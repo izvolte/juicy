@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Juicy Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/ScrollMagic.min.js"></script>
+    <script src="assets/js/animation.gsap.min.js"></script>
+    <script src="assets/js/debug.addIndicators.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+<div class="ch-wrapper">
+    <div class="ch-content">
+        <header class="ch-header">
+            <div class="ch-header__top">
+                <div class="ch-header__top-left">
+                    <a href="#" class="ch-header__ch-logo ch-logo ch-logo_size_normal">
+                    </a>
+                    <div class="ch-header__contacts">
+                        <a href="tel:+74956498169" class="ch-header__tel">
+                            +7 (495) 649 81 69
+                        </a>
+                        <div class="ch-header__time">
+                            с 10:00 до 22:00
+                        </div>
+                    </div>
+                    <a href="#" class="ch-header__ch-button ch-button ch-button_theme_gold">
+                    <span class="bg">
+                        <span class="text">Заказать звонок</span>
+                    </span>
+                    </a>
+                </div>
+                <div class="ch-header__top-right">
+                    <a href="#" class="ch-header__ch-tel-header ch-tel-header">
+
+                    </a>
+                    <a href="#" class="ch-header__ch-header-cart ch-header-cart">
+                        <div class="ch-header-cart__icon">
+                            <div class="ch-header-cart__num">14</div>
+                        </div>
+                        <span>Оплатить заказ</span>
+                    </a>
+                    <a href="#" class="ch-header__ch-header-lk ch-header-lk">
+                        <div class="ch-header-lk__icon">
+                        </div>
+                        <span>Личный кабинет</span>
+                    </a>
+                    <div class="ch-header__soc-wrapper">
+                        <a href="#" class="ch-header__soc ch-header__soc_fb"></a>
+                        <a href="#" class="ch-header__soc ch-header__soc_inst"></a>
+                    </div>
+                    <div class="ch-header__ch-burger ch-burger">
+                        <div class="ch-burger__line ch-burger__line_small"></div>
+                        <div class="ch-burger__line"></div>
+                        <div class="ch-burger__line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ch-header__bottom">
+                <div class="ch-header__mob-cont-contacts">
+                    <div class="ch-header__contacts">
+                        <a href="tel:+74956498169" class="ch-header__tel">
+                            +7 (495) 649 81 69
+                        </a>
+                        <div class="ch-header__time">
+                            с 10:00 до 22:00
+                        </div>
+                    </div>
+                    <a href="#" class="ch-header__ch-button ch-button ch-button_theme_gold">
+                    <span class="bg">
+                        <span class="text">Заказать звонок</span>
+                    </span>
+                    </a>
+                </div>
+                <nav class="ch-header__ch-header-nav ch-header-nav">
+                    <ul class="ch-header-nav__list">
+                        <li class="ch-header-nav__item">
+                            <a href="#">О компании</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Программы питания</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Оплата и доставка</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Консультация диетолога</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Программа лояльности</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Пресса о нас</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Блог</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="ch-header__mob-cont-lk">
+                    <a href="#" class="ch-header__ch-header-lk ch-header-lk">
+                        <div class="ch-header-lk__icon">
+                        </div>
+                        <span>Личный кабинет</span>
+                    </a>
+                    <div class="ch-header__soc-wrapper">
+                        <a href="#" class="ch-header__soc ch-header__soc_fb"></a>
+                        <a href="#" class="ch-header__soc ch-header__soc_inst"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="ch-page-header ch-page-header_about-company">
+            <ul class="ch-page-header__ch-breadcrumb ch-breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О компании</a></li>
+            </ul>
+            <h1 class="ch-page-header__ch-title ch-title ch-title_size_l">
+                О компании
+            </h1>
+        </section>
+        <div class="ch-about-company">
+            <section class="ch-about-company__ch-about-project ch-about-project">
+                <div class="ch-about-project__container">
+                    <div class="ch-about-project__image">
+                        <img src="assets/img/about-company/about-company.png" alt="">
+                    </div>
+                    <div class="ch-about-project__content">
+                        <h1 class="ch-about-project__title ch-title_size_l">
+                            О ПРОЕКТЕ JUICY FOOD
+                        </h1>
+                        <div class="ch-about-project__text ch-text ch-text_size_s">
+                            <p>
+                                Juicy Food - это бренд, объединяющий в себе ценности здорового питания и стандарты
+                                высокой гастрономии. Мы производим
+                                и доставляем для Вас рационы правильного питания, состоящие из авторских блюд
+                                ресторанного уровня, сбалансированных
+                                по калорийности и составу основных нутриентов.
+                            </p>
+                            <p>
+                                Созданные профессиональным шеф-поваром и детально проработанные нашим нутрициологом
+                                рационы, отражают в себе гастрономические представления профессионалов о кухне здорового
+                                питания – как о кухне не только полезной, качественной и сбалансированной, но и вкусной,
+                                изысканной
+                                и разнообразной.
+                            </p>
+                            <p>
+                                Мы придерживаемся принципов постоянного самосовершенствования. Качество контролируется
+                                ежедневно, меню обновляется ежемесячно, а на кухне внедряются самые актуальные новинки и
+                                последние технологии.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ch-about-company__ch-ingredients ch-ingredients">
+                <div class="ch-ingredients__header">
+                    <h2 class="ch-ingredients__title ch-text ch-text_size_s">
+                        В&nbsp;производстве наших блюд мы&nbsp;используем только самые свежие,<br>
+                        качественные и&nbsp;натуральные ингредиенты:
+                    </h2>
+                </div>
+                <div class="ch-ingredients__cont ch-text ch-text_size_xs">
+                    <ul class="ch-ingredients__ul">
+                        <li class="ch-ingredients__li">
+                            <div class="ch-ingredients__ch-gold-circle ch-gold-circle"></div>
+                            Различные виды безглютеновой
+                            муки вместо пшеничной;
+                        </li>
+                        <li class="ch-ingredients__li">
+                            <div class="ch-ingredients__ch-gold-circle ch-gold-circle"></div>
+                            Безлактозное молоко
+                            вместо обычного;
+                        </li>
+                    </ul>
+                    <ul class="ch-ingredients__ul">
+                        <li class="ch-ingredients__li">
+                            <div class="ch-ingredients__ch-gold-circle ch-gold-circle"></div>
+                            Натуральные сахарозаменители &mdash;
+                            эритрол и&nbsp;фитпарад вместо сахара;
+                        </li>
+                        <li class="ch-ingredients__li">
+                            <div class="ch-ingredients__ch-gold-circle ch-gold-circle"></div>
+                            Псиллиум вместо крахмала;
+                        </li>
+                        <li class="ch-ingredients__li">
+                            <div class="ch-ingredients__ch-gold-circle ch-gold-circle"></div>
+                            Масло МСТ (среднецепочечные
+                            триглицериды) и&nbsp;масло ГХИ;
+                        </li>
+                    </ul>
+                    <ul class="ch-ingredients__ul">
+                        <li class="ch-ingredients__li">
+                            <div class="ch-ingredients__ch-gold-circle ch-gold-circle"></div>
+                            Соль с&nbsp;пониженным
+                            содержанием натрия;
+
+                        </li>
+                        <li class="ch-ingredients__li">
+                            <div class="ch-ingredients__ch-gold-circle ch-gold-circle"></div>
+                            Различные суперфуды
+                            <span class="ch-text_size_xxs">
+                                (семена чиа, ягоды годжи, хлорелла,
+мака перуанская, семена черного
+кунжута, ягоды асаи, спирулина,
+витграсс и&nbsp;др.);
+                            </span>
+                        </li>
+                    </ul>
+                    <ul class="ch-ingredients__ul">
+                        <li class="ch-ingredients__li">
+                            <div class="ch-ingredients__ch-gold-circle ch-gold-circle"></div>
+                            Дорогие сорта<br>
+                            рыбы и&nbsp;мяса;
+                        </li>
+                        <li class="ch-ingredients__li">
+                            <div class="ch-ingredients__ch-gold-circle ch-gold-circle"></div>
+                            Свежие и&nbsp;органические
+                            овощи, фрукты и&nbsp;ягоды.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="ch-about-company__ch-about-chicken-author ch-about-chicken-author">
+                <div class="ch-about-chicken-author__container">
+                    <div class="ch-about-chicken-author__content">
+                        <h1 class="ch-about-chicken-author__title ch-title_size_l">
+                            Бренд-шеф Juicy Food<br>
+                            Алексей Берзин
+                        </h1>
+                        <div class="ch-about-chicken-author__text  ch-text ch-text_size_s">
+                            <p>Призер международных конкурсов, трехкратный призер
+                                на&nbsp;выставке &laquo;Кубок Кремля&raquo;, обладатель первого места престижного гастрономического конкурса &laquo;Пальмовая ветвь&raquo; в&nbsp;России и&nbsp;второго
+                                места в&nbsp;Европе, член Национальной Гильдии шеф-поваров.
+                            </p>
+                            <p>
+                                Его учителями были такие международные шеф-повара как Зетуни Абдебастар и&nbsp;Ричард Квентон. Работал в&nbsp;известных ресторанах и&nbsp;пятизвездочных отелях (Hotel Ararat Park Hyatt, ресторан &laquo;Новый&raquo;, ELSE Caf&eacute;, &laquo;Cook&rsquo;kareku&raquo;, &laquo;Жеральдин&raquo;, &quot;Гранд европейский экспресс и&nbsp;др.).
+
+                            </p>
+                            <p>При приготовлении блюд Алексей применяет технологию cook
+                                and chill, использует принципы лактоферментации, внедряет методы модульного ротационного нагрева пищевых продуктов с&nbsp;помощью термостатных аппаратов, работает с&nbsp;гидроколлоидами. Энергичный
+                                и&nbsp;талантливый, он&nbsp;постоянно совершенствует свои знания современных технологических процессов и&nbsp;тенденций, внимательно следит
+                                за&nbsp;современными трендами высокой кухни и&nbsp;умело использует
+                                их&nbsp;при создании своих сезонных коллекций, делая здоровое питание модным.
+                            </p>
+                            <p class="ch-green">
+                                Кредо: нестандартные идеи, выраженные в еде.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ch-about-chicken-author__image">
+                        <div class="ch-about-chicken-author__ch-gold-circle ch-gold-circle js-anim"></div>
+                        <img src="assets/img/about-company/Тимур-Абузяров.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="ch-about-company__ch-about-nutritionist ch-about-nutritionist">
+                <div class="ch-about-nutritionist__container">
+                    <div class="ch-about-nutritionist__image">
+                        <div class="ch-about-nutritionist__ch-gold-circle ch-gold-circle js-anim"></div>
+                        <img src="assets/img/about-company/nutritionist.png" alt="">
+                    </div>
+                    <div class="ch-about-nutritionist__content">
+                        <h1 class="ch-about-nutritionist__title ch-title_size_l">
+                            Нутрициолог Juicy Food<br>
+                            Елена Кокорева
+                        </h1>
+                        <div class="ch-about-nutritionist__text ch-text ch-text_size_s"><p>
+                            Елена&nbsp;&mdash; холистический нутрициолог, специалист по&nbsp;модификации
+                            образа жизни и&nbsp;биохакинга, детокс-коуч.
+
+                        </p>
+                            <p>
+                                Окончила Московский Государственный университет технологий
+                                и&nbsp;управления&nbsp;им. К.З. Разумовского по&nbsp;специализации лечебно-профилактическое питание, а&nbsp;также Международный Институт Интегральной Превентивной и&nbsp;Антивозрастной Медицины. Является членом научного Общества натуральной медицины и&nbsp;Ассоциации Нутрициологов
+                                и&nbsp;Детокс-коучей.
+
+                            </p>
+                            <p>
+                                Елена создала собственную авторскую методологию питания
+                                с&nbsp;учетом концепции здорового образа жизни. В&nbsp;каждом блюде
+                                она воплощает свои обширные знания и&nbsp;многолетний опыт
+                                и, конечно&nbsp;же, всегда с&nbsp;радостью делится секретами здоровья
+                                и&nbsp;долголетия с&nbsp;нашими Клиентами.
+
+                            </p>
+                            <p class="ch-green">
+                                Кредо: системный подход к&nbsp;здоровому образу жизни для улучшения
+                                ее&nbsp;качества на&nbsp;долгосрочной основе.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+
+    <script>
+
+        let autorController = new ScrollMagic.Controller();
+
+        let autoTL = new TimelineMax();
+
+        autoTL.from('.ch-about-chicken-author__content', 0.25, {opacity: 0, x: -50}, 0)
+            .from('.ch-about-chicken-author__ch-gold-circle', 0.25, {opacity: 0, y: 50}, 0)
+            .from('.ch-about-chicken-author__image img', 0.25, {opacity: 0, y: 50});
+
+        new ScrollMagic.Scene({
+            triggerElement: '.ch-about-chicken-author'
+        })
+            .setTween(autoTL)
+            // .addIndicators()
+            .triggerHook(0.8)
+            .addTo(autorController);
+
+        let nutController = new ScrollMagic.Controller();
+
+        let nutTL = new TimelineMax();
+
+        nutTL.from('.ch-about-nutritionist__content', 0.25, {opacity: 0, x: 50}, 0)
+            .from('.ch-about-nutritionist__ch-gold-circle', 0.25, {opacity: 0, y: 50}, 0)
+            .from('.ch-about-nutritionist__image img', 0.25, {opacity: 0, y: 50});
+
+        new ScrollMagic.Scene({
+            triggerElement: '.ch-about-nutritionist'
+        })
+            .setTween(nutTL)
+            // .addIndicators()
+            .triggerHook(0.8)
+            .addTo(nutController);
+
+
+    </script>
+
+    <footer class="ch-footer">
+        <section class="ch-footer__top">
+            <div class="ch-footer__container">
+                <div class="ch-footer__top-left">
+                    <form class="ch-footer__ch-form-subscribe ch-form-subscribe ch-form">
+                        <h4 class="ch-form-subscribe__title">
+                            Узнавайте о спецпредложениях
+                            и новинках первыми!
+                        </h4>
+
+                        <div class="ch-form-subscribe__input ch-input__wrapper">
+                            <input id="email-for-sub" type="text" class="ch-input" name="email" placeholder=" "
+                                   data-required>
+                            <label for="email-for-sub" class="ch-input__label">Ваш e-mail</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                            <button type="submit" class="ch-form-subscribe__submit ch-form__submit">
+
+                            </button>
+                        </div>
+                        <div class="ch-form-subscribe__conf">
+                            Нажимая на кнопку, я подтверждаю свое согласие на обработку персональных данных
+                            в соответствии с <a href="#">Политикой конфиденциальности</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="ch-footer__top-right">
+                    <div class="ch-footer__ch-menu-footer ch-menu-footer">
+                        <nav class="ch-menu-footer__nav">
+                            <ul class="ch-menu-footer__ul">
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Программы питания</a>
+                                </li>
+                                <li>
+                                    <a href="#">Оплата и доставка</a>
+                                </li>
+                                <li>
+                                    <a href="#">Консультация диетолога</a>
+                                </li>
+                                <li>
+                                    <a href="#">Программа лояльности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Пресса о нас</a>
+                                </li>
+                                <li>
+                                    <a href="#">Политика конфиденциальности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Публичная оферта</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ch-footer__bottom">
+            <div class="ch-footer__container">
+                <div class="ch-footer__bottom-left">
+                    <ul class="ch-footer__ch-contacts ch-contacts">
+                        <li class="ch-contacts__item ch-contacts__item_address">г. Москва, Кутузовский пр-кт, дом 36,
+                            строение 4
+                        </li>
+                        <li class="ch-contacts__item ch-contacts__item_tel">+7 (495) 649 81 69</li>
+                        <li class="ch-contacts__item ch-contacts__item_mail">info@juicy-food.ru</li>
+                    </ul>
+
+                </div>
+                <div class="ch-footer__bottom-right">
+                    <div class="ch-footer__ch-list-circle ch-list-circle">
+                        <div class="ch-list-circle__title">
+                            Наши группы:
+                        </div>
+                        <div class="ch-list-circle__list">
+                            <a href="#" class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-fb.svg" alt="">
+                            </a>
+                            <a href="#" class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-inst.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ch-footer__ch-list-circle ch-list-circle">
+                        <div class="ch-list-circle__title">
+                            Платёжные системы:
+                        </div>
+                        <div class="ch-list-circle__list">
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-visa.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-apple-pay.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-google-pay.png" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-mir.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-maestro.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-mastercard.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ch-footer__ch-copyright ch-copyright">
+            <div class="ch-footer__container">
+                <div class="ch-copyright__date">© 2018. Juicy Food</div>
+                <a href="https://choose.digital/" target="_blank" class="ch-copyright__dev">Разработка дизайна —
+                    компания Choose</a>
+            </div>
+        </section>
+    </footer>
+</div>
+</body>
+</html>

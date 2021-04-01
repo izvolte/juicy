@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Juicy Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/ScrollMagic.min.js"></script>
+    <script src="assets/js/animation.gsap.min.js"></script>
+    <script src="assets/js/debug.addIndicators.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+<div class="ch-wrapper">
+    <div class="ch-content">
+        <header class="ch-header">
+            <div class="ch-header__top">
+                <div class="ch-header__top-left">
+                    <a href="#" class="ch-header__ch-logo ch-logo ch-logo_size_normal">
+                    </a>
+                    <div class="ch-header__contacts">
+                        <a href="tel:+74956498169" class="ch-header__tel">
+                            +7 (495) 649 81 69
+                        </a>
+                        <div class="ch-header__time">
+                            с 10:00 до 22:00
+                        </div>
+                    </div>
+                    <a href="#" class="ch-header__ch-button ch-button ch-button_theme_gold">
+                    <span class="bg">
+                        <span class="text">Заказать звонок</span>
+                    </span>
+                    </a>
+                </div>
+                <div class="ch-header__top-right">
+                    <a href="#" class="ch-header__ch-tel-header ch-tel-header">
+
+                    </a>
+                    <a href="#" class="ch-header__ch-header-cart ch-header-cart">
+                        <div class="ch-header-cart__icon">
+                            <div class="ch-header-cart__num">14</div>
+                        </div>
+                        <span>Оплатить заказ</span>
+                    </a>
+                    <a href="#" class="ch-header__ch-header-lk ch-header-lk">
+                        <div class="ch-header-lk__icon">
+                        </div>
+                        <span>Личный кабинет</span>
+                    </a>
+                    <div class="ch-header__soc-wrapper">
+                        <a href="#" class="ch-header__soc ch-header__soc_fb"></a>
+                        <a href="#" class="ch-header__soc ch-header__soc_inst"></a>
+                    </div>
+                    <div class="ch-header__ch-burger ch-burger">
+                        <div class="ch-burger__line ch-burger__line_small"></div>
+                        <div class="ch-burger__line"></div>
+                        <div class="ch-burger__line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ch-header__bottom">
+                <div class="ch-header__mob-cont-contacts">
+                    <div class="ch-header__contacts">
+                        <a href="tel:+74956498169" class="ch-header__tel">
+                            +7 (495) 649 81 69
+                        </a>
+                        <div class="ch-header__time">
+                            с 10:00 до 22:00
+                        </div>
+                    </div>
+                    <a href="#" class="ch-header__ch-button ch-button ch-button_theme_gold">
+                    <span class="bg">
+                        <span class="text">Заказать звонок</span>
+                    </span>
+                    </a>
+                </div>
+                <nav class="ch-header__ch-header-nav ch-header-nav">
+                    <ul class="ch-header-nav__list">
+                        <li class="ch-header-nav__item">
+                            <a href="#">О компании</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Программы питания</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Оплата и доставка</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Консультация диетолога</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Программа лояльности</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Пресса о нас</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Блог</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="ch-header__mob-cont-lk">
+                    <a href="#" class="ch-header__ch-header-lk ch-header-lk">
+                        <div class="ch-header-lk__icon">
+                        </div>
+                        <span>Личный кабинет</span>
+                    </a>
+                    <div class="ch-header__soc-wrapper">
+                        <a href="#" class="ch-header__soc ch-header__soc_fb"></a>
+                        <a href="#" class="ch-header__soc ch-header__soc_inst"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="ch-page-header">
+
+            <ul class="ch-page-header__ch-breadcrumb ch-breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Программы питания</a></li>
+            </ul>
+            <h1 class="ch-page-header__ch-title ch-title ch-title_size_l">
+                ПРОГРАММЫ ПИТАНИЯ
+            </h1>
+        </section>
+        <div class="ch-section ch-section__ch-list-programs ch-list-programs">
+            <a href="#" class="ch-list-programs__ch-item-list-programs ch-item-list-programs">
+                <div class="ch-item-list-programs__ch-gold-box ch-gold-box">
+
+                </div>
+                <div class="ch-item-list-programs__img">
+                    <img src="assets/img/programs/img1.jpg" alt="">
+                </div>
+                <div class="ch-item-list-programs__content">
+                    <div class="ch-item-list-programs__title ch-text ch-text_size_s">
+                        Снижение веса
+                    </div>
+                    <div class="ch-item-list-programs__kkl ch-text_size_xs">
+                        900 ккал/1200 ккал/1500 ккал
+                    </div>
+                    <ul class="ch-item-list-programs__list-adv ch-text_size_xs">
+                        <li class="ch-item-list-programs__adv">
+                            Эффективное снижение веса;
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Нормализация веса;
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Закрепление полученных результатов.
+                        </li>
+                    </ul>
+                    <div class="ch-item-list-programs__bottom">
+                        <div class="ch-item-list-programs__price ch-text_size_s">
+                            от 1 700 ₽/день
+                        </div>
+                        <div class="ch-item-list-programs__button ch-button">
+                            Подробнее
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="ch-list-programs__ch-item-list-programs ch-item-list-programs">
+                <div class="ch-item-list-programs__ch-gold-box ch-gold-box">
+
+                </div>
+                <div class="ch-item-list-programs__img">
+                    <img src="assets/img/programs/img2.jpg" alt="">
+                </div>
+                <div class="ch-item-list-programs__content">
+                    <div class="ch-item-list-programs__title ch-text ch-text_size_s">
+                        Сбалансированное питание
+                    </div>
+                    <div class="ch-item-list-programs__kkl ch-text_size_xs">
+                        1800 ккал/2000 ккал
+                    </div>
+                    <ul class="ch-item-list-programs__list-adv ch-text_size_xs">
+                        <li class="ch-item-list-programs__adv">
+                            Ежедневный рацион для поддержания веса;
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Сохранение жизненной энергии
+                            и хорошего самочувствия;
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Формирование правильных пищевых привычек.
+                        </li>
+                    </ul>
+                    <div class="ch-item-list-programs__bottom">
+                        <div class="ch-item-list-programs__price ch-text_size_s">
+                            от 1 850 ₽/день
+                        </div>
+                        <div class="ch-item-list-programs__button ch-button">
+                            Подробнее
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="ch-list-programs__ch-item-list-programs ch-item-list-programs">
+                <div class="ch-item-list-programs__ch-gold-box ch-gold-box">
+
+                </div>
+                <div class="ch-item-list-programs__img">
+                    <img src="assets/img/programs/img2.jpg" alt="">
+                </div>
+                <div class="ch-item-list-programs__content">
+                    <div class="ch-item-list-programs__title ch-text ch-text_size_s">
+                        Спортивное питание
+                    </div>
+                    <div class="ch-item-list-programs__kkl ch-text_size_xs">
+                        2500 ккал/3000 ккал
+                    </div>
+                    <ul class="ch-item-list-programs__list-adv ch-text_size_xs">
+                        <li class="ch-item-list-programs__adv">
+                            Формирование спортивного тела
+                            и улучшение рельефа
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Поддержание веса при активных
+                            занятиях спортом
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Набор массы тела
+                        </li>
+                    </ul>
+                    <div class="ch-item-list-programs__bottom">
+                        <div class="ch-item-list-programs__price ch-text_size_s">
+                            от 1 700 ₽/день
+                        </div>
+                        <div class="ch-item-list-programs__button ch-button">
+                            Подробнее
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="ch-list-programs__ch-item-list-programs ch-item-list-programs">
+                <div class="ch-item-list-programs__ch-gold-box ch-gold-box">
+
+                </div>
+                <div class="ch-item-list-programs__img">
+                    <img src="assets/img/programs/img1.jpg" alt="">
+                </div>
+                <div class="ch-item-list-programs__content">
+                    <div class="ch-item-list-programs__title ch-text ch-text_size_s">
+                        Белковая диета
+                    </div>
+                    <div class="ch-item-list-programs__kkl ch-text_size_xs">
+                        Белковая атака 1200 ккал/900ккал<br>
+                        Чередование 1500 ккал/1200ккал
+                    </div>
+                    <ul class="ch-item-list-programs__list-adv ch-text_size_xs">
+                        <li class="ch-item-list-programs__adv">
+                            Похудение с сохранением мышечной массы;
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Набор мышечной массы за счет уменьшения<br>
+                            жировых отложений;
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Быстрое снижение веса без чувства голода.
+                        </li>
+                    </ul>
+                    <div class="ch-item-list-programs__bottom">
+                        <div class="ch-item-list-programs__price ch-text_size_s">
+                            от 1 700 ₽/день
+                        </div>
+                        <div class="ch-item-list-programs__button ch-button">
+                            Подробнее
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="ch-list-programs__ch-item-list-programs ch-item-list-programs">
+                <div class="ch-item-list-programs__ch-gold-box ch-gold-box">
+
+                </div>
+                <div class="ch-item-list-programs__img">
+                    <img src="assets/img/programs/img2.jpg" alt="">
+                </div>
+                <div class="ch-item-list-programs__content">
+                    <div class="ch-item-list-programs__title ch-text ch-text_size_s">
+                        Кето диета
+                    </div>
+                    <div class="ch-item-list-programs__kkl ch-text_size_xs">
+                        1500 ккал/1200 ккал
+                    </div>
+                    <ul class="ch-item-list-programs__list-adv ch-text_size_xs">
+                        <li class="ch-item-list-programs__adv">
+                            Похудение за счет употребления полезных жиров;
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Поддержание гормонального фона
+                            и улучшения обмена веществ;
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Повышение уровня энергии за счет
+                            высокожировых продуктов.
+                        </li>
+                    </ul>
+                    <div class="ch-item-list-programs__bottom">
+                        <div class="ch-item-list-programs__price ch-text_size_s">
+                            от 2 150 ₽/день
+                        </div>
+                        <div class="ch-item-list-programs__button ch-button">
+                            Подробнее
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="ch-list-programs__ch-item-list-programs ch-item-list-programs">
+                <div class="ch-item-list-programs__ch-gold-box ch-gold-box">
+
+                </div>
+                <div class="ch-item-list-programs__img">
+                    <img src="assets/img/programs/img1.jpg" alt="">
+                </div>
+                <div class="ch-item-list-programs__content">
+                    <div class="ch-item-list-programs__title ch-text ch-text_size_s">
+                        Вегетарианство
+                    </div>
+                    <div class="ch-item-list-programs__kkl ch-text_size_xs">
+                        2000 ккал/1500 ккал/1200 ккал
+                    </div>
+                    <ul class="ch-item-list-programs__list-adv ch-text_size_xs">
+                        <li class="ch-item-list-programs__adv">
+                            Растительная диета с добавлением яиц
+                            и молочных продуктов;
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Рацион, обогащенный качественным белком;
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Укрепление иммунитета.
+                        </li>
+                    </ul>
+                    <div class="ch-item-list-programs__bottom">
+                        <div class="ch-item-list-programs__price ch-text_size_s">
+                            от 1 300 ₽/день
+                        </div>
+                        <div class="ch-item-list-programs__button ch-button">
+                            Подробнее
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="ch-list-programs__ch-item-list-programs ch-item-list-programs">
+                <div class="ch-item-list-programs__ch-gold-box ch-gold-box">
+
+                </div>
+                <div class="ch-item-list-programs__img">
+                    <img src="assets/img/programs/img2.jpg" alt="">
+                </div>
+                <div class="ch-item-list-programs__content">
+                    <div class="ch-item-list-programs__title ch-text ch-text_size_s">
+                        Вегетарианство с рыбой
+                    </div>
+                    <div class="ch-item-list-programs__kkl ch-text_size_xs">
+                        1500 ккал/1200 ккал
+                    </div>
+                    <ul class="ch-item-list-programs__list-adv ch-text_size_xs">
+                        <li class="ch-item-list-programs__adv">
+                            Растительная диета с рыбой и морепродуктами;
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Рацион, исключающий мясо и птицу;
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Поддержание здоровья
+                        </li>
+                    </ul>
+                    <div class="ch-item-list-programs__bottom">
+                        <div class="ch-item-list-programs__price ch-text_size_s">
+                            от 1 500 ₽/день
+                        </div>
+                        <div class="ch-item-list-programs__button ch-button">
+                            Подробнее
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="ch-list-programs__ch-item-list-programs ch-item-list-programs">
+                <div class="ch-item-list-programs__ch-gold-box ch-gold-box">
+
+                </div>
+                <div class="ch-item-list-programs__img">
+                    <img src="assets/img/programs/img1.jpg" alt="">
+                </div>
+                <div class="ch-item-list-programs__content">
+                    <div class="ch-item-list-programs__title ch-text ch-text_size_s">
+                        Веганство
+                    </div>
+                    <div class="ch-item-list-programs__kkl ch-text_size_xs">
+                        2000 ккал/1500 ккал/1200 ккал
+                    </div>
+                    <ul class="ch-item-list-programs__list-adv ch-text_size_xs">
+                        <li class="ch-item-list-programs__adv">
+                            Растительная диета без мяса, птицы, рыбы,
+                            яиц и молочных продуктов;
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Разнообразие овощей для очищения
+                            от токсинов;
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Высоконутритивный белок.
+                        </li>
+                    </ul>
+                    <div class="ch-item-list-programs__bottom">
+                        <div class="ch-item-list-programs__price ch-text_size_s">
+                            от 1 300 ₽/день
+                        </div>
+                        <div class="ch-item-list-programs__button ch-button">
+                            Подробнее
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="ch-list-programs__ch-item-list-programs ch-item-list-programs privee">
+                <div class="ch-item-list-programs__ch-gold-box ch-gold-box">
+
+                </div>
+                <div class="ch-item-list-programs__img">
+                    <img src="assets/img/programs/img1.jpg" alt="">
+                </div>
+                <div class="ch-item-list-programs__content">
+                    <div class="ch-item-list-programs__title ch-text ch-text_size_s">
+                        Детокс
+                    </div>
+                    <div class="ch-item-list-programs__kkl ch-text_size_xs">
+                        JUICY DETOX/SMART DETOX
+                    </div>
+                    <ul class="ch-item-list-programs__list-adv ch-text_size_xs">
+                        <li class="ch-item-list-programs__adv">
+                            Детоксикация организма
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Улучшение функции ЖКТ и состояния кожи;
+                        </li>
+                        <li class="ch-item-list-programs__adv">
+                            Восстановление на клеточном уровне.
+                        </li>
+                    </ul>
+                    <div class="ch-item-list-programs__bottom">
+                        <div class="ch-item-list-programs__price ch-text_size_s">
+                            от 1 500 ₽/день
+                        </div>
+                        <div class="ch-item-list-programs__button ch-button">
+                            Подробнее
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <section class="ch-section ch-section__ch-help-form ch-help-form">
+            <div class="ch-help-form__container">
+                <div class="ch-help-form__photo">
+                    <img src="assets/img/help-form.png" alt="">
+                    <div class="ch-help-form__ch-gold-circle ch-gold-circle js-anim"></div>
+                </div>
+                <form class="ch-help-form__ch-form ch-form">
+                    <h1 class="ch-help-form__ch-title ch-title ch-title_size_l">
+                        МЫ ПОМОЖЕМ<br>
+                        ВАМ С ВЫБОРОМ
+                    </h1>
+                    <div class="ch-help-form__sub-title ch-text_size_s">
+                        Задайте вопрос и получите ответ
+                    </div>
+                    <div class="ch-help-form__input ch-input__wrapper">
+                        <input id="tel-for-help" type="text" class="ch-input ch-mask-tel" name="tel" placeholder=" "
+                               data-required="tel">
+                        <label for="tel-for-help" class="ch-input__label">Ваш телефон</label>
+                        <div class="ch-input__error"></div>
+                        <div class="ch-input__successful"></div>
+                    </div>
+                    <div class="ch-help-form__textarea ch-textarea__wrapper">
+                        <textarea id="message" class="ch-textarea" name="message" placeholder=" "
+                                  data-required="message"></textarea>
+                        <label for="message" class="ch-textarea__label">Текст сообщения</label>
+                        <div class="ch-textarea__error"></div>
+                        <div class="ch-textarea__successful"></div>
+                    </div>
+                    <div class="ch-help-form__bottom">
+                        <div class="ch-help-form__conf ch-text_size_xs">
+                            Нажимая на кнопку, я подтверждаю свое<br>
+                            согласие на обработку персональных данных<br>
+                            в соответствии с <a href="#">Политикой конфиденциальности</a>
+                        </div>
+                        <button type="submit" class="ch-help-form__ch-button ch-button ch-form__submit">
+                            Подобрать рацион
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer class="ch-footer">
+        <section class="ch-footer__top">
+            <div class="ch-footer__container">
+                <div class="ch-footer__top-left">
+                    <form class="ch-footer__ch-form-subscribe ch-form-subscribe ch-form">
+                        <h4 class="ch-form-subscribe__title">
+                            Узнавайте о спецпредложениях
+                            и новинках первыми!
+                        </h4>
+
+                        <div class="ch-form-subscribe__input ch-input__wrapper">
+                            <input id="email-for-sub" type="text" class="ch-input" name="email" placeholder=" "
+                                   data-required>
+                            <label for="email-for-sub" class="ch-input__label">Ваш e-mail</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                            <button type="submit" class="ch-form-subscribe__submit ch-form__submit">
+
+                            </button>
+                        </div>
+                        <div class="ch-form-subscribe__conf">
+                            Нажимая на кнопку, я подтверждаю свое согласие на обработку персональных данных
+                            в соответствии с <a href="#">Политикой конфиденциальности</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="ch-footer__top-right">
+                    <div class="ch-footer__ch-menu-footer ch-menu-footer">
+                        <nav class="ch-menu-footer__nav">
+                            <ul class="ch-menu-footer__ul">
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Программы питания</a>
+                                </li>
+                                <li>
+                                    <a href="#">Оплата и доставка</a>
+                                </li>
+                                <li>
+                                    <a href="#">Консультация диетолога</a>
+                                </li>
+                                <li>
+                                    <a href="#">Программа лояльности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Пресса о нас</a>
+                                </li>
+                                <li>
+                                    <a href="#">Политика конфиденциальности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Публичная оферта</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ch-footer__bottom">
+            <div class="ch-footer__container">
+                <div class="ch-footer__bottom-left">
+                    <ul class="ch-footer__ch-contacts ch-contacts">
+                        <li class="ch-contacts__item ch-contacts__item_address">г. Москва, Кутузовский пр-кт, дом 36,
+                            строение 4
+                        </li>
+                        <li class="ch-contacts__item ch-contacts__item_tel">+7 (495) 649 81 69</li>
+                        <li class="ch-contacts__item ch-contacts__item_mail">info@juicy-food.ru</li>
+                    </ul>
+
+                </div>
+                <div class="ch-footer__bottom-right">
+                    <div class="ch-footer__ch-list-circle ch-list-circle">
+                        <div class="ch-list-circle__title">
+                            Наши группы:
+                        </div>
+                        <div class="ch-list-circle__list">
+                            <a href="#" class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-fb.svg" alt="">
+                            </a>
+                            <a href="#" class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-inst.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ch-footer__ch-list-circle ch-list-circle">
+                        <div class="ch-list-circle__title">
+                            Платёжные системы:
+                        </div>
+                        <div class="ch-list-circle__list">
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-visa.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-apple-pay.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-google-pay.png" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-mir.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-maestro.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-mastercard.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ch-footer__ch-copyright ch-copyright">
+            <div class="ch-footer__container">
+                <div class="ch-copyright__date">© 2018. Juicy Food</div>
+                <a href="https://choose.digital/" target="_blank" class="ch-copyright__dev">Разработка дизайна —
+                    компания Choose</a>
+            </div>
+        </section>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Juicy Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/ScrollMagic.min.js"></script>
+    <script src="assets/js/animation.gsap.min.js"></script>
+    <script src="assets/js/debug.addIndicators.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+<div class="ch-wrapper">
+    <div class="ch-content">
+        <header class="ch-header">
+            <div class="ch-header__top">
+                <div class="ch-header__top-left">
+                    <a href="#" class="ch-header__ch-logo ch-logo ch-logo_size_normal">
+                    </a>
+                    <div class="ch-header__contacts">
+                        <a href="tel:+74956498169" class="ch-header__tel">
+                            +7 (495) 649 81 69
+                        </a>
+                        <div class="ch-header__time">
+                            с 10:00 до 22:00
+                        </div>
+                    </div>
+                    <a href="#" class="ch-header__ch-button ch-button ch-button_theme_gold">
+                    <span class="bg">
+                        <span class="text">Заказать звонок</span>
+                    </span>
+                    </a>
+                </div>
+                <div class="ch-header__top-right">
+                    <a href="#" class="ch-header__ch-tel-header ch-tel-header">
+
+                    </a>
+                    <a href="#" class="ch-header__ch-header-cart ch-header-cart">
+                        <div class="ch-header-cart__icon">
+                            <div class="ch-header-cart__num">14</div>
+                        </div>
+                        <span>Оплатить заказ</span>
+                    </a>
+                    <a href="#" class="ch-header__ch-header-lk ch-header-lk">
+                        <div class="ch-header-lk__icon">
+                        </div>
+                        <span>Личный кабинет</span>
+                    </a>
+                    <div class="ch-header__soc-wrapper">
+                        <a href="#" class="ch-header__soc ch-header__soc_fb"></a>
+                        <a href="#" class="ch-header__soc ch-header__soc_inst"></a>
+                    </div>
+                    <div class="ch-header__ch-burger ch-burger">
+                        <div class="ch-burger__line ch-burger__line_small"></div>
+                        <div class="ch-burger__line"></div>
+                        <div class="ch-burger__line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ch-header__bottom">
+                <div class="ch-header__mob-cont-contacts">
+                    <div class="ch-header__contacts">
+                        <a href="tel:+74956498169" class="ch-header__tel">
+                            +7 (495) 649 81 69
+                        </a>
+                        <div class="ch-header__time">
+                            с 10:00 до 22:00
+                        </div>
+                    </div>
+                    <a href="#" class="ch-header__ch-button ch-button ch-button_theme_gold">
+                    <span class="bg">
+                        <span class="text">Заказать звонок</span>
+                    </span>
+                    </a>
+                </div>
+                <nav class="ch-header__ch-header-nav ch-header-nav">
+                    <ul class="ch-header-nav__list">
+                        <li class="ch-header-nav__item">
+                            <a href="#">О компании</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Программы питания</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Оплата и доставка</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Консультация диетолога</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Программа лояльности</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Пресса о нас</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Блог</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="ch-header__mob-cont-lk">
+                    <a href="#" class="ch-header__ch-header-lk ch-header-lk">
+                        <div class="ch-header-lk__icon">
+                        </div>
+                        <span>Личный кабинет</span>
+                    </a>
+                    <div class="ch-header__soc-wrapper">
+                        <a href="#" class="ch-header__soc ch-header__soc_fb"></a>
+                        <a href="#" class="ch-header__soc ch-header__soc_inst"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="ch-page-header">
+            <ul class="ch-page-header__ch-breadcrumb ch-breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Программы питания</a></li>
+                <li><a href="#">Программы питания</a></li>
+            </ul>
+            <h1 class="ch-page-header__ch-title ch-title ch-title_size_l">
+                ПРОГРАММЫ ПИТАНИЯ
+            </h1>
+        </section>
+        <div class="ch-product-page">
+            <table class="ch-product-page__ch-tabs-product-variants">
+                <tr>
+                    <td class="ch-tabs-product-variants__tab active">
+                        <div class="ch-tabs-product-variants__ch-gold-box ch-gold-box"></div>
+                        <span>900 ккал</span>
+                    </td>
+                    <td class="ch-tabs-product-variants__tab">
+                        <div class="ch-tabs-product-variants__ch-gold-box ch-gold-box"></div>
+                        <span>1200 ккал</span>
+                    </td>
+                    <td class="ch-tabs-product-variants__tab">
+                        <div class="ch-tabs-product-variants__ch-gold-box ch-gold-box"></div>
+                        <span>1500 ккал</span>
+                    </td>
+                </tr>
+            </table>
+            <div class="ch-product-page__ch-card-product ch-card-product">
+                <div class="ch-card-product__thumb">
+                    <img src="assets/img/programs/img3.png" alt="">
+                </div>
+                <form action="" class="ch-card-product__block-info-list">
+                    <div class="ch-card-product__block-info-item ch-card-product__block-info-item_title ch-text ch-text_size_s">
+                        Программа:<br>
+                        Снижение веса 900 ккал
+                    </div>
+                    <div class="ch-card-product__block-info-item ch-card-product__block-info-item_stock">
+                        <div>
+                            <p class="ch-card-product__stock ch-text ch-text_size_s">
+                                ПРИ ПОВТОРНОМ ЗАКАЗЕ
+                                СКИДКИ ОТ 10%
+                            </p>
+                            <p class="ch-text ch-text_size_xs">
+                                Узнайте подробнее<br>
+                                о нашей <a href="#">Программе лояльности</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ch-card-product__block-info-item ch-card-product__block-info-item_value">
+
+                        <div class="ch-item-cart__ch-value-control ch-value-control">
+                            <div class="ch-value-control__title ch-text ch-text_size_s">
+                                Пожалуйста, выберите<br>
+                                количество дней:
+                            </div>
+                            <div class="ch-value-control__cont ch-value-control__cont_xl">
+                                <button type="button" class="ch-value-control__button ch-value-control__minus">
+
+                                </button>
+                                <div class="ch-value-control__wrapper">
+                                    <input id="product-value" type="text" disabled
+                                           class="ch-value-control__num ch-value-control__num_grey" name="value"
+                                           value="1" placeholder="1">
+                                    <span class="ch-value-control__word ch-text_size_s">1 день</span>
+                                </div>
+
+                                <button type="button" class="ch-value-control__button ch-value-control__plus">
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ch-card-product__block-info-item ch-card-product__block-info-item_total">
+                        <div>
+                            <div class="ch-card-product__total ch-text_size_s">
+                                ИТОГО: 3 750 ₽
+                            </div>
+                            <button type="submit" class="ch-card-product__ch-button ch-button">
+                                Заказать
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="ch-product-page__about">
+                <h2 class="ch-product-page__title ch-title ch-title_size_l">
+                    о программе
+                </h2>
+                <div class="ch-product-page__about-text ch-text ch-text_size_xs">
+                    <p>
+                        Веганство - самая строгая форма вегетарианства, программа питания построенная исключительно из
+                        растительной пищи. Мы позаботились о достаточном количестве растительных белков,
+                        высококачественных жиров и разнообразных углеводов - каждый из этих макронутриентов, является
+                        необходимой составляющей сбалансированного рациона, а также уделили внимание продуктам,
+                        содержащим незаменимые аминокислоты, столь необходимые веганам для жизнидеятельности.
+                    </p>
+                </div>
+            </div>
+            <div class="ch-product-page__ch-menu-week ch-menu-week">
+                <h2 class="ch-product-page__title ch-menu-week__title ch-title ch-title_size_l">
+                    МЕНЮ НА НЕДЕЛЮ
+                </h2>
+                <input id="day-mon" type="radio" class="ch-menu-week__day-input ch-input_inv" checked name="day-input">
+                <input id="day-tue" type="radio" class="ch-menu-week__day-input ch-input_inv" name="day-input">
+                <input id="day-wed" type="radio" class="ch-menu-week__day-input ch-input_inv" name="day-input">
+                <input id="day-thu" type="radio" class="ch-menu-week__day-input ch-input_inv" name="day-input">
+                <input id="day-fri" type="radio" class="ch-menu-week__day-input ch-input_inv" name="day-input">
+                <input id="day-sat" type="radio" class="ch-menu-week__day-input ch-input_inv" name="day-input">
+                <input id="day-sun" type="radio" class="ch-menu-week__day-input ch-input_inv" name="day-input">
+                <div class="ch-menu-week__header">
+                    <div class="ch-menu-week__week-list">
+                        <label for="day-mon" class="ch-menu-week__day-week ch-text_size_xs ch-text">
+                            ПН
+                        </label>
+                        <label for="day-tue" class="ch-menu-week__day-week ch-text_size_xs ch-text">
+                            ВТ
+                        </label>
+                        <label for="day-wed" class="ch-menu-week__day-week ch-text_size_xs ch-text">
+                            СР
+                        </label>
+                        <label for="day-thu" class="ch-menu-week__day-week ch-text_size_xs ch-text">
+                            ЧТ
+                        </label>
+                        <label for="day-fri" class="ch-menu-week__day-week ch-text_size_xs ch-text">
+                            ПТ
+                        </label>
+                        <label for="day-sat" class="ch-menu-week__day-week ch-text_size_xs ch-text">
+                            СБ
+                        </label>
+                        <label for="day-sun" class="ch-menu-week__day-week ch-text_size_xs ch-text">
+                            ВС
+                        </label>
+                    </div>
+                    <div class="ch-menu-week__ch-per-day-wrapper">
+                        <div data-day="day-mon" class="ch-menu-week__ch-per-day ch-per-day ch-text">
+                            <div class="ch-per-day__header ch-text_size_xxs">
+                                Всего<br>
+                                за день:
+                            </div>
+                            <div class="ch-per-day__item">
+                                Ккал:<br>
+                                <span>7000</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Белки:<br>
+                                <span>143</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Жиры:<br>
+                                <span>25</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Углеводы:<br>
+                                <span>1500</span>
+                            </div>
+                        </div>
+                        <div data-day="day-tue" class="ch-menu-week__ch-per-day ch-per-day ch-text">
+                            <div class="ch-per-day__header ch-text_size_xxs">
+                                Всего<br>
+                                за день:
+                            </div>
+                            <div class="ch-per-day__item">
+                                Ккал:<br>
+                                <span>5000</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Белки:<br>
+                                <span>143</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Жиры:<br>
+                                <span>25</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Углеводы:<br>
+                                <span>1100</span>
+                            </div>
+                        </div>
+                        <div data-day="day-wed" class="ch-menu-week__ch-per-day ch-per-day ch-text">
+                            <div class="ch-per-day__header ch-text_size_xxs">
+                                Всего<br>
+                                за день:
+                            </div>
+                            <div class="ch-per-day__item">
+                                Ккал:<br>
+                                <span>6000</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Белки:<br>
+                                <span>143</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Жиры:<br>
+                                <span>25</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Углеводы:<br>
+                                <span>1520</span>
+                            </div>
+                        </div>
+                        <div data-day="day-thu" class="ch-menu-week__ch-per-day ch-per-day ch-text">
+                            <div class="ch-per-day__header ch-text_size_xxs">
+                                Всего<br>
+                                за день:
+                            </div>
+                            <div class="ch-per-day__item">
+                                Ккал:<br>
+                                <span>5000</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Белки:<br>
+                                <span>123</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Жиры:<br>
+                                <span>25</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Углеводы:<br>
+                                <span>1300</span>
+                            </div>
+                        </div>
+                        <div data-day="day-fri" class="ch-menu-week__ch-per-day ch-per-day ch-text">
+                            <div class="ch-per-day__header ch-text_size_xxs">
+                                Всего<br>
+                                за день:
+                            </div>
+                            <div class="ch-per-day__item">
+                                Ккал:<br>
+                                <span>7004</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Белки:<br>
+                                <span>12</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Жиры:<br>
+                                <span>25</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Углеводы:<br>
+                                <span>1520</span>
+                            </div>
+                        </div>
+                        <div data-day="day-sat" class="ch-menu-week__ch-per-day ch-per-day ch-text">
+                            <div class="ch-per-day__header ch-text_size_xxs">
+                                Всего<br>
+                                за день:
+                            </div>
+                            <div class="ch-per-day__item">
+                                Ккал:<br>
+                                <span>1000</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Белки:<br>
+                                <span>143</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Жиры:<br>
+                                <span>25</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Углеводы:<br>
+                                <span>1400</span>
+                            </div>
+                        </div>
+                        <div data-day="day-sun" class="ch-menu-week__ch-per-day ch-per-day ch-text">
+                            <div class="ch-per-day__header ch-text_size_xxs">
+                                Всего<br>
+                                за день:
+                            </div>
+                            <div class="ch-per-day__item">
+                                Ккал:<br>
+                                <span>7000</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Белки:<br>
+                                <span>143</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Жиры:<br>
+                                <span>25</span>
+                            </div>
+                            <div class="ch-per-day__item">
+                                Углеводы:<br>
+                                <span>1700</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ch-menu-week__wrapper-days">
+                    <div data-day="day-mon" class="ch-menu-week__day-list">
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+                            </div>
+                            <div class="ch-day-item__title">
+                                Завтрак
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Смузи "Клубника-гуава"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Каша из кинова с грушей
+                                    и корицей на миндальном
+                                    молоке
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Смузи "Клубника-гуава"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Каша из кинова с грушей
+                                    и корицей на миндальном
+                                    молоке
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Смузи "Клубника-гуава"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Каша из кинова с грушей
+                                    и корицей на миндальном
+                                    молоке
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Смузи "Клубника-гуава"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Каша из кинова с грушей
+                                    и корицей на миндальном
+                                    молоке
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Перекус
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Груша, томленая в вине со специями и мятой
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Обед
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Вегетарианский суп-лагман “на скорую руку"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Филе говядины терияки с овощами
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Полдник
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Салат цезарь с ломтиками запеченной семги
+                                    и йогуртовым соусом
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Ужин
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Салат цезарь с ломтиками запеченной семги
+                                    и йогуртовым соусом
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Обед
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Вегетарианский суп-лагман “на скорую руку"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Филе говядины терияки с овощами
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Полдник
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Салат цезарь с ломтиками запеченной семги
+                                    и йогуртовым соусом
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Ужин
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Салат цезарь с ломтиками запеченной семги
+                                    и йогуртовым соусом
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-day="day-tue" class="ch-menu-week__day-list">
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Завтрак
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Смузи "Клубника-гуава"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Каша из кинова с грушей
+                                    и корицей на миндальном
+                                    молоке
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Перекус
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Груша, томленая в вине со специями и мятой
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Обед
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Вегетарианский суп-лагман “на скорую руку"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Филе говядины терияки с овощами
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Полдник
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Салат цезарь с ломтиками запеченной семги
+                                    и йогуртовым соусом
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Ужин
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Салат цезарь с ломтиками запеченной семги
+                                    и йогуртовым соусом
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-day="day-wed" class="ch-menu-week__day-list">
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Завтрак
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Смузи "Клубника-гуава"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Каша из кинова с грушей
+                                    и корицей на миндальном
+                                    молоке
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Перекус
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Груша, томленая в вине со специями и мятой
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Обед
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Вегетарианский суп-лагман “на скорую руку"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Филе говядины терияки с овощами
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Полдник
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Салат цезарь с ломтиками запеченной семги
+                                    и йогуртовым соусом
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Ужин
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Салат цезарь с ломтиками запеченной семги
+                                    и йогуртовым соусом
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-day="day-thu" class="ch-menu-week__day-list">
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Завтрак
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Смузи "Клубника-гуава"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Каша из кинова с грушей
+                                    и корицей на миндальном
+                                    молоке
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Перекус
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Груша, томленая в вине со специями и мятой
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Обед
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Вегетарианский суп-лагман “на скорую руку"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Филе говядины терияки с овощами
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Полдник
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Салат цезарь с ломтиками запеченной семги
+                                    и йогуртовым соусом
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Ужин
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Салат цезарь с ломтиками запеченной семги
+                                    и йогуртовым соусом
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-day="day-fri" class="ch-menu-week__day-list">
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Завтрак
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Смузи "Клубника-гуава"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Каша из кинова с грушей
+                                    и корицей на миндальном
+                                    молоке
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Перекус
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Груша, томленая в вине со специями и мятой
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Обед
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Вегетарианский суп-лагман “на скорую руку"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Филе говядины терияки с овощами
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Полдник
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Салат цезарь с ломтиками запеченной семги
+                                    и йогуртовым соусом
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Ужин
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Салат цезарь с ломтиками запеченной семги
+                                    и йогуртовым соусом
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-day="day-sat" class="ch-menu-week__day-list">
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Завтрак
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Смузи "Клубника-гуава"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Каша из кинова с грушей
+                                    и корицей на миндальном
+                                    молоке
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Перекус
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Груша, томленая в вине со специями и мятой
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Обед
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Вегетарианский суп-лагман “на скорую руку"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Филе говядины терияки с овощами
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Полдник
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Салат цезарь с ломтиками запеченной семги
+                                    и йогуртовым соусом
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Ужин
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Салат цезарь с ломтиками запеченной семги
+                                    и йогуртовым соусом
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-day="day-sun" class="ch-menu-week__day-list">
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Завтрак
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Смузи "Клубника-гуава"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Каша из кинова с грушей
+                                    и корицей на миндальном
+                                    молоке
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Перекус
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Груша, томленая в вине со специями и мятой
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Обед
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Вегетарианский суп-лагман “на скорую руку"
+                                </li>
+                                <li class="ch-day-item__list-item">
+                                    Филе говядины терияки с овощами
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Полдник
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Салат цезарь с ломтиками запеченной семги
+                                    и йогуртовым соусом
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ch-menu-week__ch-day-item ch-day-item">
+                            <div class="ch-day-item__ch-gold-box ch-gold-box">
+
+                            </div>
+                            <div class="ch-day-item__title">
+                                Ужин
+                            </div>
+                            <div class="ch-day-item__set ch-text_size_xxs ch-text">
+                                <div class="ch-day-item__set-item">
+                                    386.3 ккал
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    8.4 б
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    6 ж
+                                </div>
+                                <div class="ch-day-item__set-item">
+                                    74.8 у
+                                </div>
+                            </div>
+                            <ul class="ch-day-item__list ch-text_size_xxs ch-text">
+                                <li class="ch-day-item__list-item">
+                                    Салат цезарь с ломтиками запеченной семги
+                                    и йогуртовым соусом
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="ch-footer">
+        <section class="ch-footer__top">
+            <div class="ch-footer__container">
+                <div class="ch-footer__top-left">
+                    <form class="ch-footer__ch-form-subscribe ch-form-subscribe ch-form">
+                        <h4 class="ch-form-subscribe__title">
+                            Узнавайте о спецпредложениях
+                            и новинках первыми!
+                        </h4>
+
+                        <div class="ch-form-subscribe__input ch-input__wrapper">
+                            <input id="email-for-sub" type="text" class="ch-input" name="email" placeholder=" "
+                                   data-required>
+                            <label for="email-for-sub" class="ch-input__label">Ваш e-mail</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                            <button type="submit" class="ch-form-subscribe__submit ch-form__submit">
+
+                            </button>
+                        </div>
+                        <div class="ch-form-subscribe__conf">
+                            Нажимая на кнопку, я подтверждаю свое согласие на обработку персональных данных
+                            в соответствии с <a href="#">Политикой конфиденциальности</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="ch-footer__top-right">
+                    <div class="ch-footer__ch-menu-footer ch-menu-footer">
+                        <nav class="ch-menu-footer__nav">
+                            <ul class="ch-menu-footer__ul">
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Программы питания</a>
+                                </li>
+                                <li>
+                                    <a href="#">Оплата и доставка</a>
+                                </li>
+                                <li>
+                                    <a href="#">Консультация диетолога</a>
+                                </li>
+                                <li>
+                                    <a href="#">Программа лояльности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Пресса о нас</a>
+                                </li>
+                                <li>
+                                    <a href="#">Политика конфиденциальности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Публичная оферта</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ch-footer__bottom">
+            <div class="ch-footer__container">
+                <div class="ch-footer__bottom-left">
+                    <ul class="ch-footer__ch-contacts ch-contacts">
+                        <li class="ch-contacts__item ch-contacts__item_address">г. Москва, Кутузовский пр-кт, дом 36,
+                            строение 4
+                        </li>
+                        <li class="ch-contacts__item ch-contacts__item_tel">+7 (495) 649 81 69</li>
+                        <li class="ch-contacts__item ch-contacts__item_mail">info@juicy-food.ru</li>
+                    </ul>
+
+                </div>
+                <div class="ch-footer__bottom-right">
+                    <div class="ch-footer__ch-list-circle ch-list-circle">
+                        <div class="ch-list-circle__title">
+                            Наши группы:
+                        </div>
+                        <div class="ch-list-circle__list">
+                            <a href="#" class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-fb.svg" alt="">
+                            </a>
+                            <a href="#" class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-inst.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ch-footer__ch-list-circle ch-list-circle">
+                        <div class="ch-list-circle__title">
+                            Платёжные системы:
+                        </div>
+                        <div class="ch-list-circle__list">
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-visa.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-apple-pay.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-google-pay.png" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-mir.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-maestro.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-mastercard.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ch-footer__ch-copyright ch-copyright">
+            <div class="ch-footer__container">
+                <div class="ch-copyright__date">© 2018. Juicy Food</div>
+                <a href="https://choose.digital/" target="_blank" class="ch-copyright__dev">Разработка дизайна —
+                    компания Choose</a>
+            </div>
+        </section>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Juicy Food</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/ScrollMagic.min.js"></script>
+    <script src="assets/js/animation.gsap.min.js"></script>
+    <script src="assets/js/debug.addIndicators.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+<div class="ch-wrapper">
+    <div class="ch-content">
+        <header class="ch-header">
+            <div class="ch-header__top">
+                <div class="ch-header__top-left">
+                    <a href="#" class="ch-header__ch-logo ch-logo ch-logo_size_normal">
+                    </a>
+                    <div class="ch-header__contacts">
+                        <a href="tel:+74956498169" class="ch-header__tel">
+                            +7 (495) 649 81 69
+                        </a>
+                        <div class="ch-header__time">
+                            с 10:00 до 22:00
+                        </div>
+                    </div>
+                    <a href="#" class="ch-header__ch-button ch-button ch-button_theme_gold">
+                    <span class="bg">
+                        <span class="text">Заказать звонок</span>
+                    </span>
+                    </a>
+                </div>
+                <div class="ch-header__top-right">
+                    <a href="#" class="ch-header__ch-tel-header ch-tel-header">
+
+                    </a>
+                    <a href="#" class="ch-header__ch-header-cart ch-header-cart">
+                        <div class="ch-header-cart__icon">
+                            <div class="ch-header-cart__num">14</div>
+                        </div>
+                        <span>Оплатить заказ</span>
+                    </a>
+                    <a href="#" class="ch-header__ch-header-lk ch-header-lk" data-modal="ch-aut-modal">
+                        <div class="ch-header-lk__icon">
+                        </div>
+                        <span>Личный кабинет</span>
+                    </a>
+                    <div class="ch-header__soc-wrapper">
+                        <a href="#" class="ch-header__soc ch-header__soc_fb"></a>
+                        <a href="#" class="ch-header__soc ch-header__soc_inst"></a>
+                    </div>
+                    <div class="ch-header__ch-burger ch-burger">
+                        <div class="ch-burger__line ch-burger__line_small"></div>
+                        <div class="ch-burger__line"></div>
+                        <div class="ch-burger__line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ch-header__bottom">
+                <div class="ch-header__mob-cont-contacts">
+                    <div class="ch-header__contacts">
+                        <a href="tel:+74956498169" class="ch-header__tel">
+                            +7 (495) 649 81 69
+                        </a>
+                        <div class="ch-header__time">
+                            с 10:00 до 22:00
+                        </div>
+                    </div>
+                    <a href="#" class="ch-header__ch-button ch-button ch-button_theme_gold">
+                    <span class="bg">
+                        <span class="text">Заказать звонок</span>
+                    </span>
+                    </a>
+                </div>
+                <nav class="ch-header__ch-header-nav ch-header-nav">
+                    <ul class="ch-header-nav__list">
+                        <li class="ch-header-nav__item">
+                            <a href="#">О компании</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Программы питания</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Оплата и доставка</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Консультация диетолога</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Программа лояльности</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Пресса о нас</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Блог</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="ch-header__mob-cont-lk">
+                    <a href="#" class="ch-header__ch-header-lk ch-header-lk" data-modal="ch-aut-modal">
+                        <div class="ch-header-lk__icon">
+                        </div>
+                        <span>Личный кабинет</span>
+                    </a>
+                    <div class="ch-header__soc-wrapper">
+                        <a href="#" class="ch-header__soc ch-header__soc_fb"></a>
+                        <a href="#" class="ch-header__soc ch-header__soc_inst"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="ch-recall-modal" class="ch-modal ch-modal__ch-recall-modal ch-hidden ch-opacity" data-modal="close">
+            <div class="ch-modal__ch-close ch-close" data-modal="close"></div>
+            <div class="ch-modal__container ch-recall-modal">
+                <div class="ch-recall-modal__header ch-title_size_l ch-title">
+                    МЫ ПОМОЖЕМ <br>
+                    ВАМ С ВЫБОРОМ
+                </div>
+                <div class="ch-recall-modal__cont">
+                    <div class="ch-recall-modal__title ch-text_size_s">
+                        Задайте вопрос и получите ответ
+                    </div>
+                    <form class="ch-recall-modal__ch-form ch-form">
+                        <div class="ch-recall-modal__input ch-input__wrapper">
+                            <input id="tel-recall" type="text" class="ch-input ch-mask-tel" name="tel" placeholder=" "
+                                   data-required="tel">
+                            <label for="tel-recall" class="ch-input__label">Ваш телефон</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                        </div>
+                        <div class="ch-recall-modal__textarea ch-textarea__wrapper">
+                        <textarea id="message-recall" class="ch-textarea" name="message" placeholder=" "
+                                  data-required="message"></textarea>
+                            <label for="message" class="ch-textarea__label">Текст сообщения</label>
+                            <div class="ch-textarea__error"></div>
+                            <div class="ch-textarea__successful"></div>
+                        </div>
+                        <div class="ch-recall-modal__button-wrapper">
+                            <div class="ch-recall-modal__conf ch-text_size_xs">
+                                Нажимая на кнопку, я подтверждаю свое
+                                согласие на обработку персональных данных
+                                в соответствии с <a href="#">Политикой конфиденциальности</a>
+                            </div>
+                            <button type="submit" class="ch-recall-modal__ch-button ch-button ch-form__submit">
+                                Подобрать рацион
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="ch-recall-modal-ind" class="ch-modal ch-modal__ch-recall-modal ch-hidden ch-opacity" data-modal="close">
+            <div class="ch-modal__ch-close ch-close" data-modal="close"></div>
+            <div class="ch-modal__container ch-recall-modal">
+                <div class="ch-recall-modal__header ch-title_size_l ch-title">
+                    МЫ ПОМОЖЕМ <br>
+                    ВАМ С ВЫБОРОМ
+                </div>
+                <div class="ch-recall-modal__cont">
+                    <div class="ch-recall-modal__title ch-text_size_s">
+                        Задайте вопрос и получите ответ
+                    </div>
+                    <form class="ch-recall-modal__ch-form ch-form">
+                        <div class="ch-recall-modal__input ch-input__wrapper">
+                            <input id="tel-recall-ind" type="text" class="ch-input ch-mask-tel" name="tel" placeholder=" "
+                                   data-required="tel">
+                            <label for="tel-recall-ind" class="ch-input__label">Ваш телефон</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                        </div>
+                        <div class="ch-recall-modal__textarea ch-textarea__wrapper">
+                        <textarea id="message-recall-ind" class="ch-textarea" name="message" placeholder=" "
+                                  data-required="message"></textarea>
+                            <label for="message-recall-ind" class="ch-textarea__label">Текст сообщения</label>
+                            <div class="ch-textarea__error"></div>
+                            <div class="ch-textarea__successful"></div>
+                        </div>
+                        <div class="ch-recall-modal__button-wrapper">
+                            <div class="ch-recall-modal__conf ch-text_size_xs">
+                                Нажимая на кнопку, я подтверждаю свое
+                                согласие на обработку персональных данных
+                                в соответствии с <a href="#">Политикой конфиденциальности</a>
+                            </div>
+                            <button type="submit" class="ch-recall-modal__ch-button ch-button ch-form__submit">
+                                Заказать
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="ch-aut-modal" class="ch-modal ch-modal__ch-aut-modal сh-opacity ch-hidden" data-modal="close">
+            <div class="ch-modal__ch-close ch-close" data-modal="close"></div>
+            <div class="ch-modal__container ch-aut-modal">
+                <div class="ch-aut-modal__header ch-title_size_l ch-title">
+                    ВХОД И РЕГИСТРАЦИЯ
+                </div>
+                <div class="ch-aut-modal__cont">
+                    <form class="ch-aut-modal__ch-form ch-aut-modal__ch-form_login ch-form">
+                        <div class="ch-aut-modal__title ch-text ch-text_size_s">
+                            Войдите<br>
+                            в личный кабинет
+                        </div>
+                        <div class="ch-aut-modal__input ch-input__wrapper">
+                            <input id="login" type="text" class="ch-input" name="login" placeholder=" " data-required>
+                            <label for="login" class="ch-input__label">Login (e-mail/номер телефона)</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                        </div>
+                        <div class="ch-aut-modal__input ch-input__wrapper">
+                            <input id="password" type="password" class="ch-input" name="password" placeholder=" "
+                                   data-required="password">
+                            <label for="password" class="ch-input__label">Пароль</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                        </div>
+                        <div class="ch-aut-modal__recover ch-text ch-text_size_xs">Забыли пароль? Восстановите его <a
+                                href="#">здесь.</a></div>
+                        <button type="submit" class="ch-button ch-aut-modal__ch-button ch-form__submit">Войти</button>
+                    </form>
+                    <form class="ch-aut-modal__ch-form ch-aut-modal__ch-form_reg ch-form">
+                        <div class="ch-aut-modal__title ch-text ch-text_size_s">
+                            Если у вас нет личного кабинета,<br>
+                            введите свои контактные данные
+                        </div>
+                        <div class="ch-aut-modal__inputs-wrapper ">
+                            <div class="ch-aut-modal__input ch-input__wrapper">
+                                <input id="reg-first-name" type="text" class="ch-input" name="first-name"
+                                       placeholder=" " data-required>
+                                <label for="reg-first-name" class="ch-input__label">Имя</label>
+                                <div class="ch-input__error"></div>
+                                <div class="ch-input__successful"></div>
+                            </div>
+                            <div class="ch-aut-modal__input ch-input__wrapper">
+                                <input id="reg-last-name" type="text" class="ch-input" name="last-name" placeholder=" "
+                                       data-required>
+                                <label for="reg-last-name" class="ch-input__label">Фамилия</label>
+                                <div class="ch-input__error"></div>
+                                <div class="ch-input__successful"></div>
+                            </div>
+                            <div class="ch-aut-modal__input ch-input__wrapper">
+                                <input id="reg-email" type="text" class="ch-input" name="email" placeholder=" "
+                                       data-required="email">
+                                <label for="reg-email" class="ch-input__label">E-mail</label>
+                                <div class="ch-input__error"></div>
+                                <div class="ch-input__successful"></div>
+                            </div>
+                            <div class="ch-aut-modal__input ch-input__wrapper">
+                                <input id="reg-tel" type="text" class="ch-input ch-mask-tel" name="tel" placeholder=" "
+                                       data-required="tel">
+                                <label for="reg-tel" class="ch-input__label">Контактный телефон</label>
+                                <div class="ch-input__error"></div>
+                                <div class="ch-input__successful"></div>
+                            </div>
+                            <div class="ch-aut-modal__input ch-input__wrapper">
+                                <input id="reg-password" type="password" class="ch-input" name="password"
+                                       placeholder=" " data-required="password">
+                                <label for="reg-password" class="ch-input__label">Придумайте пароль</label>
+                                <div class="ch-input__error"></div>
+                                <div class="ch-input__successful"></div>
+                            </div>
+                            <div class="ch-aut-modal__input ch-input__wrapper">
+                                <input id="reg-password-repeat" type="password" class="ch-input" name="password-repeat"
+                                       placeholder=" " data-required="password-repeat">
+                                <label for="reg-password-repeat" class="ch-input__label">Повторите пароль</label>
+                                <div class="ch-input__error"></div>
+                                <div class="ch-input__successful"></div>
+                            </div>
+                        </div>
+                        <div class="ch-aut-modal__conf ch-label-checkbox__text ch-text ch-text_size_xs">Нажимая на
+                            кнопку, я подтверждаю свое
+                            согласие на обработку персональных данных
+                            в соответствии с
+                            <a href="#">Политикой конфиденциальности</a>
+                        </div>
+                        <div class="ch-aut-modal__button-wrapper ch-aut-modal__button-wrapper_center">
+                            <button type="submit"
+                                    class="ch-aut-modal__ch-button ch-aut-modal__ch-button_reg ch-button ch-form__submit">
+                                Зарегистрироваться
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <section class="ch-section ch-section__ch-start-slider ch-start-slider">
+<!--            <div class="ch-start-slider__ch-item-main-slider ch-item-main-slider ch-item-main-slider_pos_right">-->
+<!--                <img src="assets/img/slider-start/new%201920.jpg" alt=""-->
+<!--                     class="ch-item-main-slider__background ch-item-main-slider__background_1920">-->
+<!--                <img src="assets/img/slider-start/new%20320.jpg" alt=""-->
+<!--                     class="ch-item-main-slider__background ch-item-main-slider__background_350">-->
+<!--                <div class="ch-item-main-slider__cont ch-item-main-slider__cont_three">-->
+<!--                    <h1 class="ch-item-main-slider__ch-title ch-item-main-slider__ch-title_center ch-item-main-slider__ch-title_underline-none ch-item-main-slider__ch-title_three">-->
+<!--                        <span class="l">-->
+<!--                            Попробуйте<br>-->
+<!--                            наши <a href="#">авторские программы<br>-->
+<!--                            здорового питания</a>-->
+<!--                        </span>-->
+<!--                    </h1>-->
+<!--                    <div class="ch-item-main-slider__ul ch-item-main-slider__ul_center ch-item-main-slider__ul_two-col">-->
+<!--                        <a href="" class="ch-item-main-slider__li ch-item-main-slider__li_two ch-item-main-slider__li_two-low-mob">-->
+<!--                            для эффективного<br>-->
+<!--                            снижения веса-->
+<!--                        </a>-->
+<!--                        <a href="" class="ch-item-main-slider__li ch-item-main-slider__li_two ">-->
+<!--                            для поддержания формы<br>-->
+<!--                            и жизненной энергии-->
+<!--                        </a>-->
+<!--                        <a href="" class="ch-item-main-slider__li ch-item-main-slider__li_two ch-item-main-slider__li_two-low-mob">-->
+<!--                            для формирования<br>-->
+<!--                            спортивного тела-->
+<!--                        </a>-->
+<!--                        <a href="" class="ch-item-main-slider__li ch-item-main-slider__li_two">-->
+<!--                            для вегетарианцев<br>-->
+<!--                            и веганов-->
+<!--                        </a>-->
+<!--                        <a href="" class="ch-item-main-slider__li ch-item-main-slider__li_two">-->
+<!--                            для очищения организма-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <div class="ch-start-slider__ch-item-main-slider ch-item-main-slider ch-item-main-slider_pos_left">
+                <img src="assets/img/slider-start/24.03.1.jpg" alt=""
+                     class="ch-item-main-slider__background ch-item-main-slider__background_1920">
+                <img src="assets/img/slider-start/24.03.1_mob.jpg" alt=""
+                     class="ch-item-main-slider__background ch-item-main-slider__background_350">
+                <div class="ch-item-main-slider__cont ch-item-main-slider__cont_four">
+                    <h1 class="ch-item-main-slider__ch-title ch-item-main-slider__ch-title_center ch-item-main-slider__ch-title_mob-left ch-item-main-slider__ch-title_underline-none ch-item-main-slider__ch-title_four">
+                        <span class="xxl ch-green">
+                            НОВАЯ КЕТО-ДИЕТА
+                        </span>
+                    </h1>
+                    <div class="ch-item-main-slider__ul ch-item-main-slider__ul_one" >
+                        <span class="ch-item-main-slider__li ch-item-main-slider__li_empty l">
+                            Похудение за счет употребления<br>
+                            полезных жиров
+                        </span>
+                        <span class="ch-item-main-slider__li ch-item-main-slider__li_empty l">
+                            Улучшение обмена веществ
+                        </span>
+                        <span class="ch-item-main-slider__li ch-item-main-slider__li_empty l">
+                            Повышение уровня энергии
+                        </span>
+                    </div>
+                    <div class="ch-item-main-slider__wrap">
+                        <div class="ch-item-main-slider__text l bold">
+                            От 2 750 руб.
+                        </div>
+                        <a href="/nutrition-program/keto-diet/keto-diet-1200-calories-/" class="ch-item-main-slider__button">
+                            Подробнее
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ch-start-slider__ch-item-main-slider ch-item-main-slider ch-item-main-slider_pos_right">
+                <img src="assets/img/slider-start/24.03.2.jpg" alt=""
+                     class="ch-item-main-slider__background ch-item-main-slider__background_1920">
+                <img src="assets/img/slider-start/24.03.2_mob.jpg" alt=""
+                     class="ch-item-main-slider__background ch-item-main-slider__background_350">
+                <div class="ch-item-main-slider__cont ch-item-main-slider__cont_five">
+                    <h1 class="ch-item-main-slider__ch-title ch-item-main-slider__ch-title_center ch-item-main-slider__ch-title_underline-none ch-item-main-slider__ch-title_three">
+                        <span class="xl">
+                            Закажите<br>
+                            наше <a href="#">Веганское меню</a><br>
+                            для питания в пост!
+                        </span>
+                    </h1>
+
+                    <div class="ch-item-main-slider__wrap-desc">
+                        <div class="ch-item-main-slider__text ch-item-main-slider__text_no-margin l bold">
+                            От 2 000 руб.
+                        </div>
+                        <a href="/nutrition-program/vegan-menu/vegan-menu-1200-calories/" class="ch-item-main-slider__button">
+                            Заказать
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ch-section ch-section__ch-programs-nutrition ch-programs-nutrition">
+            <h1 class="ch-programs-nutrition__ch-title ch-title ch-title_size_xl">
+                ПРОГРАММЫ ПИТАНИЯ
+            </h1>
+            <div class="ch-programs-nutrition__row">
+                <a href="#" class="ch-programs-nutrition__item">
+                    <div class="ch-programs-nutrition__img">
+                        <div class="ch-programs-nutrition__ch-gold-circle ch-gold-circle"></div>
+                        <img src="assets/img/programs-nutrition/Снижение_веса.png" alt="">
+                    </div>
+                    <p class="ch-programs-nutrition__ch-text ch-text ch-text_size_s">
+                        Снижение веса
+                    </p>
+                </a>
+                <a href="#" class="ch-programs-nutrition__item">
+                    <div class="ch-programs-nutrition__img">
+                        <div class="ch-programs-nutrition__ch-gold-circle ch-gold-circle"></div>
+                        <img src="assets/img/programs-nutrition/Сбалансированное_питание.png" alt="">
+                    </div>
+                    <p class="ch-programs-nutrition__ch-text ch-text ch-text_size_s">
+                        Сбалансированное
+                        питание
+                    </p>
+                </a>
+                <a href="#" class="ch-programs-nutrition__item">
+                    <div class="ch-programs-nutrition__img">
+                        <div class="ch-programs-nutrition__ch-gold-circle ch-gold-circle"></div>
+                        <img src="assets/img/programs-nutrition/Спортивное_питание.png" alt="">
+                    </div>
+                    <p class="ch-programs-nutrition__ch-text ch-text ch-text_size_s">
+                        Спортивное
+                        питание
+                    </p>
+                </a>
+                <a href="#" class="ch-programs-nutrition__item">
+                    <div class="ch-programs-nutrition__img">
+                        <div class="ch-programs-nutrition__ch-gold-circle ch-gold-circle"></div>
+                        <img src="assets/img/programs-nutrition/Белковая_диета.png" alt="">
+                    </div>
+                    <p class="ch-programs-nutrition__ch-text ch-text ch-text_size_s">
+                        Белковая
+                        диета
+                    </p>
+                </a>
+                <a href="#" class="ch-programs-nutrition__item">
+                    <div class="ch-programs-nutrition__img">
+                        <div class="ch-programs-nutrition__ch-gold-circle ch-gold-circle"></div>
+                        <img src="assets/img/programs-nutrition/Кето_диета.png" alt="">
+                    </div>
+                    <p class="ch-programs-nutrition__ch-text ch-text ch-text_size_s">
+                        Кето диета
+                    </p>
+                </a>
+                <a href="#" class="ch-programs-nutrition__item">
+                    <div class="ch-programs-nutrition__img">
+                        <div class="ch-programs-nutrition__ch-gold-circle ch-gold-circle"></div>
+                        <img src="assets/img/programs-nutrition/Веганство.png" alt="">
+                    </div>
+                    <p class="ch-programs-nutrition__ch-text ch-text ch-text_size_s">
+                        Веганство
+                    </p>
+                </a>
+                <a href="#" class="ch-programs-nutrition__item">
+                    <div class="ch-programs-nutrition__img">
+                        <div class="ch-programs-nutrition__ch-gold-circle ch-gold-circle"></div>
+                        <img src="assets/img/programs-nutrition/Вегетарианство.png" alt="">
+                    </div>
+                    <p class="ch-programs-nutrition__ch-text ch-text ch-text_size_s">
+                        Вегетарианство
+                    </p>
+                </a>
+                <a href="#" class="ch-programs-nutrition__item">
+                    <div class="ch-programs-nutrition__img">
+                        <div class="ch-programs-nutrition__ch-gold-circle ch-gold-circle"></div>
+                        <img src="assets/img/programs-nutrition/Вегетарианство_с_рыбой.png" alt="">
+                    </div>
+                    <p class="ch-programs-nutrition__ch-text ch-text ch-text_size_s">
+                        Вегетарианство
+                        с&nbsp;рыбой
+                    </p>
+                </a>
+                <a href="#" class="ch-programs-nutrition__item">
+                    <div class="ch-programs-nutrition__img">
+                        <div class="ch-programs-nutrition__ch-gold-circle ch-gold-circle"></div>
+                        <img src="assets/img/programs-nutrition/Детокс.png" alt="">
+                    </div>
+                    <p class="ch-programs-nutrition__ch-text ch-text ch-text_size_s">
+                        Детокс
+                    </p>
+                </a>
+                <a href="#" class="ch-programs-nutrition__item">
+                    <div class="ch-programs-nutrition__img">
+                        <div class="ch-programs-nutrition__ch-gold-circle ch-gold-circle"></div>
+                        <img src="assets/img/programs-nutrition/Индивидуальное_питание.png" alt="">
+                    </div>
+                    <p class="ch-programs-nutrition__ch-text ch-text ch-text_size_s">
+                        Индивидуальное
+                        питание
+                    </p>
+                </a>
+            </div>
+        </section>
+        <section class="ch-section ch-section__ch-advantage ch-advantage">
+            <div class="ch-advantage__cont">
+                <div class="ch-advantage__header">
+                    <h1 class="ch-advantage__ch-title ch-title_size_xl">НАШИ ПРЕИМУЩЕСТВА</h1>
+                </div>
+                <div class="ch-advantage__dish">
+                    <div class="ch-advantage__ch-gold-circle ch-gold-circle"></div>
+                    <img src="assets/img/adv/dish.png" alt="">
+                </div>
+                <div class="ch-advantage__list">
+                    <div class="ch-advantage__item">
+                        <div class="ch-advantage__item-img">
+                            <img src="assets/icon/adv/cook.svg" alt="">
+                        </div>
+                        <p class="ch-advantage__p ch-text ch-text_size_s">
+                            Проект, созданный<br>
+                            профессиональными<br>
+                            рестораторами, шеф-<br>
+                            поварами и&nbsp;диетологами
+                        </p>
+                    </div>
+                    <div class="ch-advantage__item">
+                        <div class="ch-advantage__item-img">
+                            <img src="assets/icon/adv/cow.svg" alt="">
+                        </div>
+                        <p class="ch-advantage__p ch-text ch-text_size_s">
+                            Работа только с&nbsp;проверенными<br>
+                            поставщиками и&nbsp;локальными<br>
+                            фермерскими хозяйствами
+                        </p>
+                    </div>
+                    <div class="ch-advantage__item">
+                        <div class="ch-advantage__item-img">
+                            <img src="assets/icon/adv/apple.svg" alt="">
+                        </div>
+                        <p class="ch-advantage__p ch-text ch-text_size_s">
+                            Продуманное меню<br>
+                            с&nbsp;2500 разнообразных<br>
+                            блюд, не&nbsp;повторяющихся<br>
+                            30&nbsp;дней
+                        </p>
+                    </div>
+                    <div class="ch-advantage__item">
+                        <div class="ch-advantage__item-img">
+                        </div>
+                        <p class="ch-advantage__p ch-text ch-text_size_s">
+                        </p>
+                    </div>
+                    <div class="ch-advantage__item">
+                        <div class="ch-advantage__item-img">
+                            <img src="assets/icon/adv/dish.svg" alt="">
+                        </div>
+                        <p class="ch-advantage__p ch-text ch-text_size_s">
+                            Приготовление блюд<br>
+                            по&nbsp;стандартам высокой<br>
+                            гастрономии с&nbsp;использованием<br>
+                            органических продуктов<br>
+                            и&nbsp;полезных суперфудов
+
+                        </p>
+                    </div>
+                    <div class="ch-advantage__item">
+                        <div class="ch-advantage__item-img">
+                            <img src="assets/icon/adv/delivery.svg" alt="">
+                        </div>
+                        <p class="ch-advantage__p ch-text ch-text_size_s">
+                            Ежедневная доставка<br>
+                            собственной логистической<br>
+                            службой
+                        </p>
+                    </div>
+                    <div class="ch-advantage__item">
+                        <div class="ch-advantage__item-img">
+                            <img src="assets/icon/adv/menu.svg" alt="">
+                        </div>
+                        <p class="ch-advantage__p ch-text ch-text_size_s">
+                            Разработка<br>
+                            индивидуального<br>
+                            питания в&nbsp;соответствии<br>
+                            с&nbsp;Вашими пожеланиями
+                        </p>
+                    </div>
+                    <div class="ch-advantage__item">
+                        <div class="ch-advantage__item-img">
+                            <img src="assets/icon/adv/fav.svg" alt="">
+                        </div>
+                        <p class="ch-advantage__p ch-text ch-text_size_s">
+                            Дарим время,<br>
+                            красоту и&nbsp;здоровье
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ch-section ch-section__ch-ind-meals ch-ind-meals">
+            <div class="ch-ind-meals__left">
+                <h1 class="ch-ind-meals__ch-title ch-title ch-title_size_l">
+                    Индивидуальное питание
+                </h1>
+                <div class="ch-ind-meals__wrapper">
+                    <div class="ch-ind-meals__col ch-ind-meals__col_one">
+                        <div class="ch-ind-meals__item ch-text ch-text_size_s">
+                            <span class="ch-ind-meals__item-ch-gold-circle ch-gold-circle"></span>
+                            Разработка<br>
+                            индивидуального меню<br>
+                            с&nbsp;учетом Ваших пожеланий<br>
+                            или ограничений
+                        </div>
+                        <div class="ch-ind-meals__item ch-text ch-text_size_s">
+                            <span class="ch-ind-meals__item-ch-gold-circle ch-gold-circle"></span>
+                            Бесплатные консультации<br>
+                            и&nbsp;сопровождение<br>
+                            диетологом на&nbsp;протяжении<br>
+                            всей программы питания
+                        </div>
+                    </div>
+                    <div class="ch-ind-meals__col ch-ind-meals__col_two">
+                        <div class="ch-ind-meals__item ch-text ch-text_size_s">
+                            <span class="ch-ind-meals__item-ch-gold-circle ch-gold-circle"></span>
+                            Ускоренная<br>
+                            доставка<br>
+                            в часовой<br>
+                            интервал
+                        </div>
+                        <div class="ch-ind-meals__item ch-text ch-text_size_s">
+                            <span class="ch-ind-meals__item-ch-gold-circle ch-gold-circle"></span>
+                            VIP сервис
+                        </div>
+                        <a href="#" class="ch-ind-meals__ch-button ch-button" data-modal="ch-recall-modal-ind">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ch-ind-meals__right">
+                <div class="ch-ind-meals__img">
+                    <img src="assets/img/ind/woman.png" alt="" class="js-anim">
+                    <div class="ch-ind-meals__ch-gold-circle ch-gold-circle js-anim"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ch-section ch-section__ch-order-step ch-order-step">
+            <div class="ch-order-step__header">
+                <h1 class="ch-order-step__ch-title ch-title ch-title_size_l">
+                    КАК СДЕЛАТЬ ЗАКАЗ?
+                </h1>
+            </div>
+            <div class="ch-order-step__container">
+                <div class="ch-order-step__item">
+                    <div class="ch-order-step__circle"></div>
+                    <div class="ch-order-step__item-header">
+                        <div class="ch-order-step__num">
+                            <img src="assets/icon/one.svg" alt="">
+                        </div>
+                        <h4 class="ch-order-step__item-title">
+                            Оформление
+                            Заказа
+                        </h4>
+                    </div>
+                    <div class="ch-order-step__item-content">
+
+                        <p class="ch-order-step__text ch-text ch-text_size_s">
+                            На&nbsp;сайте или по&nbsp;телефону
+                            +7&nbsp;(495)&nbsp;649&nbsp;81&nbsp;69
+                        </p>
+                    </div>
+                </div>
+                <div class="ch-order-step__sep"></div>
+                <div class="ch-order-step__item">
+                    <div class="ch-order-step__circle"></div>
+                    <div class="ch-order-step__item-header">
+                        <div class="ch-order-step__num">
+                            <img src="assets/icon/two.svg" alt="">
+                        </div>
+                        <h4 class="ch-order-step__item-title">
+                            Оплата
+                            заказа
+                        </h4>
+                    </div>
+                    <div class="ch-order-step__item-content">
+
+                        <p class="ch-order-step__text ch-text ch-text_size_s">
+                            Онлайн-оплата через сайт,
+                            наличными или пластиковой
+                            картой курьеру, безналичным
+                            расчетом
+                        </p>
+                    </div>
+                </div>
+                <div class="ch-order-step__sep"></div>
+                <div class="ch-order-step__item">
+                    <div class="ch-order-step__circle"></div>
+                    <div class="ch-order-step__item-header">
+                        <div class="ch-order-step__num">
+
+                            <img src="assets/icon/three.svg" alt="">
+                        </div>
+                        <h4 class="ch-order-step__item-title">
+                            Доставка
+                            заказа
+                        </h4>
+                    </div>
+                    <div class="ch-order-step__item-content">
+
+                        <p class="ch-order-step__text ch-text ch-text_size_s">
+                            Привозим через 24&nbsp;часа<br>
+                            после оплаты
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ch-section ch-section__ch-delivery ch-delivery">
+            <h1 class="ch-delivery__ch-title ch-title_size_l">
+                ЗОНА ДОСТАВКИ
+            </h1>
+            <div class="ch-delivery__container">
+                <div class="ch-delivery__wrapper">
+                    <div class="ch-delivery__box ch-gold-box">
+                        <h3 class="ch-delivery__box-title">
+                            Стоимость<br>
+                            доставки
+                        </h3>
+                        <ul class="ch-delivery__ch-list-delivery ch-list-delivery">
+                            <li class="ch-list-delivery__item ch-text ch-text_size_s">
+                                бесплатно в пределеах<br>
+                                до 5 км от мкад
+                            </li>
+                            <li class="ch-list-delivery__item ch-text ch-text_size_s">
+                                от 5 до 30 км от мкад<br>
+                                стоимость доставки составляет 350 руб
+                            </li>
+                            <li class="ch-list-delivery__item ch-text ch-text_size_s">
+                                от 30 до 50 км от мкад<br>
+                                стоимость доставки составляет 600 руб
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="assets/img/map.png" alt="" class="ch-delivery__map">
+            </div>
+        </section>
+        <section class="ch-section ch-section__ch-help-form ch-help-form">
+            <div class="ch-help-form__container">
+                <div class="ch-help-form__photo">
+                    <img src="assets/img/help-form.png" alt="">
+                    <div class="ch-help-form__ch-gold-circle ch-gold-circle js-anim"></div>
+                </div>
+                <form class="ch-help-form__ch-form ch-form">
+                    <h1 class="ch-help-form__ch-title ch-title ch-title_size_l">
+                        МЫ ПОМОЖЕМ<br>
+                        ВАМ С ВЫБОРОМ
+                    </h1>
+                    <div class="ch-help-form__sub-title ch-text_size_s">
+                        Задайте вопрос и получите ответ
+                    </div>
+                    <div class="ch-help-form__input ch-input__wrapper">
+                        <input id="tel-for-help" type="text" class="ch-input ch-mask-tel" name="tel" placeholder=" "
+                               data-required="tel">
+                        <label for="tel-for-help" class="ch-input__label">Ваш телефон</label>
+                        <div class="ch-input__error"></div>
+                        <div class="ch-input__successful"></div>
+                    </div>
+                    <div class="ch-help-form__textarea ch-textarea__wrapper">
+                        <textarea id="message" class="ch-textarea" name="message" placeholder=" "
+                                  data-required="message"></textarea>
+                        <label for="message" class="ch-textarea__label">Текст сообщения</label>
+                        <div class="ch-textarea__error"></div>
+                        <div class="ch-textarea__successful"></div>
+                    </div>
+                    <div class="ch-help-form__bottom">
+                        <div class="ch-help-form__conf ch-text_size_xs">
+                            Нажимая на кнопку, я подтверждаю свое<br>
+                            согласие на обработку персональных данных<br>
+                            в соответствии с <a href="#">Политикой конфиденциальности</a>
+                        </div>
+                        <button type="submit" class="ch-help-form__ch-button ch-button ch-form__submit">
+                            Подобрать рацион
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="ch-section ch-section__ch-about-company-index ch-about-company-index">
+            <div class="ch-about-company-index__container">
+                <div class="ch-about-company-index__info-block">
+                    <h1 class="ch-about-company-index__ch-title ch-title ch-title_size_l">
+                        ГОТОВОЕ ЗДОРОВОЕ ПИТАНИЕ<br>
+                        С ДОСТАВКОЙ
+                    </h1>
+                    <div class="ch-about-company-index__ch-text ch-text_size_s"><p class="">
+                        Juicy Food&nbsp;&mdash; это приготовление и&nbsp;доставка рационов здорового питания.
+                        Производством наших блюд занимаются высокопрофессиональные повара, строго соблюдая технологию
+                        под руководством нашего <a href="">бренд-шефа</a> и&nbsp;тщательно следуя рекомендациям <a
+                            href="">нутрициолога</a>.
+
+
+                    </p>
+                        <p class="">
+                            Мы&nbsp;предлагаем Вам разнообразные программы питания для снижения веса, поддержания формы,
+                            набора мышечной массы,
+                            а&nbsp;также белковую диету, кето рацион, веганские, вегетариансие
+                            и&nbsp;пескетарианские рационы, оригинальные детокс программы.
+                        </p>
+                        <p class="">
+                            Доставка диетического питания осуществляется нашими курьерами ежедневно в&nbsp;двухчасовой
+                            интервал с&nbsp;06-00 до&nbsp;12-00. Мы&nbsp;работаем для тех, кто следит за&nbsp;своим
+                            здоровьем, хочет питаться вкусно и&nbsp;правильно, но&nbsp;при этом не&nbsp;желает тратить
+                            драгоценное время и&nbsp;лишние деньги.
+                        </p>
+                    </div>
+                </div>
+                <div class="ch-about-company-index__box ch-gold-box">
+                    <h1 class="ch-about-company-index__box-title">
+                        JUICY FOOD
+                    </h1>
+                    <p class="ch-about-company-index__box-sub-title ch-text_size_s">
+                        Самое время начать!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="ch-section ch-section__ch-section-reviews ch-section-reviews">
+            <div class="ch-section-reviews__container">
+                <div class="ch-section-reviews__header">
+                    <h1 class="ch-section-reviews__ch-title ch-title ch-title_size_xl">
+                        ОТЗЫВЫ
+                    </h1>
+                    <a href="#" class="ch-section-reviews__ch-link ch-link">читать</a>
+                </div>
+                <div class="ch-section-reviews__list">
+                    <div class="ch-section-reviews__ch-item-reviews ch-item-reviews">
+                        <div class="ch-item-reviews__header">
+                            <div class="ch-item-reviews__avatar">
+                                <div class="ch-item-reviews__ch-gold-circle ch-gold-circle"></div>
+                                <img src="assets/img/reviews/1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="ch-item-reviews__client">КАТЯ ДОБРЯКОВА</div>
+                        <div class="ch-item-reviews__role">Дизайнер</div>
+                        <div class="ch-item-reviews__text ch-text ch-text_size_xs">
+                            <p>
+                                “Я очень люблю поесть,<br>
+                                но не просто поесть,<br>
+                                а очень вкусно. А ещё<br>
+                                я обожаю готовить,<br>
+                                наверное от этого я часто<br>
+                                хожу…
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ch-section-reviews__ch-item-reviews ch-item-reviews">
+                        <div class="ch-item-reviews__header">
+                            <div class="ch-item-reviews__avatar">
+                                <div class="ch-item-reviews__ch-gold-circle ch-gold-circle"></div>
+                                <img src="assets/img/reviews/2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="ch-item-reviews__client">АЛЕКСАНДР РОГОВ</div>
+                        <div class="ch-item-reviews__role">Стилист</div>
+                        <div class="ch-item-reviews__text ch-text ch-text_size_xs">
+                            <p>
+                                Ни так давно<br>
+                                я познакомился<br>
+                                с сервисом доставки<br>
+                                здорового питания Juicy<br>
+                                Food, и, честно говоря,<br>
+                                был в восторге…
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ch-section-reviews__ch-item-reviews ch-item-reviews">
+                        <div class="ch-item-reviews__header">
+                            <div class="ch-item-reviews__avatar">
+                                <div class="ch-item-reviews__ch-gold-circle ch-gold-circle"></div>
+                                <img src="assets/img/reviews/3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="ch-item-reviews__client">КАРИНА ОШРОЕВА</div>
+                        <div class="ch-item-reviews__role">Певец</div>
+                        <div class="ch-item-reviews__text ch-text ch-text_size_xs">
+                            <p>
+                                Я человек очень занятой<br>
+                                и публичный - постоянные<br>
+                                съемки, светские<br>
+                                мероприятия, путешествия,<br>
+                                все это обязывает<br>
+                                меня…
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ch-section-reviews__ch-item-reviews ch-item-reviews">
+                        <div class="ch-item-reviews__header">
+                            <div class="ch-item-reviews__avatar">
+                                <div class="ch-item-reviews__ch-gold-circle ch-gold-circle"></div>
+                                <img src="assets/img/reviews/4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="ch-item-reviews__client">ВЕРА ПОЧУЕВА</div>
+                        <div class="ch-item-reviews__role">Главный редактор и владелец Veter Magazine</div>
+                        <div class="ch-item-reviews__text ch-text ch-text_size_xs">
+                            <p>
+                                «Ребята, хочу вам<br>
+                                порекомендовать один<br>
+                                фуд проект, в который<br>
+                                невозможно не влюбиться!<br>
+                                Меня мало, чем можно<br>
+                                удивить…
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ch-section ch-section__ch-press-section ch-press-section">
+            <div class="ch-press-section__container">
+                <div class="ch-press-section__header">
+                    <h1 class="ch-press-section__ch-title ch-title ch-title_size_xl">
+                        ПЕРССА О НАС
+                    </h1>
+                    <a href="#" class="ch-press-section__ch-link ch-link">ЧИТАТЬ</a>
+                </div>
+                <div class="ch-press-section__list">
+                    <a href="#" class="ch-press-section__ch-item-press ch-item-press">
+                        <div class="ch-item-press__ch-gold-box ch-gold-box"></div>
+                        <div class="ch-item-press__content">
+                            <div class="ch-item-press__header">
+                                <div class="ch-item-press__thumb">
+                                    <img src="assets/img/press/1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="ch-item-press__title">
+                                <div class="ch-item-press__arrow"></div>
+                                КАК РАБОТАЮТ НОВЫЕ
+                                СЕРВИСЫ ДОСТАВКИ
+                                ЗДОРОВОЙ ЕДЫ
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="ch-press-section__ch-item-press ch-item-press">
+                        <div class="ch-item-press__ch-gold-box ch-gold-box"></div>
+                        <div class="ch-item-press__content">
+                            <div class="ch-item-press__header">
+                                <div class="ch-item-press__thumb">
+                                    <img src="assets/img/press/2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="ch-item-press__title">
+                                <div class="ch-item-press__arrow"></div>
+                                КАК РАБОТАЮТ НОВЫЕ
+                                СЕРВИСЫ ДОСТАВКИ
+                                ЗДОРОВОЙ ЕДЫ
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="ch-press-section__ch-item-press ch-item-press">
+                        <div class="ch-item-press__ch-gold-box ch-gold-box"></div>
+                        <div class="ch-item-press__content">
+                            <div class="ch-item-press__header">
+                                <div class="ch-item-press__thumb">
+                                    <img src="assets/img/press/3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="ch-item-press__title">
+                                <div class="ch-item-press__arrow"></div>
+                                КАК РАБОТАЮТ НОВЫЕ
+                                СЕРВИСЫ ДОСТАВКИ
+                                ЗДОРОВОЙ ЕДЫ
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="ch-press-section__ch-item-press ch-item-press">
+                        <div class="ch-item-press__ch-gold-box ch-gold-box"></div>
+                        <div class="ch-item-press__content">
+                            <div class="ch-item-press__header">
+                                <div class="ch-item-press__thumb">
+                                    <img src="assets/img/press/4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="ch-item-press__title">
+                                <div class="ch-item-press__arrow"></div>
+                                КАК РАБОТАЮТ НОВЫЕ
+                                СЕРВИСЫ ДОСТАВКИ
+                                ЗДОРОВОЙ ЕДЫ
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="ch-section__ch-partners ch-partners">
+            <div class="ch-partners__container">
+                <div class="ch-partners__ch-title ch-title ch-title_size_xl">
+                    Наши Партнёры
+                </div>
+                <div class="ch-partners__list">
+                    <a href="http://kenaiceramics.com/" class="ch-partners__item">
+                        <div class="ch-partners__item-gold-box ch-gold-box"></div>
+                        <img src="assets/img/partners/1.png" alt="">
+                    </a>
+                    <a href="http://www.sonodayspa.ru/" class="ch-partners__item">
+                        <div class="ch-partners__item-gold-box ch-gold-box"></div>
+                        <img src="assets/img/partners/2.png" alt="">
+                    </a>
+                    <a href="https://baikalpearl.com/" class="ch-partners__item">
+                        <div class="ch-partners__item-gold-box ch-gold-box"></div>
+                        <img src="assets/img/partners/3.png" alt="">
+                    </a>
+                    <a href="https://www.fitmost.ru/" class="ch-partners__item">
+                        <div class="ch-partners__item-gold-box ch-gold-box"></div>
+                        <img src="assets/img/partners/4.png" alt="">
+                    </a>
+                    <a href="http://www.blt.ru/" class="ch-partners__item">
+                        <div class="ch-partners__item-gold-box ch-gold-box"></div>
+                        <img src="assets/img/partners/5.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+
+        let controllerProgram = new ScrollMagic.Controller();
+
+        let program = new TimelineMax();
+
+        program.staggerFromTo('.ch-programs-nutrition__item', 0.5, {opacity: 0, y: 50}, {opacity: 1, y: 0}, 0.1);
+
+        new ScrollMagic.Scene({
+            triggerElement: '.ch-programs-nutrition'
+        })
+            .setTween(program)
+            // .addIndicators()
+            .triggerHook(0.8)
+            .addTo(controllerProgram);
+
+
+        let controllerAdvantage = new ScrollMagic.Controller();
+
+        let advantage = new TimelineMax();
+
+        advantage.staggerFromTo('.ch-advantage__item-img', 0.5, {opacity: 0, y: 50}, {opacity: 1, y: 0}, 0.1);
+
+        new ScrollMagic.Scene({
+            triggerElement: '.ch-advantage__list'
+        })
+            .setTween(advantage)
+            // .addIndicators()
+            .triggerHook(0.8)
+            .addTo(controllerAdvantage);
+
+
+        let controllerMeals = new ScrollMagic.Controller();
+
+        let meals = new TimelineMax();
+
+        meals.from('.ch-ind-meals__img img', 0.5, {opacity: 0, y: 50}, 0)
+            .from('.ch-ind-meals__img .ch-gold-circle', 0.5, {opacity: 0, y: 50}, 0.25);
+
+        new ScrollMagic.Scene({
+            triggerElement: '.ch-ind-meals__right'
+        })
+            .setTween(meals)
+            // .addIndicators()
+            .triggerHook(0.8)
+            .addTo(controllerMeals);
+
+
+        let controllerOrderStep = new ScrollMagic.Controller();
+
+        let orderStep = new TimelineMax();
+
+        orderStep.staggerFrom('.ch-order-step__item .ch-order-step__circle', 0.25, {opacity: 0, y: 50}, 0.1)
+            .staggerFrom('.ch-order-step__item .ch-order-step__item-header', 0.25, {opacity: 0, y: 50}, 0.1)
+            .staggerFrom('.ch-order-step__item .ch-order-step__item-content', 0.25, {opacity: 0, y: 50}, 0.1);
+
+
+        new ScrollMagic.Scene({
+            triggerElement: '.ch-order-step'
+        })
+            .setTween(orderStep)
+            // .addIndicators()
+            .triggerHook(0.8)
+            .addTo(controllerOrderStep);
+
+
+        let controllerHelpForm = new ScrollMagic.Controller();
+
+        let helpForm = new TimelineMax();
+
+        helpForm.from('.ch-help-form__photo img', 0.5, {opacity: 0, y: 50}, 0)
+            .from('.ch-help-form__photo .ch-gold-circle', 0.5, {opacity: 0, y: 50}, 0.25);
+
+        new ScrollMagic.Scene({
+            triggerElement: '.ch-help-form'
+        })
+            .setTween(helpForm)
+            // .addIndicators()
+            .triggerHook(0.8)
+            .addTo(controllerHelpForm);
+
+
+    </script>
+    <footer class="ch-footer">
+        <section class="ch-footer__top">
+            <div class="ch-footer__container">
+                <div class="ch-footer__top-left">
+                    <form class="ch-footer__ch-form-subscribe ch-form-subscribe ch-form">
+                        <h4 class="ch-form-subscribe__title">
+                            Узнавайте о спецпредложениях
+                            и новинках первыми!
+                        </h4>
+
+                        <div class="ch-form-subscribe__input ch-input__wrapper">
+                            <input id="email-for-sub" type="text" class="ch-input" name="email" placeholder=" "
+                                   data-required="email">
+                            <label for="email-for-sub" class="ch-input__label">Ваш e-mail</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                            <button type="submit" class="ch-form-subscribe__submit ch-form__submit">
+
+                            </button>
+                        </div>
+                        <div class="ch-form-subscribe__conf">
+                            Нажимая на кнопку, я подтверждаю свое согласие на обработку персональных данных
+                            в соответствии с <a href="#">Политикой конфиденциальности</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="ch-footer__top-right">
+                    <div class="ch-footer__ch-menu-footer ch-menu-footer">
+                        <nav class="ch-menu-footer__nav">
+                            <ul class="ch-menu-footer__ul">
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Программы питания</a>
+                                </li>
+                                <li>
+                                    <a href="#">Оплата и доставка</a>
+                                </li>
+                                <li>
+                                    <a href="#">Консультация диетолога</a>
+                                </li>
+                                <li>
+                                    <a href="#">Программа лояльности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Пресса о нас</a>
+                                </li>
+                                <li>
+                                    <a href="#">Политика конфиденциальности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Публичная оферта</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ch-footer__bottom">
+            <div class="ch-footer__container">
+                <div class="ch-footer__bottom-left">
+                    <ul class="ch-footer__ch-contacts ch-contacts">
+                        <li class="ch-contacts__item ch-contacts__item_address">г. Москва, Кутузовский пр-кт, дом 36,
+                            строение 4
+                        </li>
+                        <li class="ch-contacts__item ch-contacts__item_tel">+7 (495) 649 81 69</li>
+                        <li class="ch-contacts__item ch-contacts__item_mail">info@juicy-food.ru</li>
+                    </ul>
+
+                </div>
+                <div class="ch-footer__bottom-right">
+                    <div class="ch-footer__ch-list-circle ch-list-circle">
+                        <div class="ch-list-circle__title">
+                            Наши группы:
+                        </div>
+                        <div class="ch-list-circle__list">
+                            <a href="#" class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-fb.svg" alt="">
+                            </a>
+                            <a href="#" class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-inst.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ch-footer__ch-list-circle ch-list-circle">
+                        <div class="ch-list-circle__title">
+                            Платёжные системы:
+                        </div>
+                        <div class="ch-list-circle__list">
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-visa.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-apple-pay.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-google-pay.png" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-mir.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-maestro.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-mastercard.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ch-footer__ch-copyright ch-copyright">
+            <div class="ch-footer__container">
+                <div class="ch-copyright__date">© 2018. Juicy Food</div>
+                <a href="https://choose.digital/" target="_blank" class="ch-copyright__dev">Разработка дизайна —
+                    компания Choose</a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="assets/js/rem.js"></script>
+</div>
+</body>
+</html>

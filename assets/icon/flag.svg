@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86.001" height="112.002" viewBox="0 0 86.001 112.002">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e8cf8b"/>
+      <stop offset="1" stop-color="#e9d08c"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e9d08c"/>
+      <stop offset="1" stop-color="#987531"/>
+    </linearGradient>
+  </defs>
+  <g id="Сгруппировать_1233" data-name="Сгруппировать 1233" transform="translate(-435 -87)">
+    <rect id="Прямоугольник_3010" data-name="Прямоугольник 3010" width="86" height="14" transform="translate(435 87)" fill="url(#linear-gradient)"/>
+    <path id="Вычитание_134" data-name="Вычитание 134" d="M14835,16809v0l-43-15.963-43,15.963v-93h86v93Z" transform="translate(-14314 -16610)" fill="url(#linear-gradient-2)"/>
+    <path id="Контур_2619" data-name="Контур 2619" d="M4.017-.518v5.5H.857V-10.664H6.188a4.891,4.891,0,0,1,3.7,1.44,5.18,5.18,0,0,1,1.381,3.74A4.843,4.843,0,0,1,9.907-1.851,5.185,5.185,0,0,1,6.123-.518Zm0-2.633H6.188a1.72,1.72,0,0,0,1.4-.591,2.618,2.618,0,0,0,.494-1.72,3.1,3.1,0,0,0-.505-1.865,1.62,1.62,0,0,0-1.354-.7h-2.2Zm14.1,2.418H16.549V4.985h-3.16V-10.664H18.43A5.12,5.12,0,0,1,22.1-9.433a4.6,4.6,0,0,1,1.3,3.5,4.552,4.552,0,0,1-2.268,4.364l2.741,6.406v.15h-3.4ZM16.549-3.366h1.795a1.662,1.662,0,0,0,1.419-.629,2.732,2.732,0,0,0,.473-1.682q0-2.354-1.838-2.354H16.549ZM28.866,4.985h-3.16V-10.664h3.16Zm7.749-4.3,2.633-11.35h3.525L38.26,4.985H34.971L30.489-10.664h3.5ZM52.329-1.786H47.406V2.362h5.825V4.985H44.246V-10.664H53.21v2.633h-5.8v3.7h4.923Z" transform="translate(450.875 147.016)" fill="#fff"/>
+    <path id="Контур_2627" data-name="Контур 2627" d="M2.559-7.75.645-1.779H3.487L4.563-7.75h-2Z" transform="translate(503.514 126.855) rotate(180)" fill="#fff"/>
+  </g>
+</svg>

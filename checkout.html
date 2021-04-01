@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Juicy Food</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/datepicker.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/ScrollMagic.min.js"></script>
+    <script src="assets/js/animation.gsap.min.js"></script>
+    <script src="assets/js/debug.addIndicators.min.js"></script>
+    <script src="assets/js/baron.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=144c1113-7437-4d8c-8d74-e5c8b6716669"
+            type="text/javascript"></script>
+    <script src="assets/js/air-datepicker.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+<div class="ch-wrapper">
+    <div class="ch-content">
+        <header class="ch-header">
+            <div class="ch-header__top">
+                <div class="ch-header__top-left">
+                    <a href="#" class="ch-header__ch-logo ch-logo ch-logo_size_normal">
+                    </a>
+                    <div class="ch-header__contacts">
+                        <a href="tel:+74956498169" class="ch-header__tel">
+                            +7 (495) 649 81 69
+                        </a>
+                        <div class="ch-header__time">
+                            с 10:00 до 22:00
+                        </div>
+                    </div>
+                    <a href="#" class="ch-header__ch-button ch-button ch-button_theme_gold">
+                    <span class="bg">
+                        <span class="text">Заказать звонок</span>
+                    </span>
+                    </a>
+                </div>
+                <div class="ch-header__top-right">
+                    <a href="#" class="ch-header__ch-tel-header ch-tel-header">
+
+                    </a>
+                    <a href="#" class="ch-header__ch-header-cart ch-header-cart">
+                        <div class="ch-header-cart__icon">
+                            <div class="ch-header-cart__num">14</div>
+                        </div>
+                        <span>Оплатить заказ</span>
+                    </a>
+                    <a href="#" class="ch-header__ch-header-lk ch-header-lk">
+                        <div class="ch-header-lk__icon">
+                        </div>
+                        <span>Личный кабинет</span>
+                    </a>
+                    <div class="ch-header__soc-wrapper">
+                        <a href="#" class="ch-header__soc ch-header__soc_fb"></a>
+                        <a href="#" class="ch-header__soc ch-header__soc_inst"></a>
+                    </div>
+                    <div class="ch-header__ch-burger ch-burger">
+                        <div class="ch-burger__line ch-burger__line_small"></div>
+                        <div class="ch-burger__line"></div>
+                        <div class="ch-burger__line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="ch-header__bottom">
+                <div class="ch-header__mob-cont-contacts">
+                    <div class="ch-header__contacts">
+                        <a href="tel:+74956498169" class="ch-header__tel">
+                            +7 (495) 649 81 69
+                        </a>
+                        <div class="ch-header__time">
+                            с 10:00 до 22:00
+                        </div>
+                    </div>
+                    <a href="#" class="ch-header__ch-button ch-button ch-button_theme_gold">
+                    <span class="bg">
+                        <span class="text">Заказать звонок</span>
+                    </span>
+                    </a>
+                </div>
+                <nav class="ch-header__ch-header-nav ch-header-nav">
+                    <ul class="ch-header-nav__list">
+                        <li class="ch-header-nav__item">
+                            <a href="#">О компании</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Программы питания</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Оплата и доставка</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Консультация диетолога</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Программа лояльности</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Пресса о нас</a>
+                        </li>
+                        <li class="ch-header-nav__item">
+                            <a href="#">Блог</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="ch-header__mob-cont-lk">
+                    <a href="#" class="ch-header__ch-header-lk ch-header-lk">
+                        <div class="ch-header-lk__icon">
+                        </div>
+                        <span>Личный кабинет</span>
+                    </a>
+                    <div class="ch-header__soc-wrapper">
+                        <a href="#" class="ch-header__soc ch-header__soc_fb"></a>
+                        <a href="#" class="ch-header__soc ch-header__soc_inst"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="ch-page-header ch-page-header_cart">
+            <ul class="ch-page-header__ch-breadcrumb ch-breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Корзина</a></li>
+                <li><a href="#">Заказ программы</a></li>
+            </ul>
+            <h1 class="ch-page-header__ch-title ch-title ch-title_size_l">
+                Заказ программы
+            </h1>
+        </section>
+        <div class="ch-page-checkout">
+            <div class="ch-page-checkout__container">
+                <div class="ch-page-checkout__list-order">
+                    <div class="ch-page-checkout__ch-checkout-item ch-checkout-item">
+                        <div class="ch-checkout-item__thumb">
+                            <img src="assets/img/programs/img1.jpg" alt="">
+                        </div>
+                        <div class="ch-checkout-item__info">
+                            <div class="ch-checkout-item__title">
+                                Снижение веса
+                            </div>
+                            <div class="ch-checkout-item__kkl">
+                                1200 ккал
+                            </div>
+                            <div class="ch-checkout-item__price">
+                                2 дня: 3 240 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ch-page-checkout__ch-checkout-item ch-checkout-item">
+                        <div class="ch-checkout-item__thumb">
+                            <img src="assets/img/programs/img1.jpg" alt="">
+                        </div>
+                        <div class="ch-checkout-item__info">
+                            <div class="ch-checkout-item__title">
+                                Снижение веса
+                            </div>
+                            <div class="ch-checkout-item__kkl">
+                                1200 ккал
+                            </div>
+                            <div class="ch-checkout-item__price">
+                                2 дня: 3 240 ₽
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form action="" class="ch-form ch-page-checkout__ch-form-checkout ch-form-checkout">
+                <div class="ch-form-checkout__header">
+                    <div class="ch-form-checkout__title">
+                        Доставка курьером
+                    </div>
+                    <div class="ch-form-checkout__sub-title">
+                        Доставка в пределах МКАД - бесплатно
+                    </div>
+                </div>
+                <div class="ch-form-checkout__wrapper">
+                    <div class="ch-form-checkout__col">
+                        <div class="ch-form-checkout__input ch-input__wrapper">
+                            <input id="name-for-checkout" type="text" class="ch-input" name="name" placeholder=" "
+                                   data-required="name">
+                            <label for="name-for-checkout" class="ch-input__label">Ваше имя*</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                        </div>
+                        <div class="ch-form-checkout__input ch-input__wrapper">
+                            <input id="tel-for-checkout" type="text" class="ch-input ch-mask-tel" name="tel"
+                                   placeholder=" "
+                                   data-required="tel">
+                            <label for="tel-for-checkout" class="ch-input__label">Ваш телефон</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                        </div>
+                        <div class="ch-form-checkout__input ch-input__wrapper">
+                            <input id="email-for-checkout" type="text" class="ch-input" name="email" placeholder=" "
+                                   data-required="email">
+                            <label for="email-for-checkout" class="ch-input__label">Ваш e-mail*</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                        </div>
+                        <div class="ch-form-checkout__input ch-form-checkout__input_date ch-input__wrapper">
+                            <input id="date-for-checkout" type="text" class="ch-input ch-input_date" name="date"
+                                   placeholder=" "
+                                   data-required="date" data-datepicker>
+                            <label for="date-for-checkout" class="ch-input__label">Дата доставки*</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                            <div class="ch-input__calendar"></div>
+                            <div class="ch-input__date-tip ch-tip">
+                                <div class="ch-tip__tip">
+                                    При заказе до 12:00 заказ может быть доставлен на следующий день;<br>
+                                    <br>
+                                    При заказе после
+                                    12:00 заказ будет доставлен только через день.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ch-form-checkout__input ch-input__wrapper ch-select">
+                            <input id="time-for-checkout" type="text" class="ch-input ch-select__input" disabled name="email"
+                                   placeholder=" "
+                                   data-required="message">
+                            <label for="metro-for-checkout" class="ch-input__label">Время доставки*</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                            <div class="ch-select__cont">
+                                <div class="ch-select__scroller">
+                                    <div class="ch-select__list">
+                                        <div class="ch-select__option">06:00 - 08:00</div>
+                                        <div class="ch-select__option">07:00 - 09:00</div>
+                                        <div class="ch-select__option">08:00 - 10:00</div>
+                                        <div class="ch-select__option">09:00 - 11:00</div>
+                                        <div class="ch-select__option">10:00 - 12:00</div>
+                                    </div>
+                                    <div class='scroller__bar'></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ch-form-checkout__person">
+                            <span>Кол-во персон</span>
+                            <div class="ch-form-checkout__ch-value-control ch-value-control">
+                                <div class="ch-value-control__cont">
+                                    <button type="button"
+                                            class="ch-value-control__button ch-value-control__minus ch-value-control__minus_grey">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                             viewBox="0 0 30 30">
+                                            <g id="Сгруппировать_1255" transform="translate(-1233 -1119)">
+                                                <rect width="13" height="2" class="ch-svg-line"
+                                                      transform="translate(1242 1133)" fill="#cecfd1"/>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <input id="product-value" type="text" disabled
+                                           class="ch-value-control__num ch-value-control__num_grey" name="value"
+                                           value="1" placeholder="1">
+                                    <button type="button"
+                                            class="ch-value-control__button ch-value-control__plus ch-value-control__plus_grey">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                             viewBox="0 0 30 30">
+                                            <g id="Сгруппировать_1256" transform="translate(-1346.5 -1119)">
+                                                <g id="Сгруппировать_1253">
+                                                    <rect width="13" height="2" class="ch-svg-line"
+                                                          transform="translate(1355 1133)" fill="#cecfd1"/>
+                                                    <rect width="13" height="2" class="ch-svg-line"
+                                                          transform="translate(1362.5 1127.5) rotate(90)"
+                                                          fill="#cecfd1"/>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <label class="ch-form-checkout__devices ch-checkbox-mini">
+                                <input id="need-devices" type="checkbox" class="ch-checkbox-mini__input">
+                                <span class="ch-checkbox-mini__icon"></span>
+                                <span class="ch-checkbox-mini__label">Нужны приборы</span>
+                            </label>
+                        </div>
+                        <div class="ch-form-checkout__delivery-input">
+                            <label class="ch-checkbox-input__cont">
+                                <input type="checkbox" class="ch-checkbox-input" checked>
+                                <span class="ch-checkbox-input__icon">
+                                    <span class="ch-checkbox-input__yes">
+                                        <span class="ch-checkbox-input__yes--short"></span>
+                                        <span class="ch-checkbox-input__yes--long"></span>
+                                    </span>
+                                </span>
+                                <span class="ch-checkbox-input__label">
+                                    Доставка в пределах МКАД
+                                </span>
+                            </label>
+                            <div class="ch-tip">
+                                <div class="ch-tip__tip">
+                                    Доставка за пределы МКАД – в соответствии
+                                    с тарифами транспортной компании.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ch-form-checkout__ch-checkout-payments ch-checkout-payments">
+                            <div class="ch-checkout-payments__title">
+                                Способы оплаты*
+                            </div>
+                            <label class="ch-checkout-payments__ch-radio-input ch-radio-input__cont">
+                                <input type="radio" class="ch-radio-input" name="payments" checked>
+                                <span class="ch-radio-input__icon">
+                                    <span class="ch-radio-input__yes"></span>
+                                </span>
+                                <span class="ch-radio-input__label">
+                                    Онлайн оплата
+                                </span>
+                            </label>
+                            <label class="ch-checkout-payments__ch-radio-input ch-radio-input__cont">
+                                <input type="radio" class="ch-radio-input" name="payments">
+                                <span class="ch-radio-input__icon">
+                                    <span class="ch-radio-input__yes"></span>
+                                </span>
+                                <span class="ch-radio-input__label">
+                                    Наличными курьеру
+                                </span>
+                                <span class="ch-radio-input__visible">
+                                    <label for="sdacha">сдача с:</label>
+                                    <input id="sdacha" type="text">
+                                </span>
+                            </label>
+                            <label class="ch-checkout-payments__ch-radio-input ch-radio-input__cont">
+                                <input type="radio" class="ch-radio-input" name="payments">
+                                <span class="ch-radio-input__icon">
+                                    <span class="ch-radio-input__yes"></span>
+                                </span>
+                                <span class="ch-radio-input__label ch-radio-input__label_two-string">
+                                    Оплата курьеру банковской картой<br>
+                                    Visa, Master Card, МИР
+                                </span>
+                            </label>
+                        </div>
+                        <div class="ch-form-checkout__required">
+                            *отмечены обязательные поля для заполнения
+                        </div>
+                        <div class="ch-form-checkout__input ch-input__wrapper">
+                            <input id="promo-for-checkout" type="text" class="ch-input" name="email" placeholder=" ">
+                            <label for="promo-for-checkout" class="ch-input__label">Введите Ваш промокод</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                        </div>
+                    </div>
+                    <div class="ch-form-checkout__col">
+                        <div class="ch-form-checkout__input ch-input__wrapper ch-select">
+                            <input id="metro-for-checkout" type="text" class="ch-input ch-select__input" name="city"
+                                   placeholder=" "
+                                   data-required="message">
+                            <label for="metro-for-checkout" class="ch-input__label">Город*</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                            <div class="ch-select__cont">
+                                <div class="ch-select__scroller">
+                                    <div class="ch-select__list">
+                                        <div class="ch-select__option">город 1</div>
+                                        <div class="ch-select__option">город 2</div>
+                                        <div class="ch-select__option">город 3</div>
+                                        <div class="ch-select__option">город 4</div>
+                                        <div class="ch-select__option">город 5</div>
+                                        <div class="ch-select__option">город 6</div>
+                                        <div class="ch-select__option">город 7</div>
+                                        <div class="ch-select__option">город 8</div>
+                                        <div class="ch-select__option">город 9</div>
+                                        <div class="ch-select__option">город 10</div>
+                                        <div class="ch-select__option">город 11</div>
+                                        <div class="ch-select__option">город 12</div>
+                                    </div>
+                                    <div class='scroller__bar'></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ch-form-checkout__input ch-input__wrapper">
+                            <input id="street-for-checkout" type="text" class="ch-input" name="name" placeholder=" "
+                                   data-required="name">
+                            <label for="street-for-checkout" class="ch-input__label">Улица*</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                        </div>
+                        <div class="ch-form-checkout__inputs-wrapper">
+                            <div class="ch-form-checkout__input-50 ch-input__wrapper">
+                                <input id="house-for-checkout" type="text" class="ch-input" name="name" placeholder=" "
+                                       data-required="">
+                                <label for="house-for-checkout" class="ch-input__label">Дом*</label>
+                                <div class="ch-input__error"></div>
+                                <div class="ch-input__successful"></div>
+                            </div>
+                            <div class="ch-form-checkout__input-50 ch-input__wrapper">
+                                <input id="flat-for-checkout" type="text" class="ch-input" name="name" placeholder=" "
+                                       data-required="">
+                                <label for="flat-for-checkout" class="ch-input__label">Квартира/офис*</label>
+                                <div class="ch-input__error"></div>
+                                <div class="ch-input__successful"></div>
+                            </div>
+                        </div>
+                        <div class="ch-form-checkout__inputs-wrapper">
+                            <div class="ch-form-checkout__input-50 ch-input__wrapper">
+                                <input id="stroenie-for-checkout" type="text" class="ch-input" name="name"
+                                       placeholder=" ">
+                                <label for="stroenie-for-checkout" class="ch-input__label">Строение</label>
+                                <div class="ch-input__error"></div>
+                                <div class="ch-input__successful"></div>
+                            </div>
+                            <div class="ch-form-checkout__input-50 ch-input__wrapper">
+                                <input id="korpus-for-checkout" type="text" class="ch-input" name="name"
+                                       placeholder=" ">
+                                <label for="korpus-for-checkout" class="ch-input__label">Корпус</label>
+                                <div class="ch-input__error"></div>
+                                <div class="ch-input__successful"></div>
+                            </div>
+                        </div>
+                        <div class="ch-form-checkout__inputs-wrapper">
+                            <div class="ch-form-checkout__input-50 ch-input__wrapper">
+                                <input id="podezd-for-checkout" type="text" class="ch-input" name="name"
+                                       placeholder=" ">
+                                <label for="podezd-for-checkout" class="ch-input__label">Подъезд</label>
+                                <div class="ch-input__error"></div>
+                                <div class="ch-input__successful"></div>
+                            </div>
+                            <div class="ch-form-checkout__input-50 ch-input__wrapper">
+                                <input id="etazh-for-checkout" type="text" class="ch-input" name="name" placeholder=" ">
+                                <label for="etazh-for-checkout" class="ch-input__label">Этаж</label>
+                                <div class="ch-input__error"></div>
+                                <div class="ch-input__successful"></div>
+                            </div>
+                        </div>
+                        <div class="ch-form-checkout__inputs-wrapper">
+                            <div class="ch-form-checkout__input-50 ch-input__wrapper">
+                                <input id="domophone-for-checkout" type="text" class="ch-input" name="name"
+                                       placeholder=" ">
+                                <label for="domophone-for-checkout" class="ch-input__label">Домофон</label>
+                                <div class="ch-input__error"></div>
+                                <div class="ch-input__successful"></div>
+                            </div>
+                        </div>
+                        <div class="ch-form-checkout__textarea ch-textarea__wrapper">
+                            <textarea id="comment-for-checkout" class="ch-textarea" name="message"
+                                      placeholder=" "></textarea>
+                            <label for="comment-for-checkout" class="ch-textarea__label">Комментарий к заказу</label>
+                            <div class="ch-textarea__error"></div>
+                            <div class="ch-textarea__successful"></div>
+                        </div>
+
+                        <div class="ch-form-checkout__agree">
+                            <label class="ch-checkbox-input__cont">
+                                <input type="checkbox" class="ch-checkbox-input">
+                                <span class="ch-checkbox-input__icon">
+                                <span class="ch-checkbox-input__yes">
+                                    <span class="ch-checkbox-input__yes--short"></span>
+                                    <span class="ch-checkbox-input__yes--long"></span>
+                                </span>
+                            </span>
+                            </label>
+                            <span class="ch-form-checkout__agree-span">
+                                Подписаться на рассылку новостей, <br>
+                                новинок и спецпредложений
+                            </span>
+                        </div>
+                        <div class="ch-form-checkout__agree">
+                            <label class="ch-checkbox-input__cont">
+                                <input type="checkbox" class="ch-checkbox-input">
+                                <span class="ch-checkbox-input__icon">
+                                    <span class="ch-checkbox-input__yes">
+                                        <span class="ch-checkbox-input__yes--short"></span>
+                                        <span class="ch-checkbox-input__yes--long"></span>
+                                    </span>
+                                </span>
+                            </label>
+                            <span class="ch-form-checkout__agree-span">
+                                    Я согласен с условиями данного <a href="#">договора</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ch-form-checkout__total">
+                    <div class="ch-form-checkout__total-title">
+                        Итого к оплате: 45 250 ₽
+                    </div>
+                    <div class="ch-form-checkout__conf">
+                        Нажимая на кнопку, я подтверждаю свое <br>
+                        согласие на обработку персональных данных <br>
+                        в соответствии с <a href="#">Политикой конфиденциальности</a>
+                    </div>
+                </div>
+                <button class="ch-form-checkout__submit ch-button ch-form__submit">Оформить заказ</button>
+            </form>
+        </div>
+
+    </div>
+    <footer class="ch-footer">
+        <section class="ch-footer__top">
+            <div class="ch-footer__container">
+                <div class="ch-footer__top-left">
+                    <form class="ch-footer__ch-form-subscribe ch-form-subscribe ch-form">
+                        <h4 class="ch-form-subscribe__title">
+                            Узнавайте о спецпредложениях
+                            и новинках первыми!
+                        </h4>
+
+                        <div class="ch-form-subscribe__input ch-input__wrapper">
+                            <input id="email-for-sub" type="text" class="ch-input" name="email" placeholder=" "
+                                   data-required>
+                            <label for="email-for-sub" class="ch-input__label">Ваш e-mail</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                            <button type="submit" class="ch-form-subscribe__submit ch-form__submit">
+
+                            </button>
+                        </div>
+                        <div class="ch-form-subscribe__conf">
+                            Нажимая на кнопку, я подтверждаю свое
+                            согласие на обработку персональных данных
+                            в соответствии с <a href="#">Политикой конфиденциальности</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="ch-footer__top-right">
+                    <div class="ch-footer__ch-menu-footer ch-menu-footer">
+                        <nav class="ch-menu-footer__nav">
+                            <ul class="ch-menu-footer__ul">
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Программы питания</a>
+                                </li>
+                                <li>
+                                    <a href="#">Оплата и доставка</a>
+                                </li>
+                                <li>
+                                    <a href="#">Консультация диетолога</a>
+                                </li>
+                                <li>
+                                    <a href="#">Программа лояльности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отзывы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Пресса о нас</a>
+                                </li>
+                                <li>
+                                    <a href="#">Политика конфиденциальности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Публичная оферта</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ch-footer__bottom">
+            <div class="ch-footer__container">
+                <div class="ch-footer__bottom-left">
+                    <ul class="ch-footer__ch-contacts ch-contacts">
+                        <li class="ch-contacts__item ch-contacts__item_address">г. Москва, Кутузовский пр-кт, дом 36,
+                            строение 4
+                        </li>
+                        <li class="ch-contacts__item ch-contacts__item_tel">+7 (495) 649 81 69</li>
+                        <li class="ch-contacts__item ch-contacts__item_mail">info@juicy-food.ru</li>
+                    </ul>
+
+                </div>
+                <div class="ch-footer__bottom-right">
+                    <div class="ch-footer__ch-list-circle ch-list-circle">
+                        <div class="ch-list-circle__title">
+                            Наши группы:
+                        </div>
+                        <div class="ch-list-circle__list">
+                            <a href="#" class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-fb.svg" alt="">
+                            </a>
+                            <a href="#" class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-inst.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ch-footer__ch-list-circle ch-list-circle">
+                        <div class="ch-list-circle__title">
+                            Платёжные системы:
+                        </div>
+                        <div class="ch-list-circle__list">
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-visa.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-apple-pay.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-google-pay.png" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-mir.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-maestro.svg" alt="">
+                            </div>
+                            <div class="ch-list-circle__item ch-green-circle">
+                                <img src="assets/icon/gold-mastercard.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ch-footer__ch-copyright ch-copyright">
+            <div class="ch-footer__container">
+                <div class="ch-copyright__date">© 2018. Juicy Food</div>
+                <a href="https://choose.digital/" target="_blank" class="ch-copyright__dev">Разработка дизайна —
+                    компания Choose</a>
+            </div>
+        </section>
+    </footer>
+</div>
+</body>
+</html>
