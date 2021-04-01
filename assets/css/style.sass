@@ -1324,15 +1324,21 @@ ul
         padding: 20.0000vw 0 0 7.1429vw
     &_three
       padding: 78rem 65rem 0
+      @media only screen and (max-width: 1200px)
+        padding: 45rem 15rem 0
       @media only screen and (max-width: 700px)
         padding: 23rem 0rem
     &_four
       padding: 59rem 125rem 0
+      @media only screen and (max-width: 1200px)
+        padding: 37rem 95rem 0
       @media only screen and (max-width: 700px)
         padding: 15rem 10rem 0rem
         width: 100%
     &_five
       padding: 145rem 125rem 0
+      @media only screen and (max-width: 1200px)
+        padding: 45rem 15rem 0
       @media only screen and (max-width: 700px)
         padding: 35rem 10rem 0rem
         width: 100%
@@ -1368,6 +1374,11 @@ ul
     color: white
     font-family: "Gotham Pro", sans-serif
     font-weight: 500
+    @media only screen and (max-width: 1200px)
+      width: 220rem
+      height: 70rem
+      border-radius: 5rem
+      font-size: 24rem
     @media only screen and (max-width: 700px)
       width: 157rem
       height: 38rem
@@ -1389,6 +1400,8 @@ ul
     &_three
       line-height: 1.3
       margin-bottom: 115rem
+      @media only screen and (max-width: 1200px)
+        margin-bottom: 65rem
       @media only screen and (max-width: 700px)
         margin-bottom: 5.1429vw
     &_four
@@ -1407,11 +1420,15 @@ ul
     .xl
       font-size: 90rem
       font-weight: 700
+      @media only screen and (max-width: 1200px)
+        font-size: 55rem
       @media only screen and (max-width: 700px)
         font-size: 32rem
     .xxl
       font-size: 130rem
       font-weight: 700
+      @media only screen and (max-width: 1200px)
+        font-size: 70rem
       @media only screen and (max-width: 700px)
         font-size: 32rem
 
@@ -1457,6 +1474,7 @@ ul
       justify-content: flex-start
       display: flex
       flex-wrap: wrap
+      flex-direction: column
       width: 1060rem
       @media only screen and (max-width: 700px)
         width: 311rem
@@ -1470,6 +1488,8 @@ ul
       font-weight: 500
     &.l
       font-size: 50rem
+      @media only screen and (max-width: 1200px)
+        font-size: 32rem
       @media only screen and (max-width: 700px)
         font-size: 16rem
     &_no-margin
@@ -1524,6 +1544,9 @@ ul
     &.l
       font-size: 51rem
       line-height: 51rem
+      @media only screen and (max-width: 1200px)
+        font-size: 29rem
+        line-height: 29rem
       @media only screen and (max-width: 700px)
         font-size: 15rem
         line-height: 20rem
@@ -1877,7 +1900,6 @@ ul
       display: block
       width: auto
   &__col
-
     @media only screen and (max-width: 1200px)
     &_one
       width: 22vw
@@ -3950,6 +3972,9 @@ ul
         width: 2.5714vw
         height: 1.7143vw
         margin-right: 0.8571vw
+  &__col
+    display: flex
+    flex-direction: column
 
   &__elem
     background: white
@@ -3958,25 +3983,18 @@ ul
     @media only screen and (max-width: 1200px)
       box-shadow: 0 0.2000vw 0.6000vw rgba(112, 112, 112, 0.16)
     &_left
-      max-height: 49.2188vw
       width: 36.9271vw
       margin-bottom: 0.6250vw
-      padding: 3.1250vw 3.1250vw 3.6458vw 4.6875vw
+      padding: 3.125vw 3.125vw 2.6458vw 4.6875vw
       overflow: hidden
       @media only screen and (max-width: 1200px)
         margin-bottom: 0.4000vw
         width: 31.1000vw
         padding: 2.8000vw 2.7000vw 1.5000vw 2.4000vw
       &:nth-child(1)
-        height: 15.5vw
-        @media only screen and (max-width: 1200px)
-          height: 11.6000vw
       &:nth-child(2)
-        height: 33.16vw
-        @media only screen and (max-width: 1200px)
-          height: 30.0000vw
+        margin-bottom: unset
     &_left-edit
-      max-height: 49.2188vw
       height: 100%
       width: 36.9271vw
       padding: 3.1250vw 3.1250vw 3.6458vw 4.6875vw
@@ -3984,14 +4002,11 @@ ul
         width: 31.1000vw
         padding: 2.8000vw 2.7000vw 1.5000vw 2.4000vw
         height: 42.0000vw
-
-
       .ch-personal-data__item-edit
         margin-top: unset
       .ch-personal-data__item
-        height: 10.5vw
-        @media only screen and (max-width: 1200px)
-          height: 9vw
+        height: auto
+        margin-bottom: 2vw
         @media only screen and (max-width: 700px)
           margin-bottom: 10vw
           height: auto
@@ -4017,7 +4032,7 @@ ul
             top: 50%
             transform: translate(-50%, -50%)
     &_right
-      height: 49.2188vw
+      height: 100%
       width: 39.7396vw
       padding: 3.1250vw 4.6875vw 2.0833vw 3.1250vw
       overflow: hidden
@@ -4036,11 +4051,8 @@ ul
           padding-bottom: 5.7143vw
           margin-bottom: 5.1429vw
         .ch-personal-data__item-title
-          height: 3.2292vw
+          height: auto
           width: 26.0417vw
-          @media only screen and (max-width: 1200px)
-            height: 2.8000vw
-            width: 23.0000vw
           @media only screen and (max-width: 700px)
             height: 8.5714vw
             width: 65.7143vw
@@ -4256,7 +4268,8 @@ ul
       padding: unset
   &__item-edit
     display: flex
-    align-items: center
+    flex-direction: column
+    align-items: flex-start
     justify-content: space-between
     margin-top: 2.5625vw
     font-family: "Gotham Pro", sans-serif
@@ -4282,6 +4295,9 @@ ul
       left: 0
       background: $green
       position: absolute
+    &_no-under
+      &:after
+        display: none
   &__ch-table-data
     width: 100%
 
