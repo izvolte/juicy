@@ -492,6 +492,24 @@ function initDatePicker() {
             }
         });
     }
+    
+    if (document.querySelector('[birth-datepicker]')) {
+        $('[birth-datepicker]').datepicker({
+            onRenderCell: function (date, cellType) {
+                if (cellType == 'day' && date.getDate() == 31 && date.getMonth() == 11) {
+                    return {
+                        classes: '-disabled-',
+                    }
+                }
+
+                if (cellType == 'day' && (date.getDate() == 1 || date.getDate() == 2 || date.getDate() == 3) && date.getMonth() == 0) {
+                    return {
+                        classes: '-disabled-',
+                    }
+                }
+            }
+        });
+    }
 }
 
 
@@ -532,6 +550,23 @@ function productDiet() {
     }
 }
 
+
+function saveDataCheck(){
+    let saveDataCheckBox = document.getElementById('save_data_checkbox');
+    let passInputs = document.querySelectorAll('.ch-input-invisible');
+    saveDataCheckBox.addEventListener('input', () => {
+       if(saveDataCheckBox.checked){
+           passInputs.forEach(input => {
+               input.classList.remove('ch-input-invisible');
+           })
+       }else{
+          passInputs.forEach(input => {
+               input.classList.add('ch-input-invisible');
+           })
+       }
+    });
+}
+
 window.onload = function () {
     startSlider();
 
@@ -562,4 +597,6 @@ window.onload = function () {
     formEditLk();
 
     productDiet();
+    
+    saveDataCheck();
 };
