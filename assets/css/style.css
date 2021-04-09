@@ -8409,7 +8409,8 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%; }
+    border-radius: 50%; 
+    position: relative;}
     @media only screen and (max-width: 1200px) {
       .ch-checkbox-mini__icon {
         width: 2.1vw;
@@ -8427,9 +8428,12 @@ ul {
       width: 100%;
       height: 100%;
       background: #009e62;
-      border-radius: 50%;
+      clip-path: circle(35% at 50% 50%);
       transform: scale(0);
-      transition: 0.25s ease-in-out; }
+      transition: 0.25s ease-in-out;
+        position: absolute;
+        top:0;
+        left: 0;}
 
 .ch-individual-left {
   width: 61.7188vw;
