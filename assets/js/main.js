@@ -554,15 +554,20 @@ function productDiet() {
 function saveDataCheck(){
     let saveDataCheckBox = document.getElementById('save_data_checkbox');
     let passInputs = document.querySelectorAll('.ch-input-invisible');
+    
     saveDataCheckBox.addEventListener('input', () => {
        if(saveDataCheckBox.checked){
            passInputs.forEach(input => {
                input.classList.remove('ch-input-invisible');
            })
+           passInputs[0].children[0].setAttribute("data-required", "password");
+           passInputs[1].children[0].setAttribute("data-required", "password-repeat");
        }else{
           passInputs.forEach(input => {
                input.classList.add('ch-input-invisible');
            })
+           passInputs[0].children[0].removeAttribute("data-required", "password");
+           passInputs[1].children[0].removeAttribute("data-required", "password-repeat");
        }
     });
 }
