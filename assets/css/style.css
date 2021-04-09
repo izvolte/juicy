@@ -190,6 +190,8 @@ ul {
 .ch-button--white{
     background-color: #ffffff;
     color: #000000;
+    box-shadow: none;
+    border: 1px solid #C9C9C9;
 }
   @media only screen and (max-width: 1200px) {
     .ch-button {
