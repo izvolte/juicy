@@ -162,6 +162,13 @@ ul {
     z-index: 2;
     border-radius: 50%; }
 
+
+.ch-aut-modal-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .ch-button {
   width: 16.9271vw;
   height: 3.9583vw;
@@ -180,6 +187,12 @@ ul {
   border: none;
   cursor: pointer;
   text-align: center; }
+.ch-button--white{
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: none;
+    border: 1px solid #C9C9C9;
+}
   @media only screen and (max-width: 1200px) {
     .ch-button {
       font-size: 14rem;
@@ -2588,6 +2601,9 @@ ul {
 .container {
   overflow: hidden; }
 
+.ch-input-invisible{
+    display: none;
+}
 .ch-input {
   width: 100%;
   height: 100%;
@@ -4936,9 +4952,13 @@ ul {
 
 .ch-aut-modal {
   width: 70.2604vw; }
-  @media only screen and (max-width: 1200px) {
+
+.ch-aut-modal--tight {
+  width: 32.2917vw; }
+
+@media only screen and (max-width: 1200px) {
     .ch-aut-modal {
-      width: 89vw; } }
+      width: 37.6000vw; } }
   @media only screen and (max-width: 700px) {
     .ch-aut-modal {
       width: 81.4286vw; } }
@@ -4960,9 +4980,17 @@ ul {
     @media only screen and (max-width: 700px) {
       .ch-aut-modal__header {
         padding: 5.1429vw 0; } }
+.ch-aut-modal__separator{
+    width: 100%;
+    height: 1px;
+    background: #DEDEDE;
+    margin-bottom: 1vw;
+}@media only screen and (max-width: 700px) {
+      .ch-aut-modal__separator {
+        margin-bottom: 4vw; } }
   .ch-aut-modal__cont {
     display: flex;
-    padding: 2.125vw 4.6875vw;
+    padding: 2vw 4.6875vw;
     justify-content: space-between; }
     @media only screen and (max-width: 1200px) {
       .ch-aut-modal__cont {
@@ -4986,14 +5014,14 @@ ul {
         left: 50%;
         transform: translateX(-50%); } }
   .ch-aut-modal__ch-form_login {
-    width: 18.5417vw; }
+    width: 20.8854vw; 
+    margin: 0 auto;}
     @media only screen and (max-width: 1200px) {
       .ch-aut-modal__ch-form_login {
         width: 26.2vw; } }
     @media only screen and (max-width: 700px) {
       .ch-aut-modal__ch-form_login {
-        width: 56.5714vw;
-        margin-bottom: 7.1429vw; } }
+        width: 56.5714vw; } }
   .ch-aut-modal__ch-form_reg {
     width: 37.8125vw; }
     @media only screen and (max-width: 1200px) {
@@ -5071,16 +5099,24 @@ ul {
       @media only screen and (max-width: 700px) {
         .ch-aut-modal__remember .ch-mob {
           display: inline; } }
+
+
   .ch-aut-modal__ch-button {
     margin: 0 auto 0.9896vw;
-    height: 2.4479vw;
+    height: 2.6042vw;
     font-size: 20rem;
-    width: 10.625vw; }
+    width: 10.1042vw; }
+    @media only screen and (max-width: 1200px) {
+      .ch-aut-modal__ch-button {
+        font-size: 12rem;
+        height: 3vw;
+        width: 11.7000vw;
+        margin: 0 auto 2vw; } }
     @media only screen and (max-width: 700px) {
       .ch-aut-modal__ch-button {
         font-size: 10rem;
         height: 7.1429vw;
-        width: 30vw;
+        width: 27vw;
         margin: 0 auto 4.8571vw; } }
     .ch-aut-modal__ch-button_reg {
       width: 18.4896vw;
@@ -5096,12 +5132,23 @@ ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; }
+.ch-aut-modal__soc{
+     display: flex;
+    justify-content: space-around;
+}
+@media only screen and (max-width: 700px) {
+      .ch-aut-modal__soc {
+        flex-direction: column; } }
   .ch-aut-modal__soc-title {
     text-align: center;
     margin-bottom: 0.4167vw;
     font-weight: 500; }
+    @media only screen and (max-width: 1200px) {
+      .ch-aut-modal__soc-title {
+        width: 10.0000vw;} }
     @media only screen and (max-width: 700px) {
       .ch-aut-modal__soc-title {
+          width:100%;
         margin-bottom: 1.4286vw; } }
   .ch-aut-modal__soc-list {
     display: flex;
@@ -6798,7 +6845,10 @@ ul {
         display: block;
         padding: 0 3.14vw 7.14vw; } }
   .ch-form-checkout__col {
-    width: 32.5vw; }
+    width: 32.5vw;
+  padding-top: 3vw; }
+.ch-form-checkout__col--padding-top {
+    padding-top: 4.95vw; }
     @media only screen and (max-width: 1200px) {
       .ch-form-checkout__col {
         width: 32.3vw; } }
@@ -6847,13 +6897,13 @@ ul {
   .ch-form-checkout__submit {
     margin: 0 auto; }
   .ch-form-checkout__header {
-    padding: 2.4479vw 6.0417vw 0; }
+    padding: 0; }
     @media only screen and (max-width: 1200px) {
       .ch-form-checkout__header {
-        padding: 3.9vw 6.6vw 0; } }
+        padding: 0; } }
     @media only screen and (max-width: 700px) {
       .ch-form-checkout__header {
-        padding: 4.29vw 3.14vw 0; } }
+        padding: 0; } }
   .ch-form-checkout__inputs-wrapper {
     display: flex;
     margin-bottom: 1.1458vw;
@@ -6865,7 +6915,7 @@ ul {
       .ch-form-checkout__inputs-wrapper {
         margin-bottom: 2.57vw; } }
   .ch-form-checkout__textarea {
-    height: 20.1vw;
+    height: 21.9vw;
     margin-bottom: 2.5vw; }
     @media only screen and (max-width: 1200px) {
       .ch-form-checkout__textarea {
@@ -7388,6 +7438,34 @@ ul {
       margin-bottom: 4vw; }
       .ch-about-project__title br {
         display: none; } }
+.ch-form-checkout__gift{
+    display: flex;
+    align-items: center;
+    font-size: 17rem;
+    color: #9299A2;
+    line-height: 32rem;
+    font-family: "Gotham Pro", sans-serif;
+    margin-bottom: 18rem;
+    position: relative;
+}
+@media only screen and (max-width: 1200px) {
+    .ch-form-checkout__gift {
+      font-size: 10rem; } }
+@media only screen and (max-width: 700px) {
+    .ch-form-checkout__gift {
+        width: 70%;
+      font-size: 10rem;
+    line-height: 10rem;
+    margin-bottom: 13rem;}
+}
+.ch-form-checkout__gift-icon{
+    height: 32rem;
+    width: 32rem;
+    margin-right: 6rem;
+    background: url("../icon/gift.svg") center no-repeat;
+    background-size: contain;
+}
+
 .ch-about-project__text {
   width: 45.2083vw;
   font-weight: 400;
@@ -8331,7 +8409,8 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%; }
+    border-radius: 50%; 
+    position: relative;}
     @media only screen and (max-width: 1200px) {
       .ch-checkbox-mini__icon {
         width: 2.1vw;
@@ -8346,12 +8425,15 @@ ul {
     .ch-checkbox-mini__icon:after {
       content: "";
       display: block;
-      width: 100%;
-      height: 100%;
+      width: 70%;
+      height: 70%;
       background: #009e62;
       border-radius: 50%;
       transform: scale(0);
-      transition: 0.25s ease-in-out; }
+      transition: 0.25s ease-in-out;
+        position: absolute;
+        top:15%;
+        left: 15%;}
 
 .ch-individual-left {
   width: 61.7188vw;

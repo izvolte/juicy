@@ -7,6 +7,7 @@
     <link href="assets/css/datepicker.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/imask.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/TweenMax.min.js"></script>
     <script src="assets/js/ScrollMagic.min.js"></script>
@@ -17,6 +18,7 @@
             type="text/javascript"></script>
     <script src="assets/js/air-datepicker.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/rem.js"></script>
 </head>
 <body>
 <div class="ch-wrapper">
@@ -172,20 +174,28 @@
                 </div>
             </div>
             <form action="" class="ch-form ch-page-checkout__ch-form-checkout ch-form-checkout">
-                <div class="ch-form-checkout__header">
-                    <div class="ch-form-checkout__title">
-                        Доставка курьером
-                    </div>
-                    <div class="ch-form-checkout__sub-title">
-                        Доставка в пределах МКАД - бесплатно
-                    </div>
-                </div>
+                
                 <div class="ch-form-checkout__wrapper">
                     <div class="ch-form-checkout__col">
+                        <div class="ch-form-checkout__header">
+                            <div class="ch-form-checkout__title">
+                                Доставка курьером
+                            </div>
+                            <div class="ch-form-checkout__sub-title">
+                                Доставка в пределах МКАД - бесплатно
+                            </div>
+                        </div>
                         <div class="ch-form-checkout__input ch-input__wrapper">
                             <input id="name-for-checkout" type="text" class="ch-input" name="name" placeholder=" "
                                    data-required="name">
                             <label for="name-for-checkout" class="ch-input__label">Ваше имя*</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                        </div>
+                        <div class="ch-form-checkout__input ch-input__wrapper">
+                            <input id="surname-for-checkout" type="text" class="ch-input" name="name" placeholder=" "
+                                   data-required="name">
+                            <label for="surname-for-checkout" class="ch-input__label">Ваша фамилия*</label>
                             <div class="ch-input__error"></div>
                             <div class="ch-input__successful"></div>
                         </div>
@@ -203,6 +213,17 @@
                             <label for="email-for-checkout" class="ch-input__label">Ваш e-mail*</label>
                             <div class="ch-input__error"></div>
                             <div class="ch-input__successful"></div>
+                        </div>
+                        <div class="ch-form-checkout__input ch-input__wrapper">
+                            <input id="birthday-for-checkout" type="text" class="ch-input ch-mask_date" name="date"
+                                   placeholder=" ">
+                            <label for="birthday-for-checkout" class="ch-input__label">Дата рождения</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                        </div>
+                        <div class="ch-form-checkout__gift">
+                            <div class="ch-form-checkout__gift-icon"></div>
+                            <p>Заполните поле, чтобы получить подарок ко Дню Рождения</p>
                         </div>
                         <div class="ch-form-checkout__input ch-form-checkout__input_date ch-input__wrapper">
                             <input id="date-for-checkout" type="text" class="ch-input ch-input_date" name="date"
@@ -348,7 +369,7 @@
                             <div class="ch-input__successful"></div>
                         </div>
                     </div>
-                    <div class="ch-form-checkout__col">
+                    <div class="ch-form-checkout__col ch-form-checkout__col--padding-top">
                         <div class="ch-form-checkout__input ch-input__wrapper ch-select">
                             <input id="metro-for-checkout" type="text" class="ch-input ch-select__input" name="city"
                                    placeholder=" "
@@ -451,11 +472,11 @@
                             <label class="ch-checkbox-input__cont">
                                 <input type="checkbox" class="ch-checkbox-input">
                                 <span class="ch-checkbox-input__icon">
-                                <span class="ch-checkbox-input__yes">
-                                    <span class="ch-checkbox-input__yes--short"></span>
-                                    <span class="ch-checkbox-input__yes--long"></span>
+                                    <span class="ch-checkbox-input__yes">
+                                        <span class="ch-checkbox-input__yes--short"></span>
+                                        <span class="ch-checkbox-input__yes--long"></span>
+                                    </span>
                                 </span>
-                            </span>
                             </label>
                             <span class="ch-form-checkout__agree-span">
                                 Подписаться на рассылку новостей, <br>
@@ -473,8 +494,36 @@
                                 </span>
                             </label>
                             <span class="ch-form-checkout__agree-span">
-                                    Я согласен с условиями данного <a href="#">договора</a>
+                                    Я согласен с условиями публичной <a href="#">оферты</a>
                             </span>
+                        </div>
+                        <div class="ch-form-checkout__agree">
+                            <label class="ch-checkbox-input__cont">
+                                <input type="checkbox" class="ch-checkbox-input" id="save_data_checkbox">
+                                <span class="ch-checkbox-input__icon">
+                                    <span class="ch-checkbox-input__yes">
+                                        <span class="ch-checkbox-input__yes--short"></span>
+                                        <span class="ch-checkbox-input__yes--long"></span>
+                                    </span>
+                                </span>
+                            </label>
+                            <span class="ch-form-checkout__agree-span">
+                                    Сохранить мои данные в личном кабинете для повторных заказов
+                            </span>
+                        </div>
+                        <div class="ch-form-checkout__input ch-input__wrapper ch-input-invisible">
+                            <input id="password-for-checkout" type="password" class="ch-input" name="name" placeholder=" "
+                                   >
+                            <label for="password-for-checkout" class="ch-input__label">Пароль</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
+                        </div>
+                        <div class="ch-form-checkout__input ch-input__wrapper ch-input-invisible">
+                            <input id="rep-password-for-checkout" type="password" class="ch-input" name="name" placeholder=" "
+                                   >
+                            <label for="rep-password-for-checkout" class="ch-input__label">Повторите пароль</label>
+                            <div class="ch-input__error"></div>
+                            <div class="ch-input__successful"></div>
                         </div>
                     </div>
                 </div>
