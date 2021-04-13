@@ -6915,7 +6915,7 @@ ul {
       .ch-form-checkout__inputs-wrapper {
         margin-bottom: 2.57vw; } }
   .ch-form-checkout__textarea {
-    height: 22vw;
+    height: 22.0vw;
     margin-bottom: 2.5vw; }
     @media only screen and (max-width: 1200px) {
       .ch-form-checkout__textarea {
