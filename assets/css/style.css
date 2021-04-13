@@ -7443,7 +7443,6 @@ ul {
     align-items: center;
     font-size: 17rem;
     color: #9299A2;
-    line-height: 32rem;
     font-family: "Gotham Pro", sans-serif;
     margin-bottom: 18rem;
     position: relative;
@@ -7462,6 +7461,7 @@ ul {
     height: 32rem;
     width: 32rem;
     margin-right: 6rem;
+    margin-left: 13.2rem;
     background: url("../icon/gift.svg") center no-repeat;
     background-size: contain;
 }
