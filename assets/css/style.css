@@ -7447,13 +7447,23 @@ ul {
     margin-bottom: 18rem;
     position: relative;
 }
+.ch-form-checkout__gift p{
+    padding-top: 5rem;
+}
 @media only screen and (max-width: 1200px) {
     .ch-form-checkout__gift {
-      font-size: 10rem; } }
+      font-size: 9rem;
+     width: 100%;
+    margin-bottom: 12rem;}
+
+    .ch-form-checkout__gift p{
+        padding-top: 3rem;
+    }
+}
 @media only screen and (max-width: 700px) {
     .ch-form-checkout__gift {
-        width: 70%;
-      font-size: 10rem;
+    width: 100%;
+     font-size: 10rem;
     line-height: 10rem;
     margin-bottom: 13rem;}
 }
@@ -7464,6 +7474,18 @@ ul {
     margin-left: 13.2rem;
     background: url("../icon/gift.svg") center no-repeat;
     background-size: contain;
+}
+
+@media only screen and (max-width: 1200px) {
+    .ch-form-checkout__gift-icon {
+      height: 17rem;
+        width: 17rem;
+        margin-left: 0; } }
+@media only screen and (max-width: 700px) {
+    .ch-form-checkout__gift-icon {
+        height: 25rem;
+    width: 25rem;
+    }
 }
 
 .ch-about-project__text {
