@@ -554,16 +554,81 @@ function productDiet() {
 function saveDataCheck(){
     let saveDataCheckBox = document.getElementById('save_data_checkbox');
     let passInputs = document.querySelectorAll('.ch-input-invisible');
+    
     saveDataCheckBox.addEventListener('input', () => {
        if(saveDataCheckBox.checked){
            passInputs.forEach(input => {
                input.classList.remove('ch-input-invisible');
            })
+           passInputs[0].children[0].setAttribute("data-required", "password");
+           passInputs[1].children[0].setAttribute("data-required", "password-repeat");
        }else{
           passInputs.forEach(input => {
                input.classList.add('ch-input-invisible');
            })
+           passInputs[0].children[0].removeAttribute("data-required", "password");
+           passInputs[1].children[0].removeAttribute("data-required", "password-repeat");
        }
+    });
+}
+
+function dateMask(){
+   
+    let inputDate = document.querySelectorAll('.ch-mask_date');
+    
+    let dateMask = IMask(inputDate[0], {
+         mask: Date,  // enable date mask
+        pattern: 'd{.}`m{.}`Y',
+      blocks: {
+        d: {
+          mask: IMask.MaskedRange,
+          from: 1,
+          to: 31,
+          maxLength: 2,
+        },
+        m: {
+          mask: IMask.MaskedRange,
+          from: 1,
+          to: 12,
+          maxLength: 2,
+        },
+        Y: {
+          mask: IMask.MaskedRange,
+          from: 19000,
+          to: 99999,
+        }
+      },
+      // define date -> str convertion
+      format: function (date) {
+        var day = date.getDate();
+        var month = date.getMonth() + 1;
+        var year = date.getFullYear();
+
+        if (day < 10) day = "0" + day;
+        if (month < 10) month = "0" + month;
+
+        return [year, month, day].join('-');
+      },
+      // define str -> date convertion
+      parse: function (str) {
+        var yearMonthDay = str.split('-');
+        return new Date(yearMonthDay[0], yearMonthDay[1] - 1, yearMonthDay[2]);
+      },
+
+      // optional interval options
+      min: new Date(2000, 0, 1),  // defaults to `1900-01-01`
+      max: new Date(2020, 0, 1),  // defaults to `9999-01-01`
+
+      autofix: true,  // defaults to `false`
+
+    });  
+    
+    inputDate.forEach(elem => {
+        elem.addEventListener("blur", () => {
+            if(elem.value.length<10)
+            elem.value = "";
+            dateMask.updateValue();
+        });
     });
 }
 
@@ -599,4 +664,6 @@ window.onload = function () {
     productDiet();
     
     saveDataCheck();
+    
+    dateMask();
 };

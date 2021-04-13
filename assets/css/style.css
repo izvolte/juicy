@@ -190,6 +190,8 @@ ul {
 .ch-button--white{
     background-color: #ffffff;
     color: #000000;
+    box-shadow: none;
+    border: 1px solid #C9C9C9;
 }
   @media only screen and (max-width: 1200px) {
     .ch-button {
@@ -4949,6 +4951,9 @@ ul {
         font-size: 10rem; } }
 
 .ch-aut-modal {
+  width: 70.2604vw; }
+
+.ch-aut-modal--tight {
   width: 32.2917vw; }
 
 @media only screen and (max-width: 1200px) {
@@ -8404,7 +8409,8 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%; }
+    border-radius: 50%; 
+    position: relative;}
     @media only screen and (max-width: 1200px) {
       .ch-checkbox-mini__icon {
         width: 2.1vw;
@@ -8419,12 +8425,15 @@ ul {
     .ch-checkbox-mini__icon:after {
       content: "";
       display: block;
-      width: 100%;
-      height: 100%;
+      width: 70%;
+      height: 70%;
       background: #009e62;
       border-radius: 50%;
       transform: scale(0);
-      transition: 0.25s ease-in-out; }
+      transition: 0.25s ease-in-out;
+        position: absolute;
+        top:15%;
+        left: 15%;}
 
 .ch-individual-left {
   width: 61.7188vw;

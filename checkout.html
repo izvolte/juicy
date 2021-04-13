@@ -7,6 +7,7 @@
     <link href="assets/css/datepicker.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/imask.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/TweenMax.min.js"></script>
     <script src="assets/js/ScrollMagic.min.js"></script>
@@ -17,6 +18,7 @@
             type="text/javascript"></script>
     <script src="assets/js/air-datepicker.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/rem.js"></script>
 </head>
 <body>
 <div class="ch-wrapper">
@@ -212,10 +214,9 @@
                             <div class="ch-input__error"></div>
                             <div class="ch-input__successful"></div>
                         </div>
-                        <div class="ch-form-checkout__input ch-form-checkout__input_date ch-input__wrapper">
-                            <input id="birthday-for-checkout" type="text" class="ch-input ch-input_date" name="date"
-                                   placeholder=" "
-                                   data-required="date" birth-datepicker>
+                        <div class="ch-form-checkout__input ch-input__wrapper">
+                            <input id="birthday-for-checkout" type="text" class="ch-input ch-mask_date" name="date"
+                                   placeholder=" ">
                             <label for="birthday-for-checkout" class="ch-input__label">Дата рождения</label>
                             <div class="ch-input__error"></div>
                             <div class="ch-input__successful"></div>
@@ -512,14 +513,14 @@
                         </div>
                         <div class="ch-form-checkout__input ch-input__wrapper ch-input-invisible">
                             <input id="password-for-checkout" type="password" class="ch-input" name="name" placeholder=" "
-                                   data-required="name">
+                                   >
                             <label for="password-for-checkout" class="ch-input__label">Пароль</label>
                             <div class="ch-input__error"></div>
                             <div class="ch-input__successful"></div>
                         </div>
                         <div class="ch-form-checkout__input ch-input__wrapper ch-input-invisible">
                             <input id="rep-password-for-checkout" type="password" class="ch-input" name="name" placeholder=" "
-                                   data-required="name">
+                                   >
                             <label for="rep-password-for-checkout" class="ch-input__label">Повторите пароль</label>
                             <div class="ch-input__error"></div>
                             <div class="ch-input__successful"></div>
