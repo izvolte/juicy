@@ -1401,6 +1401,9 @@ ul {
       height: 151.4286vw; } }
   .ch-item-main-slider_pos_right {
     justify-content: flex-end; }
+  .ch-item-main-slider_pos_center{
+    justify-content: center;
+  }
   .ch-item-main-slider__background {
     position: absolute;
     top: 0;
@@ -8968,4 +8971,119 @@ ul {
       width: 50.5714vw;
       height: 10.8571vw; } }
 
+.weight{
+  font-family: Roboto Condensed;
+  width: auto;
+}
+.weight__title{
+  font-size: 74rem;
+  text-align: center;
+  margin-bottom: 22.3rem;
+}
+.weight__text--green{
+  color: #196846;
+  display: inline !important;
+}
+.weight__calories{
+  font-size: 41.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 28.43rem;
+}
+.weight__separator{
+  margin: 0 auto 28.88rem;
+  width: 374rem;
+}
+.weight__separator img{
+  width: 100%;
+}
+.weight__points{
+  margin: 0 auto 57.21rem;
+  padding-left: 120rem;
+  font-family: Gotham Pro;
+}
+.weight__points p{
+  margin-bottom: 33.65rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 33.6545rem;
+  line-height: 32rem;
+  position: relative;
+}
+.weight__points p:before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: -35rem;
+  top: 50%;
+  margin-top: -10.65rem;
+  width: 21.3rem;
+  height: 21.3rem;
+  background: url("../img/slider-start/weight_point.png");
+  background-size: cover;
+}
+.weight__button{
+  margin: 0 auto;
+}
+.weight__button a{
+  margin: 0 auto;
+  border-radius: 112.182rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .weight__title{
+    font-size: 30rem;
+    margin-bottom: 8rem;
+  }
+  .weight__calories{
+    font-size: 15rem;
+    margin-bottom: 10rem;
+  }
+  .weight__separator{
+    margin: 0 auto 9.27rem;
+    width: 153rem;
+  }
+  .weight__points{
+    width: 200rem;
+    margin: 0 auto 22rem;
+    padding-left: 10rem;
+  }
+  .weight__points p{
+    margin-bottom: 10rem;
+    font-size: 12rem;
+    line-height: 11rem;
+    position: relative;
+  }
+  .weight__points p:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: -15rem;
+    top: 50%;
+    margin-top: -4.045rem;
+    width: 8.09rem;
+    height: 8.09rem;
+    background: url("../img/slider-start/weight_point.png");
+    background-size: cover;
+  }
+  .weight__button a{
+    border-radius: 40.25rem;
+  }
+}
+
+.detox__points{
+  margin-top: 54.5rem;
+}
+.detox__points p{
+  margin-bottom: 15rem;
+}
+@media only screen and (max-width: 700px) {
+  .detox__points{
+    width: 100%;
+    margin-top: 21rem;
+  }
+  .detox__points p{
+    margin-bottom: 10rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
