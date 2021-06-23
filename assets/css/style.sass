@@ -4890,7 +4890,20 @@ ul
         margin-bottom: 1.0vw
       @media only screen and (max-width: 700px)
         margin-bottom: 4.0vw
-
+  &__ch-menu-week
+    margin-bottom: 183rem
+    @media only screen and (max-width: 1200px)
+      margin-bottom: 69rem
+    @media only screen and (max-width: 700px)
+      margin-bottom: 39rem
+  &__ch-nutritional-advice
+    margin: 0 auto 141rem
+    @media only screen and (max-width: 1200px)
+      margin: 0 auto 69rem
+    @media only screen and (max-width: 700px)
+      margin: 0 auto 39rem
+  &__ch-testimonials
+    margin: 0 auto
 
 .ch-card-product
   border: 1px solid #cecfd1
@@ -8086,3 +8099,77 @@ ul
     @media only screen and (max-width: 700px)
       width: 50.5714vw
       height: 10.8571vw
+
+
+// совет нутрициолога
+
+.ch-nutritional-advice
+  display: flex
+  justify-content: space-between
+  width: 1330rem
+  &__title
+    text-transform: uppercase
+    margin-bottom: 53rem
+  &__advice-quote
+    position: relative
+
+.advice-quote
+  padding: 0 35rem
+  width: 798rem
+  height: 123rem
+  font-weight: 500
+  &__open,&__close
+    position: absolute
+  &__open
+    top: 0
+    left: 0
+  &__close
+    right: 0
+    bottom: 0
+    transform: rotate(180deg)
+
+.ch-logo-advice
+  width: 421rem
+  height: 421rem
+  position: relative
+  &__gold-bg
+    border-radius: 421rem
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(180deg, #e9d08c 0%, #987531 100%)
+    padding: 4rem
+    &:after
+      content: ""
+      display: block
+      width: 100%
+      height: 100%
+      background-color: #f3f3f3
+      border-radius: 421rem
+  &__icon
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 168rem
+    height: 168rem
+    svg
+      width: 100%
+      height: 100%
+
+
+.ch-testimonials
+  width: 1562rem
+
+
+
+
+
+
+
+
+
+
+
