@@ -22,6 +22,18 @@ function startSlider() {
     });
 }
 
+function testimonialsSlider() {
+
+    jQuery('.ch-slider-testimonials__wrap').slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+    });
+}
+
 function wordDecline(num, expressions) {
     let result;
     let count = num % 100;
@@ -662,6 +674,8 @@ window.onload = function () {
     formEditLk();
 
     productDiet();
+
+    testimonialsSlider();
     
     //saveDataCheck();
     

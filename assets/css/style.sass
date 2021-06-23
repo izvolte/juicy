@@ -2,7 +2,6 @@
 @import "fonts.css"
 @import "anim.css"
 
-
 $dark: #04233D
 $green-dark: #196846
 $green: #009E62
@@ -245,6 +244,28 @@ ul
         background-image: linear-gradient(267deg, #ceb37d 0%, #987531 100%)
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
+
+.ch-underline-btn
+  position: relative
+  transition: all 0.25s ease-in-out
+  font-family: "Gotham Pro", sans-serif
+  border: none
+  background: none
+  font-weight: 500
+  &:after
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 1px
+    background: $dark
+  &_uppercase
+    text-transform: uppercase
+  &_color
+    &_green
+      &:after
+        background: $green
 
 
 
@@ -8107,31 +8128,32 @@ ul
   display: flex
   justify-content: space-between
   width: 1330rem
+  @media only screen and (max-width: 1200px)
+    width: 734rem
+  @media only screen and (max-width: 700px)
+    width: 316rem
+
+  &__right
+    padding-top: 40rem
+    @media only screen and (max-width: 1200px)
+    @media only screen and (max-width: 700px)
   &__title
     text-transform: uppercase
     margin-bottom: 53rem
+    @media only screen and (max-width: 1200px)
+      margin-bottom: 30rem
+    @media only screen and (max-width: 700px)
   &__advice-quote
     position: relative
-
-.advice-quote
-  padding: 0 35rem
-  width: 798rem
-  height: 123rem
-  font-weight: 500
-  &__open,&__close
-    position: absolute
-  &__open
-    top: 0
-    left: 0
-  &__close
-    right: 0
-    bottom: 0
-    transform: rotate(180deg)
 
 .ch-logo-advice
   width: 421rem
   height: 421rem
   position: relative
+  @media only screen and (max-width: 1200px)
+    width: 221rem
+    height: 221rem
+  @media only screen and (max-width: 700px)
   &__gold-bg
     border-radius: 421rem
     position: absolute
@@ -8141,6 +8163,11 @@ ul
     height: 100%
     background: linear-gradient(180deg, #e9d08c 0%, #987531 100%)
     padding: 4rem
+    @media only screen and (max-width: 1200px)
+      padding: 3rem
+      border-radius: 221rem
+    @media only screen and (max-width: 700px)
+
     &:after
       content: ""
       display: block
@@ -8148,6 +8175,8 @@ ul
       height: 100%
       background-color: #f3f3f3
       border-radius: 421rem
+      @media only screen and (max-width: 1200px)
+      @media only screen and (max-width: 700px)
   &__icon
     position: absolute
     top: 50%
@@ -8155,13 +8184,212 @@ ul
     transform: translate(-50%, -50%)
     width: 168rem
     height: 168rem
+    @media only screen and (max-width: 1200px)
+      width: 90rem
+      height: 90rem
+    @media only screen and (max-width: 700px)
     svg
       width: 100%
       height: 100%
 
+.advice-quote
+  padding: 0 35rem
+  width: 798rem
+  font-weight: 500
+  @media only screen and (max-width: 1200px)
+    padding: 0 18rem
+    width: 430rem
+    br
+      display: none
+  @media only screen and (max-width: 700px)
+  &__open,&__close
+    position: absolute
+    width: 20rem
+    height: 20rem
+    @media only screen and (max-width: 1200px)
+      width: 11rem
+      height: 11rem
+    @media only screen and (max-width: 700px)
+
+    svg
+      width: 100%
+      height: 100%
+  &__open
+    top: 0
+    left: 0
+  &__close
+    right: 0
+    bottom: 0
+    transform: rotate(180deg)
 
 .ch-testimonials
   width: 1562rem
+  height: 668rem
+  padding: 63rem 107rem 62rem
+  background: $grey-5
+  @media only screen and (max-width: 1200px)
+    width: 891rem
+    height: 394rem
+    padding: 32rem 29rem
+  @media only screen and (max-width: 700px)
+  &__header
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-bottom: 44rem
+    @media only screen and (max-width: 1200px)
+      margin-bottom: 28rem
+    @media only screen and (max-width: 700px)
+
+
+.ch-slider-testimonials
+  width: 100%
+  height: 440rem
+  position: relative
+  @media only screen and (max-width: 1200px)
+    width: 780rem
+    margin: 0 auto
+    height: 265rem
+  @media only screen and (max-width: 700px)
+  .slick-arrow
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 22rem
+    height: 38rem
+    background: url("../icon/arrow_dark.svg") center no-repeat
+    background-size: contain
+    border: none
+    font-size: 0
+    cursor: pointer
+    z-index: 100
+    @media only screen and (max-width: 1200px)
+      width: 12rem
+      height: 21rem
+
+    &:after
+      content: ""
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 300%
+      height: 200%
+    @media only screen and (max-width: 1200px)
+    @media only screen and (max-width: 700px)
+    &.prev
+      left: -56rem
+      transform: translateY(-50%) rotate(180deg)
+      @media only screen and (max-width: 1200px)
+        left: -37rem
+      @media only screen and (max-width: 700px)
+        left: -24rem
+    &.next
+      right: -56rem
+      @media only screen and (max-width: 1200px)
+        right: -37rem
+      @media only screen and (max-width: 700px)
+        right: -24rem
+  &__wrap
+    width: 100%
+    height: 100%
+    overflow: hidden
+    position: relative
+    .slick-list
+      margin-left: -14rem
+      margin-right: -14rem
+      @media only screen and (max-width: 1200px)
+        margin-left: -9rem
+        margin-right: -9rem
+      @media only screen and (max-width: 700px)
+
+  &__ch-testimonial-card
+    margin: 0 14rem
+    @media only screen and (max-width: 1200px)
+      margin: 0 9rem
+    @media only screen and (max-width: 700px)
+
+
+
+.ch-testimonial-card
+  background: #FFFFFF
+  width: 431rem
+  min-height: 100%
+  padding: 34rem 24rem 37rem 35rem
+  @media only screen and (max-width: 1200px)
+    width: 248rem
+    padding: 15rem
+  @media only screen and (max-width: 700px)
+  &__date
+    font-weight: 500
+    color: $green
+    margin-bottom: 2px
+    @media only screen and (max-width: 1200px)
+      margin-bottom: 7rem
+    @media only screen and (max-width: 700px)
+  &__client-name
+    margin-bottom: 9rem
+    @media only screen and (max-width: 1200px)
+      margin-bottom: 7rem
+    @media only screen and (max-width: 700px)
+  &__ch-rang
+    margin-bottom: 27rem
+    @media only screen and (max-width: 1200px)
+      margin-bottom: 15rem
+    @media only screen and (max-width: 700px)
+
+  &__text
+    font-weight: 500
+    margin-bottom: 13rem
+    overflow: hidden
+    display: -webkit-box
+    -webkit-line-clamp: 9
+    -webkit-box-orient: vertical
+    @media only screen and (max-width: 1200px)
+      margin-bottom: 19rem
+    @media only screen and (max-width: 700px)
+  &__link
+    color: $green
+    position: relative
+    font-weight: 500
+
+    &:after
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      height: 1px
+      background: $green
+      width: 100%
+    &.hide
+      display: none
+
+
+.ch-rang
+  width: 154rem
+  height: 26rem
+  display: flex
+  justify-content: space-between
+  @media only screen and (max-width: 1200px)
+    width: 91rem
+    height: 16rem
+  @media only screen and (max-width: 700px)
+  &__star
+    width: 26rem
+    height: 26rem
+    @media only screen and (max-width: 1200px)
+      width: 16rem
+      height: 16rem
+    @media only screen and (max-width: 700px)
+    &.filled
+      .ch-rang__star-fill
+        fill: #F0D74D
+  .ch-rang__star-fill
+    transition: fill 0.25s ease-in-out
+
+
+
+
 
 
 
