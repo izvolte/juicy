@@ -159,6 +159,14 @@ ul
     width: 100%
     z-index: 2
     border-radius: 50%
+  &_modal
+    width: 210rem
+    height: 210rem
+    @media only screen and (max-width: 700px)
+      width: 90rem
+      height: 90rem
+
+
 
 .ch-button
   width: 16.9271vw
@@ -190,6 +198,14 @@ ul
   &:active
     background-color: $green-dark
   &_theme
+    &_feedback
+      width: 225rem
+      height: 59rem
+      font-size: 20rem
+      @media only screen and (max-width: 700px)
+        width: 139rem
+        height: 34rem
+        font-size: 10rem
     &_call
       height: 2.2917vw
       width: 13.9063vw
@@ -244,29 +260,6 @@ ul
         background-image: linear-gradient(267deg, #ceb37d 0%, #987531 100%)
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
-
-.ch-underline-btn
-  position: relative
-  transition: all 0.25s ease-in-out
-  font-family: "Gotham Pro", sans-serif
-  border: none
-  background: none
-  font-weight: 500
-  &:after
-    content: ""
-    position: absolute
-    bottom: 0
-    left: 0
-    width: 100%
-    height: 1px
-    background: $dark
-  &_uppercase
-    text-transform: uppercase
-  &_color
-    &_green
-      &:after
-        background: $green
-
 
 
 .ch-gold-box
@@ -551,6 +544,13 @@ ul
       @media only screen and (max-width: 700px)
         width: 13.7143vw
         height: 13.7143vw
+    &_feedback
+      width: 108rem
+      height: 100rem
+      @media only screen and (max-width: 700px)
+        width: 67rem
+        height: 67rem
+
 
 
 .ch-header-cart
@@ -2404,9 +2404,6 @@ ul
       color: #04233d
       @media only screen and (max-width: 1200px)
         height: auto
-  &__scroller
-    height: 100%
-    overflow-y: scroll
 
 .scroller::-webkit-scrollbar
   width: 0
@@ -2443,6 +2440,8 @@ ul
     padding: 4.8571vw 3.4286vw 3.1429vw
   &_inv
     display: none
+  &_textarea
+    background: $grey-5
   &:hover
     border: 1px solid #dedede
   &:focus, &:not(:placeholder-shown)
@@ -4493,6 +4492,15 @@ ul
   @media only screen and (max-width: 700px)
     width: 4.8571vw
     height: 4.8571vw
+  &_feedback
+    width: 30rem
+    height: 30rem
+    @media only screen and (max-width: 700px)
+      width: 16rem
+      height: 16rem
+    svg
+      width: 100%
+      height: 100%
 
 .ch-message-modal
   display: flex
@@ -8125,24 +8133,31 @@ ul
 // совет нутрициолога
 
 .ch-nutritional-advice
-  display: flex
-  justify-content: space-between
   width: 1330rem
-  @media only screen and (max-width: 1200px)
-    width: 734rem
+
   @media only screen and (max-width: 700px)
-    width: 316rem
+    width: 282rem
+  &__wrap
+    display: flex
+    justify-content: space-between
 
   &__right
     padding-top: 40rem
-    @media only screen and (max-width: 1200px)
+
     @media only screen and (max-width: 700px)
+      padding-top: 0
   &__title
     text-transform: uppercase
     margin-bottom: 53rem
-    @media only screen and (max-width: 1200px)
-      margin-bottom: 30rem
     @media only screen and (max-width: 700px)
+      display: none
+    &_mob
+      display: none
+      @media only screen and (max-width: 700px)
+        display: block
+        text-align: center
+        margin-bottom: 30rem
+
   &__advice-quote
     position: relative
 
@@ -8150,10 +8165,9 @@ ul
   width: 421rem
   height: 421rem
   position: relative
-  @media only screen and (max-width: 1200px)
-    width: 221rem
-    height: 221rem
   @media only screen and (max-width: 700px)
+    width: 77rem
+    height: 77rem
   &__gold-bg
     border-radius: 421rem
     position: absolute
@@ -8167,6 +8181,8 @@ ul
       padding: 3rem
       border-radius: 221rem
     @media only screen and (max-width: 700px)
+      padding: 1px
+      border-radius: 100rem
 
     &:after
       content: ""
@@ -8184,10 +8200,9 @@ ul
     transform: translate(-50%, -50%)
     width: 168rem
     height: 168rem
-    @media only screen and (max-width: 1200px)
-      width: 90rem
-      height: 90rem
     @media only screen and (max-width: 700px)
+      width: 37rem
+      height: 37rem
     svg
       width: 100%
       height: 100%
@@ -8196,20 +8211,18 @@ ul
   padding: 0 35rem
   width: 798rem
   font-weight: 500
-  @media only screen and (max-width: 1200px)
-    padding: 0 18rem
-    width: 430rem
+  @media only screen and (max-width: 700px)
+    width: 213rem
+    padding: 0 13rem
     br
       display: none
-  @media only screen and (max-width: 700px)
   &__open,&__close
     position: absolute
     width: 20rem
     height: 20rem
-    @media only screen and (max-width: 1200px)
+    @media only screen and (max-width: 700px)
       width: 11rem
       height: 11rem
-    @media only screen and (max-width: 700px)
 
     svg
       width: 100%
@@ -8217,40 +8230,76 @@ ul
   &__open
     top: 0
     left: 0
+    @media only screen and (max-width: 700px)
+      top: 3rem
+
   &__close
-    right: 0
+    right: 40rem
     bottom: 0
     transform: rotate(180deg)
+    @media only screen and (max-width: 700px)
+      right: 0
+      bottom: 5rem
+  &__text
+    @media only screen and (max-width: 700px)
+      font-size: 10rem
+      line-height: 15rem
+      br
+        display: none
 
 .ch-testimonials
   width: 1562rem
   height: 668rem
   padding: 63rem 107rem 62rem
   background: $grey-5
-  @media only screen and (max-width: 1200px)
-    width: 891rem
-    height: 394rem
-    padding: 32rem 29rem
   @media only screen and (max-width: 700px)
+    position: relative
+    left: 50%
+    width: calc(100% + 40rem)
+    transform: translateX(-50%)
+    height: 345rem
+    padding: 35rem
   &__header
     display: flex
     justify-content: space-between
     align-items: flex-end
     margin-bottom: 44rem
-    @media only screen and (max-width: 1200px)
-      margin-bottom: 28rem
     @media only screen and (max-width: 700px)
+      margin-bottom: 11rem
+      align-items: center
+  &__btn
+    cursor: pointer
+    position: relative
+    transition: color 0.25s ease-in-out
+    font-family: "Gotham Pro", sans-serif
+    border: none
+    background: none
+    font-weight: 500
+    text-transform: uppercase
+    color: $dark
+    @media only screen and (max-width: 700px)
+      font-size: 9rem
+    &:after
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 1px
+      background: $dark
+      transition: background 0.25s ease-in-out
 
+    &:hover
+      color: $green
+      &:after
+        background: $green
 
 .ch-slider-testimonials
   width: 100%
   height: 440rem
   position: relative
-  @media only screen and (max-width: 1200px)
-    width: 780rem
-    margin: 0 auto
-    height: 265rem
   @media only screen and (max-width: 700px)
+    height: 234rem
   .slick-arrow
     position: absolute
     top: 50%
@@ -8280,14 +8329,10 @@ ul
     &.prev
       left: -56rem
       transform: translateY(-50%) rotate(180deg)
-      @media only screen and (max-width: 1200px)
-        left: -37rem
       @media only screen and (max-width: 700px)
         left: -24rem
     &.next
       right: -56rem
-      @media only screen and (max-width: 1200px)
-        right: -37rem
       @media only screen and (max-width: 700px)
         right: -24rem
   &__wrap
@@ -8298,45 +8343,44 @@ ul
     .slick-list
       margin-left: -14rem
       margin-right: -14rem
-      @media only screen and (max-width: 1200px)
-        margin-left: -9rem
-        margin-right: -9rem
+
       @media only screen and (max-width: 700px)
 
   &__ch-testimonial-card
     margin: 0 14rem
-    @media only screen and (max-width: 1200px)
-      margin: 0 9rem
+
     @media only screen and (max-width: 700px)
 
 
 
 .ch-testimonial-card
+  overflow: hidden
   background: #FFFFFF
   width: 431rem
   min-height: 100%
   padding: 34rem 24rem 37rem 35rem
-  @media only screen and (max-width: 1200px)
-    width: 248rem
-    padding: 15rem
+  box-shadow: 0 2px 6rem rgba(112, 112, 112, 0.16)
   @media only screen and (max-width: 700px)
+    padding: 15rem
+  &_modal
+    padding: 0
+    box-shadow: none
   &__date
     font-weight: 500
     color: $green
     margin-bottom: 2px
-    @media only screen and (max-width: 1200px)
-      margin-bottom: 7rem
     @media only screen and (max-width: 700px)
+      margin-bottom: 11rem
+      font-size: 9rem
   &__client-name
     margin-bottom: 9rem
-    @media only screen and (max-width: 1200px)
-      margin-bottom: 7rem
     @media only screen and (max-width: 700px)
+      font-size: 14rem
+      margin-bottom: 11rem
   &__ch-rang
     margin-bottom: 27rem
-    @media only screen and (max-width: 1200px)
-      margin-bottom: 15rem
     @media only screen and (max-width: 700px)
+      margin-bottom: 20rem
 
   &__text
     font-weight: 500
@@ -8345,14 +8389,15 @@ ul
     display: -webkit-box
     -webkit-line-clamp: 9
     -webkit-box-orient: vertical
-    @media only screen and (max-width: 1200px)
-      margin-bottom: 19rem
     @media only screen and (max-width: 700px)
+      -webkit-line-clamp: 7
+      font-size: 10rem
   &__link
     color: $green
     position: relative
     font-weight: 500
-
+    @media only screen and (max-width: 700px)
+      font-size: 10rem
     &:after
       content: ""
       position: absolute
@@ -8363,6 +8408,11 @@ ul
       width: 100%
     &.hide
       display: none
+  &__scroll-wrapper
+    height: 100%
+    width: 851rem
+    overflow-y: scroll
+
 
 
 .ch-rang
@@ -8370,22 +8420,285 @@ ul
   height: 26rem
   display: flex
   justify-content: space-between
-  @media only screen and (max-width: 1200px)
+  @media only screen and (max-width: 700px)
     width: 91rem
     height: 16rem
-  @media only screen and (max-width: 700px)
   &__star
     width: 26rem
     height: 26rem
-    @media only screen and (max-width: 1200px)
+    cursor: pointer
+    @media only screen and (max-width: 700px)
       width: 16rem
       height: 16rem
-    @media only screen and (max-width: 700px)
+    &:hover
+      .ch-rang__star-fill
+        fill: #F0D74D
+
+
     &.filled
       .ch-rang__star-fill
         fill: #F0D74D
   .ch-rang__star-fill
     transition: fill 0.25s ease-in-out
+
+.ch-feedback-modal
+  background-color: rgba(255, 255, 255, 0.9)
+  &__cont
+    width: 1060rem
+    height: 645rem
+    box-shadow: 0 3rem 10rem rgba(0, 0, 0, 0.16)
+    position: relative
+    background: #FFFFFF
+    @media only screen and (max-width: 700px)
+      width: 290rem
+      height: auto
+    &_feedback-detail
+      display: flex
+      align-items: center
+  &__ch-close
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: -50rem
+    @media only screen and (max-width: 700px)
+      top: -45rem
+  &__ch-logo
+    margin-bottom: 33rem
+    @media only screen and (max-width: 700px)
+      margin-bottom: 27rem
+  &__header
+    background: $grey-5
+    height: 124rem
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    @media only screen and (max-width: 700px)
+      height: 62rem
+
+  &__title
+    width: -moz-fit-content
+    width: fit-content
+  &__thanks-title
+    margin-bottom: 19rem
+    font-weight: 500
+    @media only screen and (max-width: 700px)
+      margin-bottom: 15rem
+  &__thanks-message
+    font-weight: 500
+    text-align: center
+    margin-bottom: 45rem
+    @media only screen and (max-width: 700px)
+      margin-bottom: 27rem
+
+  &__wrap
+    width: 100%
+    background: #FFFFFF
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    height: 521rem
+    @media only screen and (max-width: 700px)
+      height: auto
+      padding: 22rem 15rem
+
+    &_reg
+      @media only screen and (max-width: 700px)
+        padding: 50rem 0 70rem
+    &_feedback-detail
+      @media only screen and (max-width: 700px)
+        padding: 22rem 9rem 22rem 15rem
+
+
+  &__ch-gold-circle
+    position: relative
+    margin-bottom: 50rem
+    @media only screen and (max-width: 700px)
+      margin-bottom: 26rem
+  &__icon
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    width: 90rem
+    height: 77rem
+    z-index: 10
+    @media only screen and (max-width: 700px)
+      width: 39rem
+      height: 34rem
+
+    svg
+      width: 100%
+      height: 100%
+  &__message
+    text-align: center
+    font-weight: 500
+    a
+      color: $green
+      position: relative
+      &:after
+        content: ""
+        position: absolute
+        left: 0
+        bottom: 0
+        background: $green
+        width: 100%
+        height: 1px
+  &__ch-button
+    margin: 0 auto
+  &__ch-testimonial-card
+    width: 905rem
+    line-height: 25rem
+    @media only screen and (max-width: 650px)
+      width: 100%
+
+    .ch-testimonial-card__list
+      width: 851rem
+      @media only screen and (max-width: 650px)
+        width: 248rem
+
+    .ch-testimonial-card__text
+      overflow: unset
+      display: block
+      -webkit-line-clamp: unset
+      -webkit-box-orient: unset
+      @media only screen and (max-width: 650px)
+        line-height: 15rem
+
+
+.scroll-wrap
+  position: relative
+
+
+  &__scroller
+    width: 100%
+    overflow-y: scroll
+    position: relative
+    max-height: 407rem
+    @media only screen and (max-width: 650px)
+      max-height: 280rem
+
+  &__scroller::-webkit-scrollbar
+    width: 0
+
+  &__track
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 3
+    width: 7rem
+    height: 95%
+    border-radius: 7rem
+    transition: opacity 0.25s
+    @media only screen and (max-width: 650px)
+      width: 4rem
+      border-radius: 4rem
+
+  &__bar
+    position: absolute
+    z-index: 10
+    right: 0
+    width: 7rem
+    height: auto
+    border-radius: 7rem
+    background: #bcbcbc
+    opacity: 1
+    cursor: pointer
+    transition: opacity 0.25s ease-in-out
+    @media only screen and (max-width: 650px)
+      width: 4rem
+      border-radius: 4rem
+
+
+
+
+
+.ch-feedback-form
+  width: 845rem
+  @media only screen and (max-width: 700px)
+    width: 100%
+  &__header
+    margin-bottom: 25rem
+    display: flex
+    align-items: center
+    @media only screen and (max-width: 700px)
+      margin-bottom: 22rem
+  &__rating
+    color: $grey-1
+    font-weight: 500
+    margin-right: 9rem
+    transition: color 0.25s ease-in-out
+    @media only screen and (max-width: 700px)
+      font-size: 10rem
+      margin-right: 6rem
+      padding-top: 3rem
+    &.active
+      color: $dark
+  &__text-box
+    width: 100%
+    height: 172rem
+    padding: 22rem 15rem 22rem 22rem
+    background: #F3F3F3
+    margin-bottom: 11rem
+    @media only screen and (max-width: 700px)
+      padding: 14rem 5rem 14rem 14rem
+
+
+  &__feedback-textarea
+    margin-bottom: 11rem
+  &__description
+    margin-bottom: 23rem
+    @media only screen and (max-width: 700px)
+      font-size: 9rem
+
+    a
+      text-decoration: underline
+      color: $green
+  &__ch-button
+    margin-left: auto
+    @media only screen and (max-width: 700px)
+      margin: 0 auto
+
+.feedback-textarea
+  background: #F3F3F3
+  resize: none
+  border: none
+  font-size: 20rem
+  width: 100%
+  height: 100%
+  font-weight: 500
+  color: $dark
+  @media only screen and (max-width: 700px)
+    font-size: 10rem
+  &::placeholder
+    color: $grey-1
+    font-size: 20rem
+    z-index: 100
+    font-weight: 500
+    @media only screen and (max-width: 700px)
+      font-size: 10rem
+  &::-webkit-scrollbar
+    margin-right: 15rem
+    width: 7rem
+  &::-webkit-scrollbar-thumb
+    border-radius: 7rem
+    background-color: #bcbcbc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -31,6 +31,17 @@ function testimonialsSlider() {
         slidesToScroll: 1,
         prevArrow: $('.prev'),
         nextArrow: $('.next'),
+        responsive: [
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            }
+        ]
     });
 }
 
@@ -365,6 +376,19 @@ function customScroll() {
     }
 }
 
+function feedbackDetailScroller() {
+    if(document.querySelector('.scroll-wrap')) {
+        baron({
+            root: '.scroll-wrap',
+            scroller: '.scroll-wrap__scroller',
+            bar: '.scroll-wrap__bar',
+
+        }).controls({
+            track: '.scroll-wrap__track',
+        });
+    }
+}
+
 function closeModalButton() {
     document.addEventListener('click', e => {
         let target = e.target;
@@ -675,9 +699,14 @@ window.onload = function () {
 
     productDiet();
 
-    testimonialsSlider();
-    
     //saveDataCheck();
-    
+
     //dateMask();
+
+    testimonialsSlider();
+
+    feedbackDetailScroller();
+
+    
+
 };
