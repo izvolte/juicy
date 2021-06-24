@@ -699,9 +699,9 @@ window.onload = function () {
 
     productDiet();
 
-    //saveDataCheck();
+    saveDataCheck();
 
-    //dateMask();
+    dateMask();
 
     testimonialsSlider();
 
