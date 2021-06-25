@@ -49,6 +49,8 @@ ul
 
 .ch-content
   flex: 1 0 auto
+
+.ch-main
   overflow: hidden
 
 .ch-footer
@@ -284,18 +286,17 @@ ul
 
 .ch-header
   background: white
-  position: fixed
+  position: sticky
+  position: -webkit-sticky
   top: 0
   left: 0
   width: 100%
-  padding: 0 0.7813vw
   z-index: 500
   box-shadow: 0 0.4688vw 1.4063vw rgba(0, 0, 0, 0.16)
   @media only screen and (max-width: 1200px)
     box-shadow: 0 0.9000vw 2.7000vw rgba(0, 0, 0, 0.16)
   @media only screen and (max-width: 700px)
     box-shadow: 0 2.5714vw 7.7143vw rgba(0, 0, 0, 0.16)
-    padding: unset
     &.open
       .ch-burger
         &__line
@@ -307,6 +308,10 @@ ul
             transform: translateY(-2.2857vw) rotate(-45deg)
       .ch-header__bottom
         transform: translateY(0)
+  &__main
+    padding: 0 0.7813vw
+    @media only screen and (max-width: 700px)
+      padding: unset
   &__top
     max-width: 92.0833vw
     display: flex
@@ -499,6 +504,85 @@ ul
         width: 2.5714vw
 
 
+.top-banner
+  height: 154rem
+  display: flex
+  background: linear-gradient(360deg, #277354 0%, #009E62 100%)
+  align-items: center
+  position: relative
+  overflow: hidden
+  transition: 0.25s ease-in-out
+  @media only screen and (max-width: 700px)
+    height: 79rem
+  &__ticker
+    font-family: "Gotham Pro", sans-serif
+    white-space: nowrap
+    width: 100%
+  &__close
+    position: absolute
+    top: 10rem
+    right: 10rem
+    cursor: pointer
+    width: 28rem
+    height: 28rem
+    @media only screen and (max-width: 700px)
+      width: 13rem
+      height: 13rem
+      top: 7rem
+      right: 7rem
+      &:after
+        content: ''
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        width: 300%
+        height: 300%
+    svg
+      width: 100%
+      height: 100%
+      pointer-events: none
+  &__ticker-item-mob-cont
+    @media only screen and (max-width: 700px)
+      display: block
+      min-width: 262rem
+      max-width: 262rem
+      white-space: normal
+      margin-right: 8rem
+      margin-left: 23rem
+  &__ticker-item
+    font-size: 40rem
+    color: white
+    display: flex
+    width: 1325rem
+    @media only screen and (max-width: 700px)
+      width: 334rem
+      font-size: 17.5rem
+      align-items: center
+  &__transport
+    display: flex
+    align-items: center
+    justify-content: center
+    min-width: 92rem
+    height: 44rem
+    position: relative
+    @media only screen and (max-width: 700px)
+      min-width: 53rem
+      height: 28rem
+    img
+      width: 100%
+      height: 100%
+      object-fit: contain
+  &__bold
+    font-weight: 500
+    margin: 0 50rem 0 35rem
+    @media only screen and (max-width: 700px)
+      margin: 0
+  &__light
+    font-weight: 100
+    margin: 0 30rem 0 0
+    @media only screen and (max-width: 700px)
+      margin: 0
 
 
 .ch-burger
@@ -664,12 +748,10 @@ ul
 
 .ch-section
   &__ch-start-slider
-    margin-top: 8.5208vw
     margin-bottom: 4.1667vw
     @media only screen and (max-width: 1200px)
       margin-bottom: 3.8000vw
     @media only screen and (max-width: 700px)
-      margin-top: 19vw
       margin-bottom: 6.8571vw
 
   &__ch-programs-nutrition
@@ -775,19 +857,19 @@ ul
 
 
 .ch-page-header
-  padding-top: 11.625vw
+  padding-top: 2.0833vw
   margin: 0 1.4063vw 3.2083vw
   background-color: #f3f3f3
   text-align: center
   padding-bottom: 2.0833vw
   @media only screen and (max-width: 1200px)
-    padding-top: 12vw
+    padding-top: 2vw
     margin: 0 3.0000vw 5.0000vw
     padding-bottom: 3.0000vw
   @media only screen and (max-width: 700px)
     margin: 0 3.7143vw 6.2857vw
     line-height: 1
-    padding: 25.7143vw 3vw 7.1429vw
+    padding: 7.1429vw 3vw 7.1429vw
   &_blog-list
     margin-bottom: 2.3958vw
     @media only screen and (max-width: 700px)
@@ -3543,12 +3625,10 @@ ul
 
 .ch-lk
   background-color: #f3f3f3
-  padding-top: 14.0625vw
+  padding-top: 3.8125vw
   padding-bottom: 3.8125vw
-  @media only screen and (max-width: 1200px)
-    padding-top: 17.5000vw
   @media only screen and (max-width: 700px)
-    padding-top: 22.8571vw
+    padding-top: 6.5714vw
     padding-bottom: 6.5714vw
   &__container
     margin: 0 auto 1vw
@@ -4492,6 +4572,8 @@ ul
   @media only screen and (max-width: 700px)
     width: 4.8571vw
     height: 4.8571vw
+  *
+    pointer-events: none
   &_feedback
     width: 30rem
     height: 30rem
@@ -8381,7 +8463,13 @@ ul
     margin-bottom: 27rem
     @media only screen and (max-width: 700px)
       margin-bottom: 20rem
+    .ch-rang__star
+      cursor: auto
 
+    .ch-rang__star:hover path
+      fill: white
+    .ch-rang__star.filled:hover path
+      fill: #F0D74D
   &__text
     font-weight: 500
     margin-bottom: 13rem
@@ -8431,14 +8519,16 @@ ul
       width: 16rem
       height: 16rem
     &:hover
-      .ch-rang__star-fill
+      path
         fill: #F0D74D
-
-
     &.filled
-      .ch-rang__star-fill
+      path
         fill: #F0D74D
-  .ch-rang__star-fill
+  path
+    fill: white
+    stroke: #F0D74D
+    stroke-width: 1.7
+  path
     transition: fill 0.25s ease-in-out
 
 .ch-feedback-modal
@@ -8626,7 +8716,6 @@ ul
       margin-bottom: 22rem
   &__rating
     color: $grey-1
-    font-weight: 500
     margin-right: 9rem
     transition: color 0.25s ease-in-out
     @media only screen and (max-width: 700px)
@@ -8635,6 +8724,11 @@ ul
       padding-top: 3rem
     &.active
       color: $dark
+  &__ch-rang
+    flex-direction: row-reverse
+    .ch-rang__star:hover
+      &~ .ch-rang__star path
+        fill: #F0D74D
   &__text-box
     width: 100%
     height: 172rem
@@ -8667,7 +8761,6 @@ ul
   font-size: 20rem
   width: 100%
   height: 100%
-  font-weight: 500
   color: $dark
   @media only screen and (max-width: 700px)
     font-size: 10rem
@@ -8675,7 +8768,6 @@ ul
     color: $grey-1
     font-size: 20rem
     z-index: 100
-    font-weight: 500
     @media only screen and (max-width: 700px)
       font-size: 10rem
   &::-webkit-scrollbar
@@ -8684,6 +8776,7 @@ ul
   &::-webkit-scrollbar-thumb
     border-radius: 7rem
     background-color: #bcbcbc
+
 
 
 
