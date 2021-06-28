@@ -588,6 +588,7 @@ ul {
     @media only screen and (max-width: 700px) {
       .top-banner__ticker-item {
         width: 334rem;
+        min-width: 334rem;
         font-size: 17.5rem;
         align-items: center; } }
   .top-banner__transport {
