@@ -84,3 +84,16 @@ document.addEventListener('click', ({target}) => {
         target.closest('.top-banner').style.height = '0'
     }
 })
+
+jQuery(document).ready(() => {
+    flickity.destroy()
+    flickity = new Flickity(slideshowEl, {
+        autoPlay: false,
+        pageDots: false,
+        draggable: false,
+        wrapAround: true,
+        selectedAttraction: 0.015,
+        friction: 0.25,
+        prevNextButtons: false
+    })
+})
