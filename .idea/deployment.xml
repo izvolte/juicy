@@ -5,7 +5,7 @@
       <paths name="juicy">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/www/choosedesign.ru/prod/juicynew" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
