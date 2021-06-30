@@ -22,6 +22,29 @@ function startSlider() {
     });
 }
 
+function testimonialsSlider() {
+
+    jQuery('.ch-slider-testimonials__wrap').slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+        responsive: [
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            }
+        ]
+    });
+}
+
 function wordDecline(num, expressions) {
     let result;
     let count = num % 100;
@@ -353,6 +376,19 @@ function customScroll() {
     }
 }
 
+function feedbackDetailScroller() {
+    if(document.querySelector('.scroll-wrap')) {
+        baron({
+            root: '.scroll-wrap',
+            scroller: '.scroll-wrap__scroller',
+            bar: '.scroll-wrap__bar',
+
+        }).controls({
+            track: '.scroll-wrap__track',
+        });
+    }
+}
+
 function closeModalButton() {
     document.addEventListener('click', e => {
         let target = e.target;
@@ -492,7 +528,7 @@ function initDatePicker() {
             }
         });
     }
-    
+
     if (document.querySelector('[birth-datepicker]')) {
         $('[birth-datepicker]').datepicker({
             onRenderCell: function (date, cellType) {
@@ -553,83 +589,88 @@ function productDiet() {
 
 function saveDataCheck(){
     let saveDataCheckBox = document.getElementById('save_data_checkbox');
-    let passInputs = document.querySelectorAll('.ch-input-invisible');
-    
-    saveDataCheckBox.addEventListener('input', () => {
-       if(saveDataCheckBox.checked){
-           passInputs.forEach(input => {
-               input.classList.remove('ch-input-invisible');
-           })
-           passInputs[0].children[0].setAttribute("data-required", "password");
-           passInputs[1].children[0].setAttribute("data-required", "password-repeat");
-       }else{
-          passInputs.forEach(input => {
-               input.classList.add('ch-input-invisible');
-           })
-           passInputs[0].children[0].removeAttribute("data-required", "password");
-           passInputs[1].children[0].removeAttribute("data-required", "password-repeat");
-       }
-    });
+    if(saveDataCheckBox){
+        let passInputs = document.querySelectorAll('.ch-input-invisible');
+
+        saveDataCheckBox.addEventListener('input', () => {
+            if(saveDataCheckBox.checked){
+                passInputs.forEach(input => {
+                    input.classList.remove('ch-input-invisible');
+                })
+                passInputs[0].children[0].setAttribute("data-required", "password");
+                passInputs[1].children[0].setAttribute("data-required", "password-repeat");
+            }else{
+                passInputs.forEach(input => {
+                    input.classList.add('ch-input-invisible');
+                })
+                passInputs[0].children[0].removeAttribute("data-required", "password");
+                passInputs[1].children[0].removeAttribute("data-required", "password-repeat");
+            }
+        });
+    }
 }
 
 function dateMask(){
-   
+
     let inputDate = document.querySelectorAll('.ch-mask_date');
-    
-    let dateMask = IMask(inputDate[0], {
-         mask: Date,  // enable date mask
-        pattern: 'd{.}`m{.}`Y',
-      blocks: {
-        d: {
-          mask: IMask.MaskedRange,
-          from: 1,
-          to: 31,
-          maxLength: 2,
-        },
-        m: {
-          mask: IMask.MaskedRange,
-          from: 1,
-          to: 12,
-          maxLength: 2,
-        },
-        Y: {
-          mask: IMask.MaskedRange,
-          from: 19000,
-          to: 99999,
-        }
-      },
-      // define date -> str convertion
-      format: function (date) {
-        var day = date.getDate();
-        var month = date.getMonth() + 1;
-        var year = date.getFullYear();
+    if(inputDate.length > 0){
 
-        if (day < 10) day = "0" + day;
-        if (month < 10) month = "0" + month;
+        let dateMask = IMask(inputDate[0], {
+            mask: Date,  // enable date mask
+            pattern: 'd{.}`m{.}`Y',
+            blocks: {
+                d: {
+                    mask: IMask.MaskedRange,
+                    from: 1,
+                    to: 31,
+                    maxLength: 2,
+                },
+                m: {
+                    mask: IMask.MaskedRange,
+                    from: 1,
+                    to: 12,
+                    maxLength: 2,
+                },
+                Y: {
+                    mask: IMask.MaskedRange,
+                    from: 19000,
+                    to: 99999,
+                }
+            },
+            // define date -> str convertion
+            format: function (date) {
+                var day = date.getDate();
+                var month = date.getMonth() + 1;
+                var year = date.getFullYear();
 
-        return [year, month, day].join('-');
-      },
-      // define str -> date convertion
-      parse: function (str) {
-        var yearMonthDay = str.split('-');
-        return new Date(yearMonthDay[0], yearMonthDay[1] - 1, yearMonthDay[2]);
-      },
+                if (day < 10) day = "0" + day;
+                if (month < 10) month = "0" + month;
 
-      // optional interval options
-      min: new Date(2000, 0, 1),  // defaults to `1900-01-01`
-      max: new Date(2020, 0, 1),  // defaults to `9999-01-01`
+                return [year, month, day].join('-');
+            },
+            // define str -> date convertion
+            parse: function (str) {
+                var yearMonthDay = str.split('-');
+                return new Date(yearMonthDay[0], yearMonthDay[1] - 1, yearMonthDay[2]);
+            },
 
-      autofix: true,  // defaults to `false`
+            // optional interval options
+            min: new Date(2000, 0, 1),  // defaults to `1900-01-01`
+            max: new Date(2020, 0, 1),  // defaults to `9999-01-01`
 
-    });  
-    
-    inputDate.forEach(elem => {
-        elem.addEventListener("blur", () => {
-            if(elem.value.length<10)
-            elem.value = "";
-            dateMask.updateValue();
+            autofix: true,  // defaults to `false`
+
         });
-    });
+
+        inputDate.forEach(elem => {
+            elem.addEventListener("blur", () => {
+                if(elem.value.length<10)
+                    elem.value = "";
+                dateMask.updateValue();
+            });
+        });
+    }
+
 }
 
 window.onload = function () {
@@ -662,8 +703,15 @@ window.onload = function () {
     formEditLk();
 
     productDiet();
-    
+
     saveDataCheck();
-    
+
     dateMask();
+
+    testimonialsSlider();
+
+    feedbackDetailScroller();
+
+
+
 };
