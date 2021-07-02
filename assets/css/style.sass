@@ -2614,6 +2614,7 @@ ul
   &:disabled
     color: inherit
 
+
 .ch-input-line
   width: 100%
   height: 100%
@@ -8976,11 +8977,14 @@ ul
   .detox__points p
     margin-bottom: 10rem
 
-.ch-author
+.ch-author-banner
   padding-top: 88rem
   padding-right: 93rem
+  @media only screen and (max-width: 1200px)
+    padding-top: 38rem
+    padding-right: 33rem
   @media only screen and (max-width: 700px)
-    padding: 15rem 14rem 0
+    padding: 15rem 0rem 0
   &__title
     margin-bottom: 100rem
     text-align: center
@@ -8988,15 +8992,23 @@ ul
     position: relative
     width: 885rem
     height: 171rem
+    @media only screen and (max-width: 1200px)
+      width: 442rem
+      height: 85rem
+      font-size: 28rem
+      margin-bottom: 50rem
     @media only screen and (max-width: 700px)
       width: auto
       height: auto
       font-size: 19rem
       margin-bottom: 18rem
+      padding: 0 14rem
     a:after
       display: none
     a:hover
-      box-shadow: inset 0rem -7rem #FBFBFB, inset 0rem -10rem #13714b
+      box-shadow: inset 0rem -5rem #fbfbfb, inset 0rem -8rem #13714b
+      @media only screen and (max-width: 700px)
+        box-shadow: inset 0rem -3rem #fbfbfb, inset 0rem -4rem #13714b
   &__title-border
     position: absolute
     width: 100%
@@ -9004,6 +9016,7 @@ ul
     transform: translateY(13%)
     @media only screen and (max-width: 700px)
       transform: translateY(0%)
+      width: 91%
     svg
       width: 100%
       height: 100%
@@ -9012,14 +9025,22 @@ ul
     display: flex
     flex-wrap: wrap
     width: 885rem
+    @media only screen and (max-width: 1200px)
+      width: 442rem
     @media only screen and (max-width: 700px)
       width: auto
+      padding: 0 10rem
   &__item
     font-size: 22rem
     margin-right: 50rem
     margin-bottom: 66rem
     font-family: "Gotham Pro", sans-serif
     min-width: 220rem
+    @media only screen and (max-width: 1200px)
+      min-width: 110rem
+      font-size: 11rem
+      margin-bottom: 33rem
+      margin-right: 25rem
     &:nth-child(3n+3)
       margin-right: unset
       @media only screen and (max-width: 700px)
@@ -9039,6 +9060,10 @@ ul
     width: 70rem
     height: 70rem
     margin-bottom: 13rem
+    @media only screen and (max-width: 1200px)
+      width: 35rem
+      height: 35rem
+      margin-bottom: 7rem
     @media only screen and (max-width: 700px)
       width: 23rem
       height: 23rem
