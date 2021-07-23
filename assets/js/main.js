@@ -707,6 +707,4 @@ window.onload = function () {
 
     feedbackDetailScroller();
 
-    
-
 };
